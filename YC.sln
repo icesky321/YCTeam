@@ -29,6 +29,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YC.WebUI", "YC.WebUI\", "{B
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘", "备忘", "{84E01047-A022-4777-99C3-0A87DE62CCC8}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\cao\Desktop\老数据库表信息.txt = C:\Users\cao\Desktop\老数据库表信息.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
