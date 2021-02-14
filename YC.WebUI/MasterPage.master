@@ -61,7 +61,7 @@
             <div class="navbar-inner">
                 <ul class="nav pull-right">
 
-                    <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li>
+                    <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">设置</a></li>
                     <li id="fat-menu" class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="icon-user"></i>Jack Smith
@@ -99,10 +99,10 @@
                 <li><a href="reset-password.html">Reset Password</a></li>
             </ul>
 
-            <a href="#error-menu" class="nav-header collapsed" data-toggle="collapse"><i class="icon-exclamation-sign"></i>Error Pages <i class="icon-chevron-up"></i></a>
+            <a href="#error-menu" class="nav-header collapsed" data-toggle="collapse"><i class="icon-exclamation-sign"></i>基础设置 <i class="icon-chevron-up"></i></a>
             <ul id="error-menu" class="nav nav-list collapse">
-                <li><a href="403.html">403 page</a></li>
-                <li><a href="404.html">404 page</a></li>
+                <li><a href="403.html">供应商信息设置</a></li>
+                <li><a href="404.html">物料信息设置</a></li>
                 <li><a href="500.html">500 page</a></li>
                 <li><a href="503.html">503 page</a></li>
             </ul>
