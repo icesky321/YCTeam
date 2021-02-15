@@ -10,6 +10,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YC.WebUI", "YC.WebUI\", "{B8B8398D-ADC3-4E4F-A0CC-5568842C3371}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{4378a0e2-cea4-4e18-97d4-467347f6f6a8}|YC.BLL.dll;{D88B92A3-3337-4142-BC19-46CF0852FD4C}|YC.SQLServerDAL.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1546"
 		Debug.AspNetCompiler.PhysicalPath = "YC.WebUI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1546\"
