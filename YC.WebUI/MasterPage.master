@@ -49,11 +49,12 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico" />
+    <!-- 以下五句无用 -->
+    <%--    <link rel="shortcut icon" href="../assets/ico/favicon.ico" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png" />--%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -114,6 +115,12 @@
                 <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
             </ul>
 
+            <a href="#config-menu" class="nav-header" data-toggle="collapse"><i class="icon-legal"></i>系统配置</a>
+            <ul id="config-menu" class="nav nav-list">
+                <li><asp:HyperLink ID="hlnkUserList" runat="server" NavigateUrl="~/config/UserList.aspx">员工管理</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hlnkUserDetail" runat="server" NavigateUrl="~/config/UserDetail.aspx">员工详细信息</asp:HyperLink></li>
+            </ul>
+
             <a href="help.html" class="nav-header"><i class="icon-question-sign"></i>Help</a>
             <a href="faq.html" class="nav-header"><i class="icon-comment"></i>Faq</a>
         </div>
@@ -128,7 +135,7 @@
             $(function () {
                 $('.demo-cancel-click').click(function () { return false; });
             });
-    </script>
+        </script>
     </form>
 </body>
 </html>
