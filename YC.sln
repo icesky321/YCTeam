@@ -52,6 +52,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlueNileAdmin", "BlueNileAd
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "20861"
+		SlnRelativePath = "BlueNileAdmin\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -73,6 +74,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Proton", "Proton\", "{9E985
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "37890"
+		SlnRelativePath = "Proton\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
