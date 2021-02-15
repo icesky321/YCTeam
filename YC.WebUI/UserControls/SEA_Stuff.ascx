@@ -9,10 +9,10 @@
     <EditItemTemplate>
         <div class="form-horizontal">
             <div class="form-group">
-                <label class="col-md-3 control-label" for="text-input">工号</label>
+                <label class="col-md-3 control-label" for="text-input">账户</label>
                 <div class="col-md-9">
-                    <asp:TextBox ID="tbJobNumber" runat="server" class="form-control" placeholder="员工工号" Text='<%# Eval("JobNumber") %>'></asp:TextBox>
-                    <span class="help-block">员工工号，同时也是钉钉平台中的 UserId</span>
+                    <asp:TextBox ID="tbJobNumber" runat="server" class="form-control" placeholder="员工账户" Text='<%# Eval("JobNumber") %>'></asp:TextBox>
+                    <span class="help-block">员工账户，同时也是钉钉平台中的 UserId</span>
                 </div>
             </div>
         </div>
@@ -58,10 +58,10 @@
     <InsertItemTemplate>
         <div class="form-horizontal">
             <div class="form-group">
-                <label class="col-md-3 control-label" for="text-input">工号</label>
+                <label class="col-md-3 control-label" for="text-input">账户</label>
                 <div class="col-md-9">
-                    <asp:TextBox ID="tbJobNumber" runat="server" class="form-control" placeholder="员工工号" Text='<%# Eval("JobNumber") %>'></asp:TextBox>
-                    <span class="help-block">员工工号，同时也是钉钉平台中的身份Id</span>
+                    <asp:TextBox ID="tbJobNumber" runat="server" class="form-control" placeholder="员工账户" Text='<%# Eval("JobNumber") %>'></asp:TextBox>
+                    <span class="help-block">员工账户，同时也是钉钉平台中的身份Id</span>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
     <ItemTemplate>
         <div class="form-horizontal">
             <div class="form-group">
-                <label class="col-md-3 control-label" for="text-input">工号</label>
+                <label class="col-md-3 control-label" for="text-input">账户</label>
                 <div class="col-md-9">
                     <p class="form-control-static"><%# Eval("JobNumber") %></p>
                 </div>
@@ -146,7 +146,7 @@
                 <div class="col-md-9">
                     <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit"
                         Text="编辑" CssClass="btn btn-sm btn-success" />
-                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="DeleteRepairman"
+                    &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="DeleteStuff"
                         Text="删除" CssClass="btn btn-sm btn-success" />
                 </div>
             </div>

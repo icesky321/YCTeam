@@ -27,7 +27,7 @@ public partial class UserDetail : System.Web.UI.Page
 
     private void SEA_Stuff1_Deleted(object sender, EventArgs e)
     {
-        Response.Redirect("WxgList.aspx");
+        Response.Redirect("UserList.aspx");
     }
 
     private void SEA_Stuff1_Canceled(object sender, EventArgs e)

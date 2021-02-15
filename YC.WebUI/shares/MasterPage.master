@@ -235,6 +235,7 @@
                                         <li><a href="form-dropzone.html"><i class="fa fa-plus-square-o"></i><span class="text">Dropzone Upload</span></a></li>
                                         <li><a href="form-x-editable.html"><i class="fa fa-pencil"></i><span class="text">X-editable</span></a></li>
                                          <li><a href="~/UserCenter/UserList.aspx" runat="server" id="alnk1"><i class="fa fa-pencil"></i><span class="text">系统用户管理</span></a></li>
+                                         <li><a href="~/UserCenter/CreateRoles.aspx" runat="server" id="a1nk2"><i class="fa fa-pencil"></i><span class="text">系统角色管理</span></a></li>
                                     </ul>
                                 </li>
                                 <li>

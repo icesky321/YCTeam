@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 public partial class UserControls_SEA_Stuff : System.Web.UI.UserControl
 {
@@ -78,15 +79,15 @@ public partial class UserControls_SEA_Stuff : System.Web.UI.UserControl
 
     protected void formView_ItemCommand(object sender, FormViewCommandEventArgs e)
     {
-        Guid wxgId = Guid.Empty;
-        Guid.TryParse(hfSId.Value, out wxgId);
+        Guid sId = Guid.Empty;
+        Guid.TryParse(hfSId.Value, out sId);
 
         if (e.CommandName == "UpdateStuff")
         {
 
-            YC.SQLServerDAL.Stuff record = bll_StuffManage.GetStuffById(wxgId);
+            YC.SQLServerDAL.Stuff record = bll_StuffManage.GetStuffById(sId);
 
-            // 工号
+            // 账户
             TextBox tbJobNumber = formView.FindControl("tbJobNumber") as TextBox;
             record.JobNumber = tbJobNumber.Text;
 
@@ -114,7 +115,7 @@ public partial class UserControls_SEA_Stuff : System.Web.UI.UserControl
         {
             YC.SQLServerDAL.Stuff record = new YC.SQLServerDAL.Stuff();
 
-            // 工号
+            // 账户
             TextBox tbJobNumber = formView.FindControl("tbJobNumber") as TextBox;
             record.JobNumber = tbJobNumber.Text;
 
@@ -130,9 +131,15 @@ public partial class UserControls_SEA_Stuff : System.Web.UI.UserControl
             TextBox tbMobileShort = formView.FindControl("tbMobileShort") as TextBox;
             record.MobileShort = tbMobileShort.Text;
 
+            // 在Stuff表中创建员工信息。
             YC.SQLServerDAL.Stuff user = bll_StuffManage.NewStuff(record);
+
+
             if (StuffCreated != null)
             {
+                // 在 aspnet_Membership 表中创建系统登录账户信息
+                Membership.CreateUser(tbJobNumber.Text, "12345678");
+
                 hfSId.Value = user.SId.ToString();
                 StuffInsertedEventArgs args = new StuffInsertedEventArgs(user);
                 StuffCreated(this, args);
@@ -141,7 +148,9 @@ public partial class UserControls_SEA_Stuff : System.Web.UI.UserControl
 
         if (e.CommandName == "DeleteStuff")
         {
-            bll_StuffManage.DeleteStuff(wxgId);
+            var stuff = bll_StuffManage.GetStuffById(sId);
+            Membership.DeleteUser(stuff.JobNumber, true);
+            bll_StuffManage.DeleteStuff(sId);
             if (Deleted != null)
             {
                 Deleted(this, new EventArgs());

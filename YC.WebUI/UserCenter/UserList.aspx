@@ -34,6 +34,12 @@
                         <div class=" btn-toolbar ">
                             <a href="UserDetail.aspx" class="btn btn-default">创建新员工</a>
                         </div>
+                        <div class="alert alert-info">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <strong>注意!</strong> 添加员工后，将同时为该员工创建出系统账户，“系统账户”为本系统的登录用户名，初始密码为：12345678。<br />
+                            同时，该系统账户名必须与甬诚钉钉平台的 UserID 一致，否则无法接收到钉钉信息。<br />
+
+                        </div>
                         <asp:Repeater ID="rptApp" runat="server">
                             <HeaderTemplate>
                                 <table class="table table-hover">
@@ -41,7 +47,7 @@
                                         <tr>
                                             <th>#
                                             </th>
-                                            <th>工号</th>
+                                            <th>系统账户</th>
                                             <th>姓名</th>
                                             <th>手机号码</th>
                                             <th>手机短号</th>
