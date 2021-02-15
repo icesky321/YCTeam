@@ -68,8 +68,6 @@
 
 
 
-
-
         <div class="row-fluid">
             <div class="dialog">
                 <div class="block">
@@ -103,6 +101,8 @@
                 $('.demo-cancel-click').click(function () { return false; });
             });
     </script>
+        <asp:Login ID="Login1" runat="server">
+        </asp:Login>
     </form>
 </body>
 </html>
