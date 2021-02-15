@@ -117,7 +117,7 @@
             <a href="faq.html" class="nav-header"><i class="icon-comment"></i>Faq</a>
         </div>
         <div class="content">
-
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
