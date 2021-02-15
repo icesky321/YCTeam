@@ -2301,6 +2301,15 @@
       <Column Name="ygdm_" Member="Ygdm_" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Stuff" Member="Stuff">
+    <Type Name="Stuff">
+      <Column Name="SId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RealName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="JobNumber" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="MobileShort" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.syck" Member="Syck">
     <Type Name="Syck">
       <Column Name="dm_" Member="Dm_" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
@@ -5057,6 +5066,7 @@
       <Column Name="p_mobile" Member="P_mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="p_email" Member="P_email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="p_qq" Member="P_qq" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="creatdate" Member="Creatdate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.zwsz" Member="Zwsz">

@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proton - Admin Template</title>
+    <title>甬诚项目管理系统</title>
 
     <!-- Import google fonts - Heading first/ text second -->
     <link rel='stylesheet' type='text/css' href='http://fonts.useso.com/css?family=Open+Sans:400,700|Droid+Sans:400,700' />
@@ -206,15 +206,15 @@
                     <div class="sidebar-collapse">
                         <div class="sidebar-header t-center">
                             <span>
-                                <i class="text blue">甬诚采购项目管理</i></span>
+                                <i class="sidebar-brand">甬诚采购项目管理</i></span>
                         </div>
                         <div class="sidebar-menu">
                             <ul class="nav nav-sidebar">
-                                <li><a href="index.html"><i class="fa fa-laptop"></i><span class="text">Dashboard</span></a></li>
+                                <li><a href="index.html"><i class="fa fa-laptop"></i><span class="text">首页</span></a></li>
                                 <li>
-                                    <a href="#"><i class="fa fa-file-text"></i><span class="text">Pages</span> <span class="fa fa-angle-down pull-right"></span></a>
+                                    <a href="#"><i class="fa fa-file-text"></i><span class="text">销售中心</span> <span class="fa fa-angle-down pull-right"></span></a>
                                     <ul class="nav sub">
-                                        <li><a href="page-activity.html"><i class="fa fa-car"></i><span class="text">Activity</span></a></li>
+                                        <li><a href="../SalesCenter/AddProject.aspx"><i class="fa fa-car"></i><span class="text">创建项目</span></a></li>
                                         <li><a href="page-inbox.html"><i class="fa fa-envelope"></i><span class="text">Mail</span></a></li>
                                         <li><a href="page-invoice.html"><i class="fa fa-credit-card"></i><span class="text">Invoice</span></a></li>
                                         <li><a href="page-profile.html"><i class="fa fa-heart-o"></i><span class="text">Profile</span></a></li>
