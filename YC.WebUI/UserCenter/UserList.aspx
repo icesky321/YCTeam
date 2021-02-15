@@ -52,7 +52,7 @@
                             </HeaderTemplate>
                             <ItemTemplate>
                                 <tr>
-                                    <td>1
+                                    <td><%# Container.ItemIndex+1 %>
                                     </td>
                                     <td><%# Eval("JobNumber") %></td>
                                     <td><%# Eval("RealName") %></td>
