@@ -228,6 +228,16 @@
                                     </ul>
                                 </li>
                                 <li>
+                                    <a href="#"><i class="fa fa-list-alt"></i><span class="text">系统配置</span> <span class="fa fa-angle-down pull-right"></span></a>
+                                    <ul class="nav sub">
+                                        <li><a href="form-elements.html"><i class="fa fa-indent"></i><span class="text">Form elements</span></a></li>
+                                        <li><a href="form-wizard.html"><i class="fa fa-tags"></i><span class="text">Wizard</span></a></li>
+                                        <li><a href="form-dropzone.html"><i class="fa fa-plus-square-o"></i><span class="text">Dropzone Upload</span></a></li>
+                                        <li><a href="form-x-editable.html"><i class="fa fa-pencil"></i><span class="text">X-editable</span></a></li>
+                                         <li><a href="~/UserCenter/UserList.aspx" runat="server" id="alnk1"><i class="fa fa-pencil"></i><span class="text">系统用户管理</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
                                     <a href="#"><i class="fa fa-list-alt"></i><span class="text">Forms</span> <span class="fa fa-angle-down pull-right"></span></a>
                                     <ul class="nav sub">
                                         <li><a href="form-elements.html"><i class="fa fa-indent"></i><span class="text">Form elements</span></a></li>
@@ -243,7 +253,6 @@
                                         <li><a href="chart-flot.html"><i class="fa fa-random"></i><span class="text">Flot Chart</span></a></li>
                                         <li><a href="chart-xchart.html"><i class="fa fa-retweet"></i><span class="text">xChart</span></a></li>
                                         <li><a href="chart-other.html"><i class="fa fa-bar-chart-o"></i><span class="text">Other</span></a></li>
-                                        <li><a href="UserList.aspx"><i class="fa fa-bar-chart-o"></i><span class="text">UserList</span></a></li>
                                     </ul>
                                 </li>
                                 <li>
