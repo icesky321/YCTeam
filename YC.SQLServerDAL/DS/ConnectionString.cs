@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 
-namespace YC.SQLServerDAL.DS
+namespace YC.SQLServerDAL
 {
-    public class ConnectionString
+    public class Connection
     {
-        public static string ConnectionStringYC()
+        public static string GetConnectionString()
         {
             string conString = string.Empty;
             if (ConfigurationManager.ConnectionStrings["YC_SQL_ConnString"] != null)

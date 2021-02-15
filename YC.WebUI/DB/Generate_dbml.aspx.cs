@@ -37,7 +37,7 @@ public partial class WeixinMP_Generate_dbml : System.Web.UI.Page
 
 
                     p.StandardInput.WriteLine(@"cd C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\");
-                    p.StandardInput.WriteLine(@"sqlmetal.exe /conn:""data source=localhost\SQLExpress;Initial Catalog=JiadianDB;User ID=sa;password=x4v8m2e@p2dk)s7b"" /language:C# /namespace:Tiyi.JD.SQLServerDAL /context:JiadianDataContext /views /dbml:""D:\GithubRepoBank\JDSupport\SQLServerDAL\JiadianDB.dbml""");
+                    p.StandardInput.WriteLine(@"sqlmetal.exe /conn:""data source=106.14.177.162;Initial Catalog=ycdb;User ID=sa;password=x4v8m2e@p2dk)s7b"" /language:C# /namespace:YC.SQLServerDAL /context:YCDataContext /views /dbml:""D:\GithubRepoBank\YCTeam\YC.SQLServerDAL\YCDB.dbml""");
                     p.StandardInput.WriteLine("exit");
                     //p.WaitForExit();     //这里无限等待进程结束
                 }

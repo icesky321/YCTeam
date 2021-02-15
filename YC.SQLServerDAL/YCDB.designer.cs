@@ -76997,8 +76997,6 @@ namespace YC.SQLServerDAL
 		
 		private string _P_qq;
 		
-		private System.DateTime _Creatdate;
-		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -77045,8 +77043,6 @@ namespace YC.SQLServerDAL
     partial void OnP_emailChanged();
     partial void OnP_qqChanging(string value);
     partial void OnP_qqChanged();
-    partial void OnCreatdateChanging(System.DateTime value);
-    partial void OnCreatdateChanged();
     #endregion
 		
 		public Ygsz()
@@ -77470,26 +77466,6 @@ namespace YC.SQLServerDAL
 					this._P_qq = value;
 					this.SendPropertyChanged("P_qq");
 					this.OnP_qqChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="creatdate", Storage="_Creatdate", DbType="DateTime NOT NULL")]
-		public System.DateTime Creatdate
-		{
-			get
-			{
-				return this._Creatdate;
-			}
-			set
-			{
-				if ((this._Creatdate != value))
-				{
-					this.OnCreatdateChanging(value);
-					this.SendPropertyChanging();
-					this._Creatdate = value;
-					this.SendPropertyChanged("Creatdate");
-					this.OnCreatdateChanged();
 				}
 			}
 		}

@@ -6,9 +6,28 @@ using System.Threading.Tasks;
 
 namespace YC.SQLServerDAL
 {
-    public class dwtxDA
+    public class dwtxDA : IDisposable
     {
-        YC.SQLServerDAL.YCDataContext dbContext = new YCDataContext(DS.ConnectionString.ConnectionStringYC());
+        YCDataContext dbContext = new YCDataContext(YC.SQLServerDAL.Connection.GetConnectionString());
+
+        /// <summary>
+        /// 释放由本类占用的所有资源
+        /// </summary>
+        public void Dispose()
+        {
+            if (dbContext != null)
+            {
+                dbContext.Dispose();
+                dbContext = null;
+            }
+
+            GC.SuppressFinalize(this);
+        }
+
+        ~dwtxDA()
+        {
+            this.Dispose();
+        }
 
 
         /// <summary>
