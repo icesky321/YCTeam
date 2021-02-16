@@ -66,6 +66,9 @@ namespace YC.SQLServerDAL
     partial void InsertBd_sz1(Bd_sz1 instance);
     partial void UpdateBd_sz1(Bd_sz1 instance);
     partial void DeleteBd_sz1(Bd_sz1 instance);
+    partial void InsertCorporation(Corporation instance);
+    partial void UpdateCorporation(Corporation instance);
+    partial void DeleteCorporation(Corporation instance);
     partial void InsertCw_kmxm(Cw_kmxm instance);
     partial void UpdateCw_kmxm(Cw_kmxm instance);
     partial void DeleteCw_kmxm(Cw_kmxm instance);
@@ -303,6 +306,14 @@ namespace YC.SQLServerDAL
 			get
 			{
 				return this.GetTable<Cg_dhda_mxb>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Corporation> Corporation
+		{
+			get
+			{
+				return this.GetTable<Corporation>();
 			}
 		}
 		
@@ -13372,6 +13383,308 @@ namespace YC.SQLServerDAL
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Corporation")]
+	public partial class Corporation : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _CorpId;
+		
+		private string _CorpName;
+		
+		private string _Abbr;
+		
+		private string _CorpType;
+		
+		private System.DateTime _CreateDate;
+		
+		private System.Nullable<bool> _OrderIndex;
+		
+		private string _LinkmanName;
+		
+		private string _Telephone;
+		
+		private string _MobilePhone;
+		
+		private string _MobileShort;
+		
+		private string _Email;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnCorpIdChanging(System.Guid value);
+    partial void OnCorpIdChanged();
+    partial void OnCorpNameChanging(string value);
+    partial void OnCorpNameChanged();
+    partial void OnAbbrChanging(string value);
+    partial void OnAbbrChanged();
+    partial void OnCorpTypeChanging(string value);
+    partial void OnCorpTypeChanged();
+    partial void OnCreateDateChanging(System.DateTime value);
+    partial void OnCreateDateChanged();
+    partial void OnOrderIndexChanging(System.Nullable<bool> value);
+    partial void OnOrderIndexChanged();
+    partial void OnLinkmanNameChanging(string value);
+    partial void OnLinkmanNameChanged();
+    partial void OnTelephoneChanging(string value);
+    partial void OnTelephoneChanged();
+    partial void OnMobilePhoneChanging(string value);
+    partial void OnMobilePhoneChanged();
+    partial void OnMobileShortChanging(string value);
+    partial void OnMobileShortChanged();
+    partial void OnEmailChanging(string value);
+    partial void OnEmailChanged();
+    #endregion
+		
+		public Corporation()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CorpId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid CorpId
+		{
+			get
+			{
+				return this._CorpId;
+			}
+			set
+			{
+				if ((this._CorpId != value))
+				{
+					this.OnCorpIdChanging(value);
+					this.SendPropertyChanging();
+					this._CorpId = value;
+					this.SendPropertyChanged("CorpId");
+					this.OnCorpIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CorpName", DbType="NVarChar(64) NOT NULL", CanBeNull=false)]
+		public string CorpName
+		{
+			get
+			{
+				return this._CorpName;
+			}
+			set
+			{
+				if ((this._CorpName != value))
+				{
+					this.OnCorpNameChanging(value);
+					this.SendPropertyChanging();
+					this._CorpName = value;
+					this.SendPropertyChanged("CorpName");
+					this.OnCorpNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Abbr", DbType="NVarChar(32)")]
+		public string Abbr
+		{
+			get
+			{
+				return this._Abbr;
+			}
+			set
+			{
+				if ((this._Abbr != value))
+				{
+					this.OnAbbrChanging(value);
+					this.SendPropertyChanging();
+					this._Abbr = value;
+					this.SendPropertyChanged("Abbr");
+					this.OnAbbrChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CorpType", DbType="NVarChar(32)")]
+		public string CorpType
+		{
+			get
+			{
+				return this._CorpType;
+			}
+			set
+			{
+				if ((this._CorpType != value))
+				{
+					this.OnCorpTypeChanging(value);
+					this.SendPropertyChanging();
+					this._CorpType = value;
+					this.SendPropertyChanged("CorpType");
+					this.OnCorpTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="DateTime NOT NULL")]
+		public System.DateTime CreateDate
+		{
+			get
+			{
+				return this._CreateDate;
+			}
+			set
+			{
+				if ((this._CreateDate != value))
+				{
+					this.OnCreateDateChanging(value);
+					this.SendPropertyChanging();
+					this._CreateDate = value;
+					this.SendPropertyChanged("CreateDate");
+					this.OnCreateDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OrderIndex", DbType="Bit")]
+		public System.Nullable<bool> OrderIndex
+		{
+			get
+			{
+				return this._OrderIndex;
+			}
+			set
+			{
+				if ((this._OrderIndex != value))
+				{
+					this.OnOrderIndexChanging(value);
+					this.SendPropertyChanging();
+					this._OrderIndex = value;
+					this.SendPropertyChanged("OrderIndex");
+					this.OnOrderIndexChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LinkmanName", DbType="NVarChar(32)")]
+		public string LinkmanName
+		{
+			get
+			{
+				return this._LinkmanName;
+			}
+			set
+			{
+				if ((this._LinkmanName != value))
+				{
+					this.OnLinkmanNameChanging(value);
+					this.SendPropertyChanging();
+					this._LinkmanName = value;
+					this.SendPropertyChanged("LinkmanName");
+					this.OnLinkmanNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telephone", DbType="NVarChar(32)")]
+		public string Telephone
+		{
+			get
+			{
+				return this._Telephone;
+			}
+			set
+			{
+				if ((this._Telephone != value))
+				{
+					this.OnTelephoneChanging(value);
+					this.SendPropertyChanging();
+					this._Telephone = value;
+					this.SendPropertyChanged("Telephone");
+					this.OnTelephoneChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MobilePhone", DbType="NVarChar(32)")]
+		public string MobilePhone
+		{
+			get
+			{
+				return this._MobilePhone;
+			}
+			set
+			{
+				if ((this._MobilePhone != value))
+				{
+					this.OnMobilePhoneChanging(value);
+					this.SendPropertyChanging();
+					this._MobilePhone = value;
+					this.SendPropertyChanged("MobilePhone");
+					this.OnMobilePhoneChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MobileShort", DbType="NVarChar(16)")]
+		public string MobileShort
+		{
+			get
+			{
+				return this._MobileShort;
+			}
+			set
+			{
+				if ((this._MobileShort != value))
+				{
+					this.OnMobileShortChanging(value);
+					this.SendPropertyChanging();
+					this._MobileShort = value;
+					this.SendPropertyChanged("MobileShort");
+					this.OnMobileShortChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="NVarChar(64)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this.OnEmailChanging(value);
+					this.SendPropertyChanging();
+					this._Email = value;
+					this.SendPropertyChanged("Email");
+					this.OnEmailChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.cw_kmxm")]
 	public partial class Cw_kmxm : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -17728,7 +18041,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="fileimage_", Storage="_Fileimage_", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="fileimage_", Storage="_Fileimage_", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Fileimage_
 		{
 			get
@@ -44357,7 +44670,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="dwsyntax", Storage="_Dwsyntax", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="dwsyntax", Storage="_Dwsyntax", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Dwsyntax
 		{
 			get
@@ -76997,6 +77310,8 @@ namespace YC.SQLServerDAL
 		
 		private string _P_qq;
 		
+		private System.DateTime _Creatdate;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -77043,6 +77358,8 @@ namespace YC.SQLServerDAL
     partial void OnP_emailChanged();
     partial void OnP_qqChanging(string value);
     partial void OnP_qqChanged();
+    partial void OnCreatdateChanging(System.DateTime value);
+    partial void OnCreatdateChanged();
     #endregion
 		
 		public Ygsz()
@@ -77330,7 +77647,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="photoimage_", Storage="_Photoimage_", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="photoimage_", Storage="_Photoimage_", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Photoimage_
 		{
 			get
@@ -77466,6 +77783,26 @@ namespace YC.SQLServerDAL
 					this._P_qq = value;
 					this.SendPropertyChanged("P_qq");
 					this.OnP_qqChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="creatdate", Storage="_Creatdate", DbType="DateTime NOT NULL")]
+		public System.DateTime Creatdate
+		{
+			get
+			{
+				return this._Creatdate;
+			}
+			set
+			{
+				if ((this._Creatdate != value))
+				{
+					this.OnCreatdateChanging(value);
+					this.SendPropertyChanging();
+					this._Creatdate = value;
+					this.SendPropertyChanged("Creatdate");
+					this.OnCreatdateChanged();
 				}
 			}
 		}

@@ -570,6 +570,21 @@
       <Column Name="bz13_" Member="Bz13_" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.Corporation" Member="Corporation">
+    <Type Name="Corporation">
+      <Column Name="CorpId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CorpName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Abbr" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="CorpType" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OrderIndex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LinkmanName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="MobileShort" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.cw_kmxm" Member="Cw_kmxm">
     <Type Name="Cw_kmxm">
       <Column Name="xh" Member="Xh" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
