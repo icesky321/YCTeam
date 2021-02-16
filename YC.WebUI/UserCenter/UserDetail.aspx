@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="UserDetail.aspx.cs" Inherits="UserDetail" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/shares/MasterPage.master" AutoEventWireup="true" CodeFile="UserDetail.aspx.cs" Inherits="UserDetail" %>
 
 <%@ Register TagPrefix="user" TagName="SEA_Stuff" Src="~/UserControls/SEA_Stuff.ascx" %>
 
@@ -9,10 +9,10 @@
     <div class="main sidebar-minified">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="page-header"><i class="fa fa-laptop"></i>系统配置</h3>
+                <h3 class="page-header"><i class="fa fa-laptop"></i></h3>
                 <ol class="breadcrumb">
                     <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                    <li><i class="fa fa-cogs"></i><a href="UserList.aspx">系统配置</a></li>
+                    <li><i class="fa fa-cogs"></i><a href="WxgList.aspx">系统配置</a></li>
                     <li><i class="fa  fa-group"></i>员工详情</li>
                 </ol>
             </div>
@@ -33,7 +33,6 @@
 
                         
                         <user:SEA_Stuff ID="SEA_Stuff1" runat="server" />
-
                     </div>
                     <div class="panel-footer">
                         <a href="UserList.aspx" class="btn btn-default"><< 返回人员列表</a>
