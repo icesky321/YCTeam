@@ -1,0 +1,7 @@
+syck  仓库信息
+xtsz0  字段字典
+syhwdm    商业货物代码   重要 
+dwtx   单位体系   重要 
+kc_wzzl   库存物资种类
+kc_gc   库存钢材
+ygsz    员工设置
