@@ -1,2 +1,3 @@
 ﻿Stuff			员工
 Corporation		公司，往来单位
+Jldw			计量单位

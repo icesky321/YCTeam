@@ -237,6 +237,7 @@
                                          <li><a href="~/UserCenter/UserList.aspx" runat="server" id="alnk1"><i class="fa fa-pencil"></i><span class="text">系统用户管理</span></a></li>
                                          <li><a href="~/UserCenter/CreateRoles.aspx" runat="server" id="a1nk2"><i class="fa fa-pencil"></i><span class="text">系统角色管理</span></a></li>
                                         <li><a href="~/config/CorpList.aspx" runat="server" id="a1"><i class="fa fa-pencil"></i><span class="text">往来单位管理</span></a></li>
+                                        <li><a href="~/config/ConfigJldw.aspx" runat="server" id="a2"><i class="fa fa-pencil"></i><span class="text">计量单位管理</span></a></li>
                                     </ul>
                                 </li>
                                 <li>

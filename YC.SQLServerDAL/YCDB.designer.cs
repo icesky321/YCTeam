@@ -90,6 +90,9 @@ namespace YC.SQLServerDAL
     partial void InsertJ_fp_cw(J_fp_cw instance);
     partial void UpdateJ_fp_cw(J_fp_cw instance);
     partial void DeleteJ_fp_cw(J_fp_cw instance);
+    partial void InsertJldw(Jldw instance);
+    partial void UpdateJldw(Jldw instance);
+    partial void DeleteJldw(Jldw instance);
     partial void InsertKc_wzcz(Kc_wzcz instance);
     partial void UpdateKc_wzcz(Kc_wzcz instance);
     partial void DeleteKc_wzcz(Kc_wzcz instance);
@@ -442,6 +445,14 @@ namespace YC.SQLServerDAL
 			get
 			{
 				return this.GetTable<J_fp_xstz>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Jldw> Jldw
+		{
+			get
+			{
+				return this.GetTable<Jldw>();
 			}
 		}
 		
@@ -13397,9 +13408,11 @@ namespace YC.SQLServerDAL
 		
 		private string _CorpType;
 		
+		private string _District;
+		
 		private System.DateTime _CreateDate;
 		
-		private System.Nullable<bool> _OrderIndex;
+		private System.Nullable<double> _OrderIndex;
 		
 		private string _LinkmanName;
 		
@@ -13423,9 +13436,11 @@ namespace YC.SQLServerDAL
     partial void OnAbbrChanged();
     partial void OnCorpTypeChanging(string value);
     partial void OnCorpTypeChanged();
+    partial void OnDistrictChanging(string value);
+    partial void OnDistrictChanged();
     partial void OnCreateDateChanging(System.DateTime value);
     partial void OnCreateDateChanged();
-    partial void OnOrderIndexChanging(System.Nullable<bool> value);
+    partial void OnOrderIndexChanging(System.Nullable<double> value);
     partial void OnOrderIndexChanged();
     partial void OnLinkmanNameChanging(string value);
     partial void OnLinkmanNameChanged();
@@ -13524,6 +13539,26 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_District", DbType="NVarChar(64)")]
+		public string District
+		{
+			get
+			{
+				return this._District;
+			}
+			set
+			{
+				if ((this._District != value))
+				{
+					this.OnDistrictChanging(value);
+					this.SendPropertyChanging();
+					this._District = value;
+					this.SendPropertyChanged("District");
+					this.OnDistrictChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreateDate", DbType="DateTime NOT NULL")]
 		public System.DateTime CreateDate
 		{
@@ -13544,8 +13579,8 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OrderIndex", DbType="Bit")]
-		public System.Nullable<bool> OrderIndex
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OrderIndex", DbType="Float")]
+		public System.Nullable<double> OrderIndex
 		{
 			get
 			{
@@ -18041,7 +18076,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="fileimage_", Storage="_Fileimage_", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="fileimage_", Storage="_Fileimage_", DbType="Image", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Fileimage_
 		{
 			get
@@ -20508,6 +20543,116 @@ namespace YC.SQLServerDAL
 				{
 					this._Fhr_ = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Jldw")]
+	public partial class Jldw : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _JLDWID;
+		
+		private string _Name;
+		
+		private System.Nullable<double> _OrderIndex;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnJLDWIDChanging(System.Guid value);
+    partial void OnJLDWIDChanged();
+    partial void OnNameChanging(string value);
+    partial void OnNameChanged();
+    partial void OnOrderIndexChanging(System.Nullable<double> value);
+    partial void OnOrderIndexChanged();
+    #endregion
+		
+		public Jldw()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_JLDWID", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid JLDWID
+		{
+			get
+			{
+				return this._JLDWID;
+			}
+			set
+			{
+				if ((this._JLDWID != value))
+				{
+					this.OnJLDWIDChanging(value);
+					this.SendPropertyChanging();
+					this._JLDWID = value;
+					this.SendPropertyChanged("JLDWID");
+					this.OnJLDWIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="NVarChar(32) NOT NULL", CanBeNull=false)]
+		public string Name
+		{
+			get
+			{
+				return this._Name;
+			}
+			set
+			{
+				if ((this._Name != value))
+				{
+					this.OnNameChanging(value);
+					this.SendPropertyChanging();
+					this._Name = value;
+					this.SendPropertyChanged("Name");
+					this.OnNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OrderIndex", DbType="Float")]
+		public System.Nullable<double> OrderIndex
+		{
+			get
+			{
+				return this._OrderIndex;
+			}
+			set
+			{
+				if ((this._OrderIndex != value))
+				{
+					this.OnOrderIndexChanging(value);
+					this.SendPropertyChanging();
+					this._OrderIndex = value;
+					this.SendPropertyChanged("OrderIndex");
+					this.OnOrderIndexChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -44670,7 +44815,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="dwsyntax", Storage="_Dwsyntax", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="dwsyntax", Storage="_Dwsyntax", DbType="Image", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Dwsyntax
 		{
 			get
@@ -77647,7 +77792,7 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="photoimage_", Storage="_Photoimage_", DbType="Image", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="photoimage_", Storage="_Photoimage_", DbType="Image", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary Photoimage_
 		{
 			get

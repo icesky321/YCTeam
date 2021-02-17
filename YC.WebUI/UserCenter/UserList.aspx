@@ -47,7 +47,7 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>#
+                                            <th><%# Container.ItemIndex+1 %>
                                             </th>
                                             <th>系统账户</th>
                                             <th>姓名</th>

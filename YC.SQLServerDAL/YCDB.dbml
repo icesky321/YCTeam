@@ -576,8 +576,9 @@
       <Column Name="CorpName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
       <Column Name="Abbr" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
       <Column Name="CorpType" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="District" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
       <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="OrderIndex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OrderIndex" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="LinkmanName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
       <Column Name="Telephone" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
       <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
@@ -963,6 +964,13 @@
       <Column Name="sysrq_" Member="Sysrq_" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="kpxz_" Member="Kpxz_" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="fhr_" Member="Fhr_" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Jldw" Member="Jldw">
+    <Type Name="Jldw">
+      <Column Name="JLDWID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderIndex" Type="System.Double" DbType="Float" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.kc_ckda" Member="Kc_ckda">

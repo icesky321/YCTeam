@@ -86,6 +86,10 @@ public partial class UserControls_SEA_Corporation : System.Web.UI.UserControl
 
             YC.SQLServerDAL.Corporation record = bll_CorpManage.GetCorporationById(corpId);
 
+            // 公司所在地
+            TextBox tbDistrict = formView.FindControl("tbDistrict") as TextBox;
+            record.District = tbDistrict.Text;
+
             // 公司名称
             TextBox tbCorpName = formView.FindControl("tbCorpName") as TextBox;
             record.CorpName = tbCorpName.Text;
@@ -127,6 +131,10 @@ public partial class UserControls_SEA_Corporation : System.Web.UI.UserControl
         if (e.CommandName == "InsertCorp")
         {
             YC.SQLServerDAL.Corporation record = new YC.SQLServerDAL.Corporation();
+
+            // 公司所在地
+            TextBox tbDistrict = formView.FindControl("tbDistrict") as TextBox;
+            record.District = tbDistrict.Text;
 
             // 公司名称
             TextBox tbCorpName = formView.FindControl("tbCorpName") as TextBox;

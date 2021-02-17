@@ -31,7 +31,8 @@
                     <div class="panel-body">
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            <strong>提示!</strong> 往来单位是与本公司发生业务往来的公司，“往来单位名称”需全称，“公司简称”根据自己需要定义。
+                            <strong>提示!</strong> 往来单位是与本公司发生业务往来的公司，包括供应商、采购商以及其它费用发生单位。<br />
+                            “往来单位名称”需全称，“公司简称”根据自己需要定义。
                         </div>
                         <div class=" btn-toolbar ">
                             <a href="CorpDetail.aspx" class="btn btn-default">创建新公司</a>

@@ -9,6 +9,15 @@
     <EditItemTemplate>
         <div class="form-horizontal">
             <div class="form-group">
+                <label class="col-md-3 control-label" for="text-input">公司所在地</label>
+                <div class="col-md-9">
+                    <asp:TextBox ID="tbDistrict" runat="server" class="form-control" placeholder="公司所在地" Text='<%# Eval("District") %>'></asp:TextBox>
+                    <span class="help-block">公司所在地。输入示例：浙江省宁波市。</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-horizontal">
+            <div class="form-group">
                 <label class="col-md-3 control-label" for="text-input">公司名称</label>
                 <div class="col-md-9">
                     <asp:TextBox ID="tbCorpName" runat="server" class="form-control" placeholder="公司名称" Text='<%# Eval("CorpName") %>'></asp:TextBox>
@@ -98,6 +107,15 @@
         </div>
     </EditItemTemplate>
     <InsertItemTemplate>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="text-input">公司所在地</label>
+                <div class="col-md-9">
+                    <asp:TextBox ID="tbDistrict" runat="server" class="form-control" placeholder="公司所在地" Text='<%# Eval("District") %>'></asp:TextBox>
+                    <span class="help-block">公司所在地。输入示例：浙江省宁波市。</span>
+                </div>
+            </div>
+        </div>
         <div class="form-horizontal">
             <div class="form-group">
                 <label class="col-md-3 control-label" for="text-input">公司名称</label>
@@ -190,6 +208,14 @@
     </InsertItemTemplate>
     <InsertRowStyle Width="400px" />
     <ItemTemplate>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-3 control-label" for="text-input">公司所在地</label>
+                <div class="col-md-9">
+                    <p class="form-control-static"><%# Eval("District") %></p>
+                </div>
+            </div>
+        </div>
         <div class="form-horizontal">
             <div class="form-group">
                 <label class="col-md-3 control-label" for="text-input">公司名称</label>

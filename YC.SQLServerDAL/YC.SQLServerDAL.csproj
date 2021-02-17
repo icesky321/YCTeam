@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JldwDA.cs" />
     <Compile Include="CorporationDA.cs" />
     <Compile Include="DS\ConnectionString.cs" />
     <Compile Include="dwtxDA.cs" />
