@@ -234,8 +234,8 @@
                                         <li><a href="form-wizard.html"><i class="fa fa-tags"></i><span class="text">Wizard</span></a></li>
                                         <li><a href="form-dropzone.html"><i class="fa fa-plus-square-o"></i><span class="text">Dropzone Upload</span></a></li>
                                         <li><a href="form-x-editable.html"><i class="fa fa-pencil"></i><span class="text">X-editable</span></a></li>
-                                         <li><a href="~/UserCenter/UserList.aspx" runat="server" id="alnk1"><i class="fa fa-pencil"></i><span class="text">系统用户管理</span></a></li>
-                                         <li><a href="~/UserCenter/CreateRoles.aspx" runat="server" id="a1nk2"><i class="fa fa-pencil"></i><span class="text">系统角色管理</span></a></li>
+                                        <li><a href="~/UserCenter/UserList.aspx" runat="server" id="alnk1"><i class="fa fa-pencil"></i><span class="text">系统用户管理</span></a></li>
+                                        <li><a href="~/UserCenter/CreateRoles.aspx" runat="server" id="a1nk2"><i class="fa fa-pencil"></i><span class="text">系统角色管理</span></a></li>
                                         <li><a href="~/config/CorpList.aspx" runat="server" id="a1"><i class="fa fa-pencil"></i><span class="text">往来单位管理</span></a></li>
                                         <li><a href="~/config/ConfigJldw.aspx" runat="server" id="a2"><i class="fa fa-pencil"></i><span class="text">计量单位管理</span></a></li>
                                     </ul>
@@ -418,6 +418,9 @@
             <script src="../assets/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
             <script src="../assets/plugins/moment/moment.min.js"></script>
             <script src="../assets/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+            <script src="../assets/plugins/chosen/js/chosen.jquery.min.js"></script>
+            <script src="../assets/plugins/wizard/jquery.bootstrap.wizard.min.js"></script>
+            <script src="../assets/plugins/maskedinput/jquery.maskedinput.min.js"></script>
             <!--[if lte IE 8]>
 		<script language="javascript" type="text/javascript" src="../assets/plugins/excanvas/excanvas.min.js"></script>
 	<![endif]-->

@@ -5,9 +5,10 @@ Jldw			计量单位
 ProjectInfo(项目信息)
 1、ProjectId  guid  id
 2、ProjectNum  nvarchar(30) 项目编号
-2、ProjectName nvarchar(Max)   项目名称
-6、Operator   nvarchar(20) 操作员（录入人）
-7、OperatDate  datetime  操作时间
+3、ProjectName nvarchar(Max)   项目名称
+4、Operator   nvarchar(20) 操作员（录入人）
+5、OperatDate  datetime  操作时间
+6、Status    nvarchar(10) 状态
 
 
 
@@ -22,3 +23,4 @@ SubProjectInfo(子项目信息)
 8、Applicant   nvarchar(30)  申请人
 9、ApplicantDate  datetime    申请日期
 10、Remark    nvarchar(Max)   备注 
+11、Status    nvarchar(10)    状态

@@ -42692,6 +42692,8 @@ namespace YC.SQLServerDAL
 		
 		private System.Nullable<System.DateTime> _OperatDate;
 		
+		private string _Status;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -42706,6 +42708,8 @@ namespace YC.SQLServerDAL
     partial void OnOperatorChanged();
     partial void OnOperatDateChanging(System.Nullable<System.DateTime> value);
     partial void OnOperatDateChanged();
+    partial void OnStatusChanging(string value);
+    partial void OnStatusChanged();
     #endregion
 		
 		public ProjectInfo()
@@ -42809,6 +42813,26 @@ namespace YC.SQLServerDAL
 					this._OperatDate = value;
 					this.SendPropertyChanged("OperatDate");
 					this.OnOperatDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="NVarChar(10)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this.OnStatusChanging(value);
+					this.SendPropertyChanging();
+					this._Status = value;
+					this.SendPropertyChanged("Status");
+					this.OnStatusChanged();
 				}
 			}
 		}
@@ -43589,6 +43613,8 @@ namespace YC.SQLServerDAL
 		
 		private string _Remark;
 		
+		private string _Status;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -43613,6 +43639,8 @@ namespace YC.SQLServerDAL
     partial void OnApplicantDateChanged();
     partial void OnRemarkChanging(string value);
     partial void OnRemarkChanged();
+    partial void OnStatusChanging(string value);
+    partial void OnStatusChanged();
     #endregion
 		
 		public SubProjectInfo()
@@ -43816,6 +43844,26 @@ namespace YC.SQLServerDAL
 					this._Remark = value;
 					this.SendPropertyChanged("Remark");
 					this.OnRemarkChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="NVarChar(10)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this.OnStatusChanging(value);
+					this.SendPropertyChanging();
+					this._Status = value;
+					this.SendPropertyChanged("Status");
+					this.OnStatusChanged();
 				}
 			}
 		}

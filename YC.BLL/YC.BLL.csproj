@@ -59,6 +59,7 @@
     <Compile Include="ProjectInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StuffManage.cs" />
+    <Compile Include="SubProjectInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YC.SQLServerDAL\YC.SQLServerDAL.csproj">

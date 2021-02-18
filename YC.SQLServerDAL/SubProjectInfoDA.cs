@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace YC.SQLServerDAL
 {
-    public class ProjectInfoDA
+    public class SubProjectInfoDA
     {
         YCDataContext dbContext = new YCDataContext(YC.SQLServerDAL.Connection.GetConnectionString());
-
         /// <summary>
         /// 释放由本类占用的所有资源
         /// </summary>
@@ -24,44 +23,38 @@ namespace YC.SQLServerDAL
             GC.SuppressFinalize(this);
         }
 
-        ~ProjectInfoDA()
+        ~SubProjectInfoDA()
         {
             this.Dispose();
         }
 
         /// <summary>
-        /// 创建概括性大项目信息
+        /// 创建子项目信息
         /// </summary>
-        /// <param name="projectinfo"></param>
+        /// <param name="subprojectinfo"></param>
         /// <returns></returns>
-        public YC.SQLServerDAL.ProjectInfo CreateProjectInfo(YC.SQLServerDAL.ProjectInfo projectinfo)
+        public YC.SQLServerDAL.SubProjectInfo NewSubProjectInfo(YC.SQLServerDAL.SubProjectInfo subprojectinfo)
         {
-            if (projectinfo != null)
+            if (subprojectinfo != null)
             {
-                projectinfo.ProjectId = Guid.NewGuid();
-                dbContext.ProjectInfo.InsertOnSubmit(projectinfo);
+                subprojectinfo.SubProId = Guid.NewGuid();
+                dbContext.SubProjectInfo.InsertOnSubmit(subprojectinfo);
                 dbContext.SubmitChanges();
-
             }
-            return projectinfo;
+            return subprojectinfo;
         }
 
-        /// <summary>
-        /// 获取所有项目信息
-        /// </summary>
-        /// <returns></returns>
-        public IQueryable<YC.SQLServerDAL.ProjectInfo> GetProjectInfo()
+        public YC.SQLServerDAL.SubProjectInfo GetSubProBySubProId(Guid SubProId)
         {
-            var query = from c in dbContext.ProjectInfo
+            var query = from c in dbContext.SubProjectInfo
+                        where c.SubProId == SubProId
                         select c;
-            return query.AsQueryable<YC.SQLServerDAL.ProjectInfo>();
+            return query.FirstOrDefault<YC.SQLServerDAL.SubProjectInfo>();
         }
 
-        public void UpdateProjectInfo(YC.SQLServerDAL.ProjectInfo projectinfo)
+        public void UpdateSubProjectInfo(YC.SQLServerDAL.SubProjectInfo subprojectinfo)
         {
             dbContext.SubmitChanges();
         }
-
-
     }
 }

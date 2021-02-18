@@ -37,5 +37,11 @@ namespace YC.BLL
         {
             return da.GetProjectInfo();
         }
+
+        public void UpdateProjectInfo(YC.SQLServerDAL.ProjectInfo projectinfo)
+        {
+            da.UpdateProjectInfo(projectinfo);
+        }
+
     }
 }
