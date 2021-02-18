@@ -32,6 +32,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YC.WebUI", "YC.WebUI\", "{B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "备忘", "备忘", "{84E01047-A022-4777-99C3-0A87DE62CCC8}"
 	ProjectSection(SolutionItems) = preProject
+		数据字典.txt = 数据字典.txt
 		数据库老表.txt = 数据库老表.txt
 	EndProjectSection
 EndProject

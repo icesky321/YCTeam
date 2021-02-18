@@ -59,6 +59,7 @@
     <Compile Include="CorporationDA.cs" />
     <Compile Include="DS\ConnectionString.cs" />
     <Compile Include="dwtxDA.cs" />
+    <Compile Include="ProjectInfoDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StuffDA.cs" />
     <Compile Include="YCDB.designer.cs">

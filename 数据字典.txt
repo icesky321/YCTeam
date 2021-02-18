@@ -1,0 +1,20 @@
+ProjectInfo(项目信息)
+1、ProjectId  guid  id
+2、ProjectNum  nvarchar(30) 项目编号
+2、ProjectName nvarchar(Max)   项目名称
+6、Operator   nvarchar(20) 操作员（录入人）
+7、OperatDate  datetime  操作时间
+
+
+
+SubProjectInfo(子项目信息)
+1、SubProId  guid  id
+2、ProjectId  guid  id
+3、SubProNum    nvarchar(30) 子项目编号
+4、SubProName nvarchar(Max)   子项目名称
+5、SubAmount  decimal 子项目总金额
+6、SubPurchaser  nvarchar(30)   采购商
+7、SubDpt    nvarchar(30)   请购部门
+8、Applicant   nvarchar(30)  申请人
+9、ApplicantDate  datetime    申请日期
+10、Remark    nvarchar(Max)   备注 

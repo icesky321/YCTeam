@@ -99,6 +99,9 @@ namespace YC.SQLServerDAL
     partial void InsertP_printj(P_printj instance);
     partial void UpdateP_printj(P_printj instance);
     partial void DeleteP_printj(P_printj instance);
+    partial void InsertProjectInfo(ProjectInfo instance);
+    partial void UpdateProjectInfo(ProjectInfo instance);
+    partial void DeleteProjectInfo(ProjectInfo instance);
     partial void InsertQxfp(Qxfp instance);
     partial void UpdateQxfp(Qxfp instance);
     partial void DeleteQxfp(Qxfp instance);
@@ -108,6 +111,9 @@ namespace YC.SQLServerDAL
     partial void InsertStuff(Stuff instance);
     partial void UpdateStuff(Stuff instance);
     partial void DeleteStuff(Stuff instance);
+    partial void InsertSubProjectInfo(SubProjectInfo instance);
+    partial void UpdateSubProjectInfo(SubProjectInfo instance);
+    partial void DeleteSubProjectInfo(SubProjectInfo instance);
     partial void InsertSys_columns(Sys_columns instance);
     partial void UpdateSys_columns(Sys_columns instance);
     partial void DeleteSys_columns(Sys_columns instance);
@@ -672,6 +678,14 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
+		public System.Data.Linq.Table<ProjectInfo> ProjectInfo
+		{
+			get
+			{
+				return this.GetTable<ProjectInfo>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Qt_f_fee> Qt_f_fee
 		{
 			get
@@ -717,6 +731,14 @@ namespace YC.SQLServerDAL
 			get
 			{
 				return this.GetTable<Stuff>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SubProjectInfo> SubProjectInfo
+		{
+			get
+			{
+				return this.GetTable<SubProjectInfo>();
 			}
 		}
 		
@@ -42654,6 +42676,164 @@ namespace YC.SQLServerDAL
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ProjectInfo")]
+	public partial class ProjectInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _ProjectId;
+		
+		private string _ProjectNum;
+		
+		private string _ProjectName;
+		
+		private string _Operator;
+		
+		private System.Nullable<System.DateTime> _OperatDate;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnProjectIdChanging(System.Guid value);
+    partial void OnProjectIdChanged();
+    partial void OnProjectNumChanging(string value);
+    partial void OnProjectNumChanged();
+    partial void OnProjectNameChanging(string value);
+    partial void OnProjectNameChanged();
+    partial void OnOperatorChanging(string value);
+    partial void OnOperatorChanged();
+    partial void OnOperatDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnOperatDateChanged();
+    #endregion
+		
+		public ProjectInfo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid ProjectId
+		{
+			get
+			{
+				return this._ProjectId;
+			}
+			set
+			{
+				if ((this._ProjectId != value))
+				{
+					this.OnProjectIdChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectId = value;
+					this.SendPropertyChanged("ProjectId");
+					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectNum", DbType="NVarChar(50)")]
+		public string ProjectNum
+		{
+			get
+			{
+				return this._ProjectNum;
+			}
+			set
+			{
+				if ((this._ProjectNum != value))
+				{
+					this.OnProjectNumChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectNum = value;
+					this.SendPropertyChanged("ProjectNum");
+					this.OnProjectNumChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectName", DbType="NVarChar(50)")]
+		public string ProjectName
+		{
+			get
+			{
+				return this._ProjectName;
+			}
+			set
+			{
+				if ((this._ProjectName != value))
+				{
+					this.OnProjectNameChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectName = value;
+					this.SendPropertyChanged("ProjectName");
+					this.OnProjectNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Operator", DbType="NVarChar(10)")]
+		public string Operator
+		{
+			get
+			{
+				return this._Operator;
+			}
+			set
+			{
+				if ((this._Operator != value))
+				{
+					this.OnOperatorChanging(value);
+					this.SendPropertyChanging();
+					this._Operator = value;
+					this.SendPropertyChanged("Operator");
+					this.OnOperatorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OperatDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> OperatDate
+		{
+			get
+			{
+				return this._OperatDate;
+			}
+			set
+			{
+				if ((this._OperatDate != value))
+				{
+					this.OnOperatDateChanging(value);
+					this.SendPropertyChanging();
+					this._OperatDate = value;
+					this.SendPropertyChanged("OperatDate");
+					this.OnOperatDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.qt_f_fee")]
 	public partial class Qt_f_fee
 	{
@@ -43358,6 +43538,284 @@ namespace YC.SQLServerDAL
 					this._MobileShort = value;
 					this.SendPropertyChanged("MobileShort");
 					this.OnMobileShortChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SubProjectInfo")]
+	public partial class SubProjectInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _SubProId;
+		
+		private System.Nullable<System.Guid> _ProjectId;
+		
+		private string _SubProNum;
+		
+		private string _SubProName;
+		
+		private System.Nullable<decimal> _SubAmount;
+		
+		private string _SubPurchaser;
+		
+		private string _SubDpt;
+		
+		private string _Applicant;
+		
+		private System.Nullable<System.DateTime> _ApplicantDate;
+		
+		private string _Remark;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnSubProIdChanging(System.Guid value);
+    partial void OnSubProIdChanged();
+    partial void OnProjectIdChanging(System.Nullable<System.Guid> value);
+    partial void OnProjectIdChanged();
+    partial void OnSubProNumChanging(string value);
+    partial void OnSubProNumChanged();
+    partial void OnSubProNameChanging(string value);
+    partial void OnSubProNameChanged();
+    partial void OnSubAmountChanging(System.Nullable<decimal> value);
+    partial void OnSubAmountChanged();
+    partial void OnSubPurchaserChanging(string value);
+    partial void OnSubPurchaserChanged();
+    partial void OnSubDptChanging(string value);
+    partial void OnSubDptChanged();
+    partial void OnApplicantChanging(string value);
+    partial void OnApplicantChanged();
+    partial void OnApplicantDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnApplicantDateChanged();
+    partial void OnRemarkChanging(string value);
+    partial void OnRemarkChanged();
+    #endregion
+		
+		public SubProjectInfo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubProId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid SubProId
+		{
+			get
+			{
+				return this._SubProId;
+			}
+			set
+			{
+				if ((this._SubProId != value))
+				{
+					this.OnSubProIdChanging(value);
+					this.SendPropertyChanging();
+					this._SubProId = value;
+					this.SendPropertyChanged("SubProId");
+					this.OnSubProIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectId", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> ProjectId
+		{
+			get
+			{
+				return this._ProjectId;
+			}
+			set
+			{
+				if ((this._ProjectId != value))
+				{
+					this.OnProjectIdChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectId = value;
+					this.SendPropertyChanged("ProjectId");
+					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubProNum", DbType="NVarChar(50)")]
+		public string SubProNum
+		{
+			get
+			{
+				return this._SubProNum;
+			}
+			set
+			{
+				if ((this._SubProNum != value))
+				{
+					this.OnSubProNumChanging(value);
+					this.SendPropertyChanging();
+					this._SubProNum = value;
+					this.SendPropertyChanged("SubProNum");
+					this.OnSubProNumChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubProName", DbType="NVarChar(50)")]
+		public string SubProName
+		{
+			get
+			{
+				return this._SubProName;
+			}
+			set
+			{
+				if ((this._SubProName != value))
+				{
+					this.OnSubProNameChanging(value);
+					this.SendPropertyChanging();
+					this._SubProName = value;
+					this.SendPropertyChanged("SubProName");
+					this.OnSubProNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubAmount", DbType="Money")]
+		public System.Nullable<decimal> SubAmount
+		{
+			get
+			{
+				return this._SubAmount;
+			}
+			set
+			{
+				if ((this._SubAmount != value))
+				{
+					this.OnSubAmountChanging(value);
+					this.SendPropertyChanging();
+					this._SubAmount = value;
+					this.SendPropertyChanged("SubAmount");
+					this.OnSubAmountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubPurchaser", DbType="NVarChar(50)")]
+		public string SubPurchaser
+		{
+			get
+			{
+				return this._SubPurchaser;
+			}
+			set
+			{
+				if ((this._SubPurchaser != value))
+				{
+					this.OnSubPurchaserChanging(value);
+					this.SendPropertyChanging();
+					this._SubPurchaser = value;
+					this.SendPropertyChanged("SubPurchaser");
+					this.OnSubPurchaserChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubDpt", DbType="NVarChar(50)")]
+		public string SubDpt
+		{
+			get
+			{
+				return this._SubDpt;
+			}
+			set
+			{
+				if ((this._SubDpt != value))
+				{
+					this.OnSubDptChanging(value);
+					this.SendPropertyChanging();
+					this._SubDpt = value;
+					this.SendPropertyChanged("SubDpt");
+					this.OnSubDptChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Applicant", DbType="NVarChar(10)")]
+		public string Applicant
+		{
+			get
+			{
+				return this._Applicant;
+			}
+			set
+			{
+				if ((this._Applicant != value))
+				{
+					this.OnApplicantChanging(value);
+					this.SendPropertyChanging();
+					this._Applicant = value;
+					this.SendPropertyChanged("Applicant");
+					this.OnApplicantChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ApplicantDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ApplicantDate
+		{
+			get
+			{
+				return this._ApplicantDate;
+			}
+			set
+			{
+				if ((this._ApplicantDate != value))
+				{
+					this.OnApplicantDateChanging(value);
+					this.SendPropertyChanging();
+					this._ApplicantDate = value;
+					this.SendPropertyChanged("ApplicantDate");
+					this.OnApplicantDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remark", DbType="NVarChar(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public string Remark
+		{
+			get
+			{
+				return this._Remark;
+			}
+			set
+			{
+				if ((this._Remark != value))
+				{
+					this.OnRemarkChanging(value);
+					this.SendPropertyChanging();
+					this._Remark = value;
+					this.SendPropertyChanged("Remark");
+					this.OnRemarkChanged();
 				}
 			}
 		}
