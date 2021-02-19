@@ -47,7 +47,7 @@
                                         <label for="email-w2">项目编号</label>
                                         <asp:TextBox ID="tbProNum" runat="server" class="form-control" placeholder="项目编号" Text=""></asp:TextBox>
                                         <span class="help-block">请输入项目编号</span>
-
+                                        <asp:HiddenField ID="hfProId" runat="server" />
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">项目名称</label>
@@ -57,15 +57,18 @@
 
                                 </div>
                                 <div class="tab-pane" id="tab22">
+
+
+
                                     <div class="form-group">
                                         <label for="email-w2">子项目编号</label>
-                                        <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="子项目编号" Text=""></asp:TextBox>
+                                        <asp:TextBox ID="tbSubProNum" runat="server" class="form-control" placeholder="子项目编号" Text=""></asp:TextBox>
                                         <span class="help-block">如项目唯一，请忽略</span>
 
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">子项目名称</label>
-                                        <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="子项目名称" Text=""></asp:TextBox>
+                                        <asp:TextBox ID="tbSubProName" runat="server" class="form-control" placeholder="子项目名称" Text=""></asp:TextBox>
                                         <span class="help-block">如项目唯一，请忽略</span>
                                     </div>
                                     <div class="form-group">
@@ -88,6 +91,17 @@
                                         <label for="password-w2">负责人</label>
                                         <asp:TextBox ID="tbApplicant" runat="server" class="form-control" placeholder="负责人" Text=""></asp:TextBox>
                                         <span class="help-block">请输入采购商负责人</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-w2">申请日期</label>
+                                        <asp:TextBox ID="tbApplicantDate" runat="server" class="form-control" placeholder="申请日期" Text=""></asp:TextBox>
+                                        <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="tbApplicantDate" />
+                                        <span class="help-block">请选择申请日期</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password-w2">备注</label>
+                                        <asp:TextBox ID="tbRemark" runat="server" class="form-control" placeholder="备注" Text="" TextMode="MultiLine"></asp:TextBox>
+                                        <span class="help-block">添加未尽事宜</span>
                                     </div>
                                 </div>
                                 <%--                                <div class="tab-pane" id="tab23">
@@ -133,7 +147,7 @@
                                     <input type="button" class="btn btn-default button-previous" name="prev" value="上一步" />
                                     <input type="button" class="btn btn-success button-next pull-right" name="next" value="下一步" />
                                     <asp:Button ID="btFinish" runat="server" CausesValidation="True"
-                                        Text="完成" CssClass="btn btn-primary button-finish pull-right" OnClick="btFinish_Click"/>
+                                        Text="完成" CssClass="btn btn-primary button-finish pull-right" OnClick="btFinish_Click" />
                                     <%--<input type="button" class="btn btn-primary button-finish pull-right" name="finish" value="完成" style="display: none" />--%>
                                 </div>
                             </div>
