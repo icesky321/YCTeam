@@ -84,6 +84,12 @@
       <DependentUpon>YCDB.dbml</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YC.Model\YC.Model.csproj">
+      <Project>{3ea26f34-6588-42f2-837c-bf1b36c17bf3}</Project>
+      <Name>YC.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

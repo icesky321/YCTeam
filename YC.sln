@@ -10,7 +10,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "YC.WebUI", "YC.WebUI\", "{B8B8398D-ADC3-4E4F-A0CC-5568842C3371}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{4378a0e2-cea4-4e18-97d4-467347f6f6a8}|YC.BLL.dll;{D88B92A3-3337-4142-BC19-46CF0852FD4C}|YC.SQLServerDAL.dll;"
+		ProjectReferences = "{4378a0e2-cea4-4e18-97d4-467347f6f6a8}|YC.BLL.dll;{D88B92A3-3337-4142-BC19-46CF0852FD4C}|YC.SQLServerDAL.dll;{3EA26F34-6588-42F2-837C-BF1B36C17BF3}|YC.Model.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1546"
 		Debug.AspNetCompiler.PhysicalPath = "YC.WebUI\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1546\"
@@ -82,6 +82,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Proton", "Proton\", "{9E985
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "项目文档", "项目文档\项目文档.csproj", "{812CD067-9F64-4C58-9198-B7271E784BAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YC.Model", "YC.Model\YC.Model.csproj", "{3EA26F34-6588-42F2-837C-BF1B36C17BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,6 +114,10 @@ Global
 		{812CD067-9F64-4C58-9198-B7271E784BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{812CD067-9F64-4C58-9198-B7271E784BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{812CD067-9F64-4C58-9198-B7271E784BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA26F34-6588-42F2-837C-BF1B36C17BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA26F34-6588-42F2-837C-BF1B36C17BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA26F34-6588-42F2-837C-BF1B36C17BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA26F34-6588-42F2-837C-BF1B36C17BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

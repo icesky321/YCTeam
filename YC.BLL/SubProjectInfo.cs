@@ -32,5 +32,14 @@ namespace YC.BLL
         {
             da.UpdateSubProjectInfo(subprojectinfo);
         }
+
+        /// <summary>
+        /// 总项目和子项目联合查询列表
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable<YC.Model.ProjectInfoModel> GetProjectInfoList()
+        {
+            return da.GetProjectInfoList();
+        }
     }
 }
