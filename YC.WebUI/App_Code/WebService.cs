@@ -34,7 +34,7 @@ public class WebService : System.Web.Services.WebService
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["YC_SQL_ConnString"].ToString());
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select distinct dwmc from dwtx  where dwmc like'%" + prefixText + "%' or dbo.comm_getpy(dwmc) like'%" + prefixText + "%' order by dwmc", conn);
+            SqlDataAdapter da = new SqlDataAdapter("select distinct CorpName from Corporation  where CorpName like'%" + prefixText + "%' or dbo.comm_getpy(CorpName) like'%" + prefixText + "%' order by CorpName", conn);
             DataSet ds = new DataSet();
             da.Fill(ds);
             //读取内容文件的数据到临时数组
@@ -42,7 +42,7 @@ public class WebService : System.Web.Services.WebService
             int i = 0;
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                temp[i] = dr["dwmc"].ToString();
+                temp[i] = dr["CorpName"].ToString();
                 i++;
             }
             //将临时数组的内容赋给返回数组

@@ -80,7 +80,7 @@
                                         <label for="password-w2">采购商</label>
                                         <asp:TextBox ID="tbSubPurchaser" runat="server" class="form-control" placeholder="采购商" Text=""></asp:TextBox>
                                         <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender1" MinimumPrefixLength="1" runat="server" ServicePath="~/WebService.asmx" ServiceMethod="GetCompleteSupplier" TargetControlID="tbSubPurchaser" CompletionInterval="1000"></ajaxToolkit:AutoCompleteExtender>
-                                        <span class="help-block">可通过拼音首字母或中文模糊查询</span>
+                                        <span class="help-block">可通过拼音首字母或中文模糊查询</span>     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/config/CorpDetail.aspx" ForeColor="Red">没有此采购商？</asp:HyperLink>                       
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">请购部门</label>

@@ -57,6 +57,19 @@ namespace YC.SQLServerDAL
             return query.AsQueryable<YC.SQLServerDAL.ProjectInfo>();
         }
 
+        /// <summary>
+        /// 根据ProId查找该项目详细信息
+        /// </summary>
+        /// <param name="ProId"></param>
+        /// <returns></returns>
+        public YC.SQLServerDAL.ProjectInfo GetProjectInfoByProId(Guid ProId)
+        {
+            var query = from c in dbContext.ProjectInfo
+                        where c.ProjectId == ProId
+                        select c;
+            return query.FirstOrDefault<YC.SQLServerDAL.ProjectInfo>();
+        }
+
         public void UpdateProjectInfo(YC.SQLServerDAL.ProjectInfo projectinfo)
         {
             dbContext.SubmitChanges();

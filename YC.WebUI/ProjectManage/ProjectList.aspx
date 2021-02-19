@@ -60,21 +60,21 @@
                                     </td>
                                     <td><%# Eval("ProjectNum") %></td>
                                     <td><%# Eval("ProjectName") %></td>
-                                    <td><%# Eval("SubProNum") %></td>
+                                    <td><%# Eval("SubProNum") %><a class="btn btn-success" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=ReadOnly" %>'>
+                                        <i class="fa fa-list"></i>
+                                    </a></td>
                                     <td><%# Eval("SubProName") %></td>
                                     <td><%# Eval("SubAmount") %></td>
                                     <td><%# Eval("SubPurchaser") %></td>
                                     <td><%# Eval("ApplicantDate") %></td>
-                                    <td><a class="btn btn-success" href="ProjectList.aspx">
+                                    <td><a class="btn btn-success" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=ReadOnly" %>'>
                                         <i class="fa fa-list"></i>
                                     </a>
-                                        <a class="btn btn-info" href="ProjectList.aspx">
+                                        <%--                                        <a class="btn btn-info" href='<%# "CorpDetail.aspx?id=" + Eval("CorpId").ToString() + "&mode=Edit" %>'>
                                             <i class="fa fa-edit "></i>
-                                        </a>
-                                        <a class="btn btn-danger" href="table.html#">
-                                            <i class="fa fa-trash-o "></i>
+                                        </a>--%>
 
-                                        </a></td>
+                                    </td>
                                 </tr>
                             </ItemTemplate>
                             <FooterTemplate>

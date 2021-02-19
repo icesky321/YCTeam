@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 public partial class ProjectManage_ProjectList : System.Web.UI.Page
 {
     YC.BLL.SubProjectInfo bll_subproject = new YC.BLL.SubProjectInfo();
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -27,4 +28,6 @@ public partial class ProjectManage_ProjectList : System.Web.UI.Page
         rptProject.DataSource = projects;
         rptProject.DataBind();
     }
+
+
 }

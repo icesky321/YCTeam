@@ -43,5 +43,15 @@ namespace YC.BLL
             da.UpdateProjectInfo(projectinfo);
         }
 
+        /// <summary>
+        /// 根据ProId查找该项目详细信息
+        /// </summary>
+        /// <param name="ProId"></param>
+        /// <returns></returns>
+        public YC.SQLServerDAL.ProjectInfo GetProjectInfoByProId(Guid ProId)
+        {
+            return da.GetProjectInfoByProId(ProId);
+        }
+
     }
 }

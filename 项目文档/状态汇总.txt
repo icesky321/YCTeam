@@ -6,4 +6,5 @@ status
 
 SubProjectInfo
 待立项
-已中标
+待询价
+已定价
