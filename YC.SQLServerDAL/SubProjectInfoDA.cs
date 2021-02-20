@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YC.SQLServerDAL
 {
-    public class SubProjectInfoDA
+    public class SubProjectInfoDA : IDisposable
     {
         YCDataContext dbContext = new YCDataContext(YC.SQLServerDAL.Connection.GetConnectionString());
         /// <summary>

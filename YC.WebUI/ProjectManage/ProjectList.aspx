@@ -60,19 +60,17 @@
                                     </td>
                                     <td><%# Eval("ProjectNum") %></td>
                                     <td><%# Eval("ProjectName") %></td>
-                                    <td><%# Eval("SubProNum") %><a class="btn btn-success" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=ReadOnly" %>'>
-                                        <i class="fa fa-list"></i>
-                                    </a></td>
+                                    <td><%# Eval("SubProNum") %></td>
                                     <td><%# Eval("SubProName") %></td>
                                     <td><%# Eval("SubAmount") %></td>
                                     <td><%# Eval("SubPurchaser") %></td>
                                     <td><%# Eval("ApplicantDate") %></td>
-                                    <td><a class="btn btn-success" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=ReadOnly" %>'>
+                                    <td><a title="新增采购单" class="btn btn-success" href='<%# "NewMaterialOrder.aspx?id=" + Eval("ProjectId").ToString() + "&Subid=" + Eval("SubProId").ToString() %>'>
                                         <i class="fa fa-list"></i>
                                     </a>
-                                        <%--                                        <a class="btn btn-info" href='<%# "CorpDetail.aspx?id=" + Eval("CorpId").ToString() + "&mode=Edit" %>'>
+                                        <a title="追加订单" class="btn btn-info" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=Edit" %>'>
                                             <i class="fa fa-edit "></i>
-                                        </a>--%>
+                                        </a>
 
                                     </td>
                                 </tr>

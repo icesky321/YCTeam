@@ -32,7 +32,7 @@
                         <div id="wizard2" class="wizard-type2">
                             <ul class="steps">
                                 <li><a href="NewProjectInfo.aspx#tab21" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-star"></i></span>项目概况</a></li>
-                                <li><a href="NewProjectInfo.aspx#tab22" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-credit-card"></i></span>详细信息</a></li>
+                                <li><a href="NewProjectInfo.aspx#tab22" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-credit-card"></i></span>订单信息</a></li>
                                 <%--                                <li><a href="NewProjectInfo.aspx#tab23" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-building"></i></span>Company Details</a></li>--%>
                                 <%-- <li><a href="NewProjectInfo.aspx#tab24" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-check"></i></span>完成</a></li>--%>
                             </ul>
@@ -61,15 +61,15 @@
 
 
                                     <div class="form-group">
-                                        <label for="email-w2">子项目编号</label>
+                                        <label for="email-w2">订单编号</label>
                                         <asp:TextBox ID="tbSubProNum" runat="server" class="form-control" placeholder="子项目编号" Text=""></asp:TextBox>
-                                        <span class="help-block">如项目唯一，请忽略</span>
+                                        <span class="help-block">请输入订单编号</span>
 
                                     </div>
                                     <div class="form-group">
-                                        <label for="password-w2">子项目名称</label>
+                                        <label for="password-w2">订单名称</label>
                                         <asp:TextBox ID="tbSubProName" runat="server" class="form-control" placeholder="子项目名称" Text=""></asp:TextBox>
-                                        <span class="help-block">如项目唯一，请忽略</span>
+                                        <span class="help-block">请输入订单名称</span>
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">项目金额</label>

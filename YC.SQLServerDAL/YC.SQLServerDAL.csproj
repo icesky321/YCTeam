@@ -59,6 +59,8 @@
     <Compile Include="CorporationDA.cs" />
     <Compile Include="DS\ConnectionString.cs" />
     <Compile Include="dwtxDA.cs" />
+    <Compile Include="ODMaterialdetailDA.cs" />
+    <Compile Include="OrderDetailInfoDA.cs" />
     <Compile Include="ProjectInfoDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StuffDA.cs" />
@@ -73,6 +75,12 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\YC.Model\YC.Model.csproj">
+      <Project>{3ea26f34-6588-42f2-837c-bf1b36c17bf3}</Project>
+      <Name>YC.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="YCDB.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>YCDB.designer.cs</LastGenOutput>
@@ -83,12 +91,6 @@
     <None Include="YCDB.dbml.layout">
       <DependentUpon>YCDB.dbml</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\YC.Model\YC.Model.csproj">
-      <Project>{3ea26f34-6588-42f2-837c-bf1b36c17bf3}</Project>
-      <Name>YC.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,9 @@
-﻿Stuff			员工
+﻿大概念：（对应采购商）项目1：N订单1：N采购单
+        （对应供货商）订单N：1订单（可能）
+
+
+
+Stuff			员工
 Corporation		公司，往来单位
 Jldw			计量单位
 
@@ -12,11 +17,11 @@ ProjectInfo(项目信息)
 
 
 
-SubProjectInfo(子项目信息)
+SubProjectInfo(订单信息)
 1、SubProId  guid  id
 2、ProjectId  guid  id
-3、SubProNum    nvarchar(30) 子项目编号
-4、SubProName nvarchar(Max)   子项目名称
+3、SubProNum    nvarchar(30) 订单编号
+4、SubProName nvarchar(Max)   订单名称
 5、SubAmount  decimal 子项目总金额
 6、SubPurchaser  nvarchar(30)   采购商
 7、SubDpt    nvarchar(30)   请购部门
@@ -24,3 +29,20 @@ SubProjectInfo(子项目信息)
 9、ApplicantDate  datetime    申请日期
 10、Remark    nvarchar(Max)   备注 
 11、Status    nvarchar(10)    状态
+
+OrderDetailInfo(订单详细信息)
+1、ODId  guid  id
+2、SubProId  guid  订单（子项目）id
+3、ProjectId  guid  项目id
+4、RcvDpt   nvarchar(50)   收货单位
+5、RcvAddr    nvarchar(50)   收货地址
+6、RcvDate	  datetime     到货时间
+
+ODMaterialdetail(订单物料详情)
+1、ODMId  guid  id
+2、ODId  guid  id
+3、MaterialName   nvarchar(50)  物料名称
+4、Model		nvarchar(200)  物料规格型号
+5、Unit			nvarchar(10)   物料单位
+6、quantity		decimal			物料数量
+7、Reamrk    nvarchar(Max)		备注

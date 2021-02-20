@@ -96,6 +96,12 @@ namespace YC.SQLServerDAL
     partial void InsertKc_wzcz(Kc_wzcz instance);
     partial void UpdateKc_wzcz(Kc_wzcz instance);
     partial void DeleteKc_wzcz(Kc_wzcz instance);
+    partial void InsertODMaterialdetail(ODMaterialdetail instance);
+    partial void UpdateODMaterialdetail(ODMaterialdetail instance);
+    partial void DeleteODMaterialdetail(ODMaterialdetail instance);
+    partial void InsertOrderDetailInfo(OrderDetailInfo instance);
+    partial void UpdateOrderDetailInfo(OrderDetailInfo instance);
+    partial void DeleteOrderDetailInfo(OrderDetailInfo instance);
     partial void InsertP_printj(P_printj instance);
     partial void UpdateP_printj(P_printj instance);
     partial void DeleteP_printj(P_printj instance);
@@ -659,6 +665,22 @@ namespace YC.SQLServerDAL
 			get
 			{
 				return this.GetTable<Kc_wzzl>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ODMaterialdetail> ODMaterialdetail
+		{
+			get
+			{
+				return this.GetTable<ODMaterialdetail>();
+			}
+		}
+		
+		public System.Data.Linq.Table<OrderDetailInfo> OrderDetailInfo
+		{
+			get
+			{
+				return this.GetTable<OrderDetailInfo>();
 			}
 		}
 		
@@ -42367,6 +42389,394 @@ namespace YC.SQLServerDAL
 				{
 					this._Sl = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ODMaterialdetail")]
+	public partial class ODMaterialdetail : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _ODMId;
+		
+		private System.Nullable<System.Guid> _ODId;
+		
+		private string _MaterialName;
+		
+		private string _Model;
+		
+		private string _Unit;
+		
+		private System.Nullable<decimal> _Quantity;
+		
+		private string _Reamrk;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnODMIdChanging(System.Guid value);
+    partial void OnODMIdChanged();
+    partial void OnODIdChanging(System.Nullable<System.Guid> value);
+    partial void OnODIdChanged();
+    partial void OnMaterialNameChanging(string value);
+    partial void OnMaterialNameChanged();
+    partial void OnModelChanging(string value);
+    partial void OnModelChanged();
+    partial void OnUnitChanging(string value);
+    partial void OnUnitChanged();
+    partial void OnQuantityChanging(System.Nullable<decimal> value);
+    partial void OnQuantityChanged();
+    partial void OnReamrkChanging(string value);
+    partial void OnReamrkChanged();
+    #endregion
+		
+		public ODMaterialdetail()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ODMId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid ODMId
+		{
+			get
+			{
+				return this._ODMId;
+			}
+			set
+			{
+				if ((this._ODMId != value))
+				{
+					this.OnODMIdChanging(value);
+					this.SendPropertyChanging();
+					this._ODMId = value;
+					this.SendPropertyChanged("ODMId");
+					this.OnODMIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ODId", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> ODId
+		{
+			get
+			{
+				return this._ODId;
+			}
+			set
+			{
+				if ((this._ODId != value))
+				{
+					this.OnODIdChanging(value);
+					this.SendPropertyChanging();
+					this._ODId = value;
+					this.SendPropertyChanged("ODId");
+					this.OnODIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaterialName", DbType="NVarChar(50)")]
+		public string MaterialName
+		{
+			get
+			{
+				return this._MaterialName;
+			}
+			set
+			{
+				if ((this._MaterialName != value))
+				{
+					this.OnMaterialNameChanging(value);
+					this.SendPropertyChanging();
+					this._MaterialName = value;
+					this.SendPropertyChanged("MaterialName");
+					this.OnMaterialNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Model", DbType="NVarChar(200)")]
+		public string Model
+		{
+			get
+			{
+				return this._Model;
+			}
+			set
+			{
+				if ((this._Model != value))
+				{
+					this.OnModelChanging(value);
+					this.SendPropertyChanging();
+					this._Model = value;
+					this.SendPropertyChanged("Model");
+					this.OnModelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Unit", DbType="NVarChar(10)")]
+		public string Unit
+		{
+			get
+			{
+				return this._Unit;
+			}
+			set
+			{
+				if ((this._Unit != value))
+				{
+					this.OnUnitChanging(value);
+					this.SendPropertyChanging();
+					this._Unit = value;
+					this.SendPropertyChanged("Unit");
+					this.OnUnitChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="quantity", Storage="_Quantity", DbType="Decimal(18,4)")]
+		public System.Nullable<decimal> Quantity
+		{
+			get
+			{
+				return this._Quantity;
+			}
+			set
+			{
+				if ((this._Quantity != value))
+				{
+					this.OnQuantityChanging(value);
+					this.SendPropertyChanging();
+					this._Quantity = value;
+					this.SendPropertyChanged("Quantity");
+					this.OnQuantityChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Reamrk", DbType="NVarChar(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public string Reamrk
+		{
+			get
+			{
+				return this._Reamrk;
+			}
+			set
+			{
+				if ((this._Reamrk != value))
+				{
+					this.OnReamrkChanging(value);
+					this.SendPropertyChanging();
+					this._Reamrk = value;
+					this.SendPropertyChanged("Reamrk");
+					this.OnReamrkChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.OrderDetailInfo")]
+	public partial class OrderDetailInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private System.Guid _ODId;
+		
+		private System.Nullable<System.Guid> _SubProId;
+		
+		private System.Nullable<System.Guid> _ProjectId;
+		
+		private string _RcvDpt;
+		
+		private string _RcvAddr;
+		
+		private System.Nullable<System.DateTime> _RcvDate;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnODIdChanging(System.Guid value);
+    partial void OnODIdChanged();
+    partial void OnSubProIdChanging(System.Nullable<System.Guid> value);
+    partial void OnSubProIdChanged();
+    partial void OnProjectIdChanging(System.Nullable<System.Guid> value);
+    partial void OnProjectIdChanged();
+    partial void OnRcvDptChanging(string value);
+    partial void OnRcvDptChanged();
+    partial void OnRcvAddrChanging(string value);
+    partial void OnRcvAddrChanged();
+    partial void OnRcvDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnRcvDateChanged();
+    #endregion
+		
+		public OrderDetailInfo()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ODId", DbType="UniqueIdentifier NOT NULL", IsPrimaryKey=true)]
+		public System.Guid ODId
+		{
+			get
+			{
+				return this._ODId;
+			}
+			set
+			{
+				if ((this._ODId != value))
+				{
+					this.OnODIdChanging(value);
+					this.SendPropertyChanging();
+					this._ODId = value;
+					this.SendPropertyChanged("ODId");
+					this.OnODIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SubProId", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> SubProId
+		{
+			get
+			{
+				return this._SubProId;
+			}
+			set
+			{
+				if ((this._SubProId != value))
+				{
+					this.OnSubProIdChanging(value);
+					this.SendPropertyChanging();
+					this._SubProId = value;
+					this.SendPropertyChanged("SubProId");
+					this.OnSubProIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectId", DbType="UniqueIdentifier")]
+		public System.Nullable<System.Guid> ProjectId
+		{
+			get
+			{
+				return this._ProjectId;
+			}
+			set
+			{
+				if ((this._ProjectId != value))
+				{
+					this.OnProjectIdChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectId = value;
+					this.SendPropertyChanged("ProjectId");
+					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RcvDpt", DbType="NVarChar(50)")]
+		public string RcvDpt
+		{
+			get
+			{
+				return this._RcvDpt;
+			}
+			set
+			{
+				if ((this._RcvDpt != value))
+				{
+					this.OnRcvDptChanging(value);
+					this.SendPropertyChanging();
+					this._RcvDpt = value;
+					this.SendPropertyChanged("RcvDpt");
+					this.OnRcvDptChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RcvAddr", DbType="NVarChar(10)")]
+		public string RcvAddr
+		{
+			get
+			{
+				return this._RcvAddr;
+			}
+			set
+			{
+				if ((this._RcvAddr != value))
+				{
+					this.OnRcvAddrChanging(value);
+					this.SendPropertyChanging();
+					this._RcvAddr = value;
+					this.SendPropertyChanged("RcvAddr");
+					this.OnRcvAddrChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RcvDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RcvDate
+		{
+			get
+			{
+				return this._RcvDate;
+			}
+			set
+			{
+				if ((this._RcvDate != value))
+				{
+					this.OnRcvDateChanging(value);
+					this.SendPropertyChanging();
+					this._RcvDate = value;
+					this.SendPropertyChanged("RcvDate");
+					this.OnRcvDateChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
