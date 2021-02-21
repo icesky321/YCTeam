@@ -71,7 +71,9 @@
                                         <a title="追加订单" class="btn btn-info" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=Edit" %>'>
                                             <i class="fa fa-edit "></i>
                                         </a>
-
+                                        <a title="查看详情" class="btn btn-success" href='<%# "OdInfo.aspx?id=" + Eval("ProjectId").ToString() + "&Subid=" + Eval("SubProId").ToString() %>'>
+                                            <i class="fa fa-search-plus "></i>
+                                        </a>
                                     </td>
                                 </tr>
                             </ItemTemplate>
