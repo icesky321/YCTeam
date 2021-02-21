@@ -105,7 +105,7 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">申请日期</label>
-                            <asp:TextBox ID="tbApplicantDate" runat="server" class="form-control"></asp:TextBox>
+                            <asp:TextBox ID="tbApplicantDate" runat="server" class="form-control" AutoCompleteType="Disabled"></asp:TextBox>
                             <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="tbApplicantDate" />
                         </div>
                         <div class="form-group">

@@ -99,12 +99,12 @@
                         <h2><i class="fa fa-heart-o red"></i><strong>订单详情</strong></h2>
                     </div>
                     <div class="panel-body">
-                        <asp:Repeater ID="rptodInfo" runat="server">
+                        <asp:Repeater ID="rptodInfo" runat="server" OnItemCreated="rptodInfo_ItemCreated">
                             <HeaderTemplate>
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th><%# Container.ItemIndex %>
+                                            <th><%# Container.ItemIndex %><asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Eval("ODId") %>' />
                                             </th>
                                             <th>收货单位</th>
                                             <th>收货地址</th>
@@ -121,10 +121,40 @@
                                     <td><%# Eval("RcvAddr") %></td>
                                     <td><%# Eval("RcvDate") %></td>
                                     <td>
-                                        <a title="物料详情" class="btn btn-success" href='<%# "OdInfo.aspx?id=" + Eval("ProjectId").ToString() + "&Subid=" + Eval("SubProId").ToString() %>'>
-                                            <i class="fa fa-search-plus "></i>
-                                        </a>
+                                        <asp:Button ID="btDetail" class="btn btn-success" runat="server" Text="物料详情" />
                                     </td>
+                                </tr>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </tbody>
+                        </table>
+                            </FooterTemplate>
+                        </asp:Repeater>
+                        <hr />
+                        <asp:Repeater ID="rptMaterialDetail" runat="server" Visible ="false">
+                            <HeaderTemplate>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><%# Container.ItemIndex %>
+                                            </th>
+                                            <th>物料名称</th>
+                                            <th>物料规格型号</th>
+                                            <th>物料单位</th>
+                                            <th>物料数量</th>
+                                            <th>备注</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <tr>
+                                    <td>1</td>
+                                    <td><%# Eval("MaterialName") %></td>
+                                    <td><%# Eval("Model") %></td>
+                                    <td><%# Eval("Unit") %></td>
+                                    <td><%# Eval("quantity") %></td>
+                                    <td><%# Eval("Reamrk") %></td>
                                 </tr>
                             </ItemTemplate>
                             <FooterTemplate>

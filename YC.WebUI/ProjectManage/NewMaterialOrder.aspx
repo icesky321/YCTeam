@@ -112,7 +112,7 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">到货日期</label>
-                            <asp:TextBox ID="tbRcvDate" runat="server" class="form-control"></asp:TextBox>
+                            <asp:TextBox ID="tbRcvDate" runat="server" class="form-control"  AutoCompleteType="Disabled"></asp:TextBox>
                             <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="tbRcvDate" />
                         </div>
 

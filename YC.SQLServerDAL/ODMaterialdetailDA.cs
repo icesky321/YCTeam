@@ -38,6 +38,7 @@ namespace YC.SQLServerDAL
         {
             if (odmaterial != null)
             {
+                odmaterial.ODMId = Guid.Empty;
                 odmaterial.ODMId = Guid.NewGuid();
                 dbContext.ODMaterialdetail.InsertOnSubmit(odmaterial);
                 dbContext.SubmitChanges();
