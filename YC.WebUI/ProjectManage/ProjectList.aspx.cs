@@ -10,7 +10,7 @@ public partial class ProjectManage_ProjectList : System.Web.UI.Page
 {
     YC.BLL.SubProjectInfo bll_subproject = new YC.BLL.SubProjectInfo();
     YC.BLL.OrderDetailInfo bll_odinfo = new YC.BLL.OrderDetailInfo();
-
+    YC.BLL.ProjectInfo bll_projectinfo = new YC.BLL.ProjectInfo();
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
@@ -26,7 +26,7 @@ public partial class ProjectManage_ProjectList : System.Web.UI.Page
 
     private void LoadData()
     {
-        var projects = bll_subproject.GetProjectInfoList();
+        var projects = bll_projectinfo.GetProjectInfo();
         rptProject.DataSource = projects;
         rptProject.DataBind();
     }

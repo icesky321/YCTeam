@@ -42401,7 +42401,9 @@ namespace YC.SQLServerDAL
 		
 		private System.Guid _ODMId;
 		
-		private System.Nullable<System.Guid> _ODId;
+		private System.Guid _ProjectId;
+		
+		private System.Guid _ODId;
 		
 		private string _MaterialName;
 		
@@ -42419,7 +42421,9 @@ namespace YC.SQLServerDAL
     partial void OnCreated();
     partial void OnODMIdChanging(System.Guid value);
     partial void OnODMIdChanged();
-    partial void OnODIdChanging(System.Nullable<System.Guid> value);
+    partial void OnProjectIdChanging(System.Guid value);
+    partial void OnProjectIdChanged();
+    partial void OnODIdChanging(System.Guid value);
     partial void OnODIdChanged();
     partial void OnMaterialNameChanging(string value);
     partial void OnMaterialNameChanged();
@@ -42458,8 +42462,28 @@ namespace YC.SQLServerDAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ODId", DbType="UniqueIdentifier")]
-		public System.Nullable<System.Guid> ODId
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProjectId", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid ProjectId
+		{
+			get
+			{
+				return this._ProjectId;
+			}
+			set
+			{
+				if ((this._ProjectId != value))
+				{
+					this.OnProjectIdChanging(value);
+					this.SendPropertyChanging();
+					this._ProjectId = value;
+					this.SendPropertyChanged("ProjectId");
+					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ODId", DbType="UniqueIdentifier NOT NULL")]
+		public System.Guid ODId
 		{
 			get
 			{
@@ -43104,6 +43128,18 @@ namespace YC.SQLServerDAL
 		
 		private string _Status;
 		
+		private System.Nullable<decimal> _Amount;
+		
+		private string _Purchaser;
+		
+		private string _Dpt;
+		
+		private string _Applicant;
+		
+		private System.Nullable<System.DateTime> _ApplicantDate;
+		
+		private string _Remark;
+		
     #region 可扩展性方法定义
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -43120,6 +43156,18 @@ namespace YC.SQLServerDAL
     partial void OnOperatDateChanged();
     partial void OnStatusChanging(string value);
     partial void OnStatusChanged();
+    partial void OnAmountChanging(System.Nullable<decimal> value);
+    partial void OnAmountChanged();
+    partial void OnPurchaserChanging(string value);
+    partial void OnPurchaserChanged();
+    partial void OnDptChanging(string value);
+    partial void OnDptChanged();
+    partial void OnApplicantChanging(string value);
+    partial void OnApplicantChanged();
+    partial void OnApplicantDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnApplicantDateChanged();
+    partial void OnRemarkChanging(string value);
+    partial void OnRemarkChanged();
     #endregion
 		
 		public ProjectInfo()
@@ -43243,6 +43291,126 @@ namespace YC.SQLServerDAL
 					this._Status = value;
 					this.SendPropertyChanged("Status");
 					this.OnStatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Amount", DbType="Money")]
+		public System.Nullable<decimal> Amount
+		{
+			get
+			{
+				return this._Amount;
+			}
+			set
+			{
+				if ((this._Amount != value))
+				{
+					this.OnAmountChanging(value);
+					this.SendPropertyChanging();
+					this._Amount = value;
+					this.SendPropertyChanged("Amount");
+					this.OnAmountChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Purchaser", DbType="NVarChar(50)")]
+		public string Purchaser
+		{
+			get
+			{
+				return this._Purchaser;
+			}
+			set
+			{
+				if ((this._Purchaser != value))
+				{
+					this.OnPurchaserChanging(value);
+					this.SendPropertyChanging();
+					this._Purchaser = value;
+					this.SendPropertyChanged("Purchaser");
+					this.OnPurchaserChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Dpt", DbType="NVarChar(50)")]
+		public string Dpt
+		{
+			get
+			{
+				return this._Dpt;
+			}
+			set
+			{
+				if ((this._Dpt != value))
+				{
+					this.OnDptChanging(value);
+					this.SendPropertyChanging();
+					this._Dpt = value;
+					this.SendPropertyChanged("Dpt");
+					this.OnDptChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Applicant", DbType="NVarChar(10)")]
+		public string Applicant
+		{
+			get
+			{
+				return this._Applicant;
+			}
+			set
+			{
+				if ((this._Applicant != value))
+				{
+					this.OnApplicantChanging(value);
+					this.SendPropertyChanging();
+					this._Applicant = value;
+					this.SendPropertyChanged("Applicant");
+					this.OnApplicantChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ApplicantDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ApplicantDate
+		{
+			get
+			{
+				return this._ApplicantDate;
+			}
+			set
+			{
+				if ((this._ApplicantDate != value))
+				{
+					this.OnApplicantDateChanging(value);
+					this.SendPropertyChanging();
+					this._ApplicantDate = value;
+					this.SendPropertyChanged("ApplicantDate");
+					this.OnApplicantDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Remark", DbType="NVarChar(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public string Remark
+		{
+			get
+			{
+				return this._Remark;
+			}
+			set
+			{
+				if ((this._Remark != value))
+				{
+					this.OnRemarkChanging(value);
+					this.SendPropertyChanging();
+					this._Remark = value;
+					this.SendPropertyChanged("Remark");
+					this.OnRemarkChanged();
 				}
 			}
 		}

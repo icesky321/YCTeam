@@ -13,7 +13,7 @@
                 <ol class="breadcrumb">
                     <li><i class="fa fa-home"></i><a href="index.html">首页</a></li>
                     <li><i class="fa fa-file-text"></i><a href="#">项目管理</a></li>
-                    <li><i class="fa fa-heart-o"></i>新增子项目</li>
+                    <li><i class="fa fa-heart-o"></i>新增订单</li>
                 </ol>
             </div>
         </div>
@@ -59,31 +59,17 @@
                         <ul class="profile-details">
                             <li>
                                 <div>
-                                    <h5><i class="fa fa-thumbs-up"></i>订单名称</h5>
-                                </div>
-                                <h4><strong>
-                                    <asp:Label ID="lbSubProName" runat="server" Text=""></asp:Label></strong></h4>
-                            </li>
-                            <li>
-                                <div>
-                                    <h5><i class="fa fa-building-o"></i>订单编号</h5>
-                                </div>
-                                <h4><strong>
-                                    <asp:Label ID="lbSubProNum" runat="server" Text=""></asp:Label></strong></h4>
-                            </li>
-                            <li>
-                                <div>
                                     <h5><i class="fa fa-building-o"></i>订单金额</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbSubAmount" runat="server" Text=""></asp:Label></strong></h4>
+                                    <asp:Label ID="lbAmount" runat="server" Text=""></asp:Label></strong></h4>
                             </li>
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>采购商</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbSubPurchaser" runat="server" Text=""></asp:Label></strong></h4>
+                                    <asp:Label ID="lbPurchaser" runat="server" Text=""></asp:Label></strong></h4>
                             </li>
                         </ul>
                     </div>
@@ -112,8 +98,16 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">到货日期</label>
-                            <asp:TextBox ID="tbRcvDate" runat="server" class="form-control"  AutoCompleteType="Disabled"></asp:TextBox>
+                            <asp:TextBox ID="tbRcvDate" runat="server" class="form-control" AutoCompleteType="Disabled"></asp:TextBox>
                             <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="tbRcvDate" />
+                        </div>
+                        <div class="form-group">
+                            <asp:HiddenField ID="hfODId" runat="server" />
+                            <label class="control-label">上传采购明细</label>
+                            <asp:FileUpload ID="FileUpload1" runat="server" />
+                            <asp:Button ID="btnUpload" runat="server" Text="数据核验" OnClick="btnUpload_Click" ValidationGroup="1" />
+                            <asp:GridView ID="GridView1" runat="server">
+                            </asp:GridView>
                         </div>
 
                         <div class="form-group pull-right">

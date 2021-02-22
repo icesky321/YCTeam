@@ -22,18 +22,13 @@ public partial class ProjectManage_NewProjectInfo : System.Web.UI.Page
         Mprojects.ProjectNum = tbProNum.Text;
         Mprojects.OperatDate = System.DateTime.Now;
         Mprojects.Status = "待投标";
+        Mprojects.Amount = Convert.ToDecimal(tbAmount.Text);
+        Mprojects.Purchaser = tbPurchaser.Text;
+        Mprojects.Dpt = tbDpt.Text;
+        Mprojects.Applicant = tbApplicant.Text;
+        Mprojects.ApplicantDate = Convert.ToDateTime(tbApplicantDate.Text);
+        Mprojects.Remark = tbRemark.Text;
         bll_project.CreateProjectInfo(Mprojects);
-        Msubprojects.ProjectId = Mprojects.ProjectId;
-        Msubprojects.SubProNum = tbSubProNum.Text;
-        Msubprojects.SubProName = tbSubProName.Text;
-        Msubprojects.SubAmount = Convert.ToDecimal(tbAmount.Text);
-        Msubprojects.SubPurchaser = tbSubPurchaser.Text;
-        Msubprojects.SubDpt = tbSubDpt.Text;
-        Msubprojects.Applicant = tbApplicant.Text;
-        Msubprojects.ApplicantDate = Convert.ToDateTime(tbApplicantDate.Text);
-        Msubprojects.Status = "待立项";
-        Msubprojects.Remark = tbRemark.Text;
-        bll_subproject.NewSubProjectInfo(Msubprojects);
         Response.Redirect("ProjectList.aspx");
     }
 }

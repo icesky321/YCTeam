@@ -32,7 +32,7 @@
                         <div id="wizard2" class="wizard-type2">
                             <ul class="steps">
                                 <li><a href="NewProjectInfo.aspx#tab21" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-star"></i></span>项目概况</a></li>
-                                <li><a href="NewProjectInfo.aspx#tab22" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-credit-card"></i></span>订单信息</a></li>
+                                <li><a href="NewProjectInfo.aspx#tab22" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-credit-card"></i></span>项目信息</a></li>
                                 <%--                                <li><a href="NewProjectInfo.aspx#tab23" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-building"></i></span>Company Details</a></li>--%>
                                 <%-- <li><a href="NewProjectInfo.aspx#tab24" data-toggle="tab"><span class="badge badge-info"><i class="fa fa-check"></i></span>完成</a></li>--%>
                             </ul>
@@ -57,20 +57,6 @@
 
                                 </div>
                                 <div class="tab-pane" id="tab22">
-
-
-
-                                    <div class="form-group">
-                                        <label for="email-w2">订单编号</label>
-                                        <asp:TextBox ID="tbSubProNum" runat="server" class="form-control" placeholder="子项目编号" Text=""></asp:TextBox>
-                                        <span class="help-block">请输入订单编号</span>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password-w2">订单名称</label>
-                                        <asp:TextBox ID="tbSubProName" runat="server" class="form-control" placeholder="子项目名称" Text=""></asp:TextBox>
-                                        <span class="help-block">请输入订单名称</span>
-                                    </div>
                                     <div class="form-group">
                                         <label for="password-w2">项目金额</label>
                                         <asp:TextBox ID="tbAmount" runat="server" class="form-control" placeholder="项目金额(元)" Text="" Width="500px"></asp:TextBox>
@@ -78,13 +64,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">采购商</label>
-                                        <asp:TextBox ID="tbSubPurchaser" runat="server" class="form-control" placeholder="采购商" Text=""></asp:TextBox>
-                                        <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender1" MinimumPrefixLength="1" runat="server" ServicePath="~/WebService.asmx" ServiceMethod="GetCompleteSupplier" TargetControlID="tbSubPurchaser" CompletionInterval="1000"></ajaxToolkit:AutoCompleteExtender>
+                                        <asp:TextBox ID="tbPurchaser" runat="server" class="form-control" placeholder="采购商" Text=""></asp:TextBox>
+                                        <ajaxToolkit:AutoCompleteExtender ID="AutoCompleteExtender1" MinimumPrefixLength="1" runat="server" ServicePath="~/WebService.asmx" ServiceMethod="GetCompleteSupplier" TargetControlID="tbPurchaser" CompletionInterval="1000"></ajaxToolkit:AutoCompleteExtender>
                                         <span class="help-block">可通过拼音首字母或中文模糊查询</span>     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/config/CorpDetail.aspx" ForeColor="Red">没有此采购商？</asp:HyperLink>                       
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">请购部门</label>
-                                        <asp:TextBox ID="tbSubDpt" runat="server" class="form-control" placeholder="请购部门" Text=""></asp:TextBox>
+                                        <asp:TextBox ID="tbDpt" runat="server" class="form-control" placeholder="请购部门" Text=""></asp:TextBox>
                                         <span class="help-block">请输入申请部门</span>
                                     </div>
                                     <div class="form-group">

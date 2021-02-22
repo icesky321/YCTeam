@@ -9,8 +9,6 @@ public partial class ProjectManage_OdInfo : System.Web.UI.Page
 {
     YC.SQLServerDAL.ProjectInfo projects = new YC.SQLServerDAL.ProjectInfo();
     YC.BLL.ProjectInfo bll_project = new YC.BLL.ProjectInfo();
-    YC.SQLServerDAL.SubProjectInfo subprojects = new YC.SQLServerDAL.SubProjectInfo();
-    YC.BLL.SubProjectInfo bll_subprojects = new YC.BLL.SubProjectInfo();
     YC.SQLServerDAL.OrderDetailInfo odinfo = new YC.SQLServerDAL.OrderDetailInfo();
     YC.BLL.OrderDetailInfo bll_odinfo = new YC.BLL.OrderDetailInfo();
     YC.BLL.ODMaterialdetail bll_odmaterial = new YC.BLL.ODMaterialdetail();
@@ -29,51 +27,25 @@ public partial class ProjectManage_OdInfo : System.Web.UI.Page
         lbProName.Text = projects.ProjectName;
         lbProNum.Text = projects.ProjectNum;
         lbStatus.Text = projects.Status;
+        lbAmount.Text = "￥" + projects.Amount.ToString() + "元";
+        lbPurchaser.Text = projects.Purchaser;
     }
 
-    private void LoadSubProjectInfo(Guid Subid)
+    private void LoadOrderDetailInfo(Guid proid)
     {
-        subprojects = bll_subprojects.GetSubProBySubProId(Subid);
-        lbSubProName.Text = subprojects.SubProName;
-        lbSubProNum.Text = subprojects.SubProNum;
-        lbSubAmount.Text = "￥" + subprojects.SubAmount.ToString() + "元";
-        lbSubPurchaser.Text = subprojects.SubPurchaser;
-    }
-
-    private void LoadOrderDetailInfo(Guid Subid)
-    {
-        rptodInfo.DataSource = bll_odinfo.GetodinfoBySubProId(Subid);
+        rptodInfo.DataSource = bll_odinfo.GetodinfoByProId(proid);
         rptodInfo.DataBind();
     }
 
     private void Init_Load()
     {
-        if (Request.QueryString["id"] != null && Request.QueryString["Subid"] != null)
+        if (Request.QueryString["id"] != null)
         {
             hfProId.Value = Request.QueryString["id"];
-            hfSubProId.Value = Request.QueryString["Subid"];
             Guid proId = Guid.Empty;
-            Guid Subid = Guid.Empty;
             Guid.TryParse(hfProId.Value, out proId);
-            Guid.TryParse(hfSubProId.Value, out Subid);
             LoadProjectInfo(proId);
-            LoadSubProjectInfo(Subid);
-            LoadOrderDetailInfo(Subid);
-        }
-    }
-
-    protected void rptodInfo_ItemCreated(object sender, RepeaterItemEventArgs e)
-    {
-        if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
-        {
-            //判断Button是否存在
-            if (e.Item.FindControl("Button1") != null)
-            {
-                //如果存在，把对象转换为Button。
-                Button InsusButton = (Button)e.Item.FindControl("btDetail");
-                //产生Click事件
-                InsusButton.Click += new EventHandler(InsusButton_Click);
-            }
+            LoadOrderDetailInfo(proId);
         }
     }
 
@@ -91,6 +63,29 @@ public partial class ProjectManage_OdInfo : System.Web.UI.Page
             rptMaterialDetail.Visible = true;
             rptMaterialDetail.DataSource = bll_odmaterial.GetodmaterialByODId(ODId);
             rptMaterialDetail.DataBind();
+        }
+    }
+
+    protected void rptodInfo_ItemCommand(object source, RepeaterCommandEventArgs e)
+    {
+        
+        if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+        {
+            //判断Button是否存在
+            if (e.Item.FindControl("btDetail") != null)
+            {
+                var sodid = e.CommandArgument.ToString();
+                    
+                //如果存在，把对象转换为Button。
+                Button InsusButton = (Button)e.Item.FindControl("btDetail");
+                //取出HiddenField的Value值。
+                //string sodid = odm.ODId.ToString();
+                Guid ODId = Guid.Parse(sodid);
+                rptMaterialDetail.Visible = true;
+                rptMaterialDetail.DataSource = bll_odmaterial.GetodmaterialByODId(ODId);
+                rptMaterialDetail.DataBind();
+
+            }
         }
     }
 }

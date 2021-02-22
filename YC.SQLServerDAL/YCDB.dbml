@@ -2265,7 +2265,8 @@
   <Table Name="dbo.ODMaterialdetail" Member="ODMaterialdetail">
     <Type Name="ODMaterialdetail">
       <Column Name="ODMId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ODId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ProjectId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ODId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
       <Column Name="MaterialName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Model" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="Unit" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
@@ -2311,6 +2312,12 @@
       <Column Name="Operator" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="OperatDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Purchaser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dpt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Applicant" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ApplicantDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
     </Type>
   </Table>
   <Table Name="dbo.qt_f_fee" Member="Qt_f_fee">

@@ -19,7 +19,7 @@
 
         <div class="row profile">
 
-            <div class="col-md-5">
+            <div class="col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -55,34 +55,20 @@
                             </li>
                         </ul>
                         <hr>
-                        <ul class="profile-details">
-                            <li>
-                                <div>
-                                    <h5><i class="fa fa-thumbs-up"></i>订单名称</h5>
-                                </div>
-                                <h4><strong>
-                                    <asp:Label ID="lbSubProName" runat="server" Text=""></asp:Label></strong></h4>
-                            </li>
-                            <li>
-                                <div>
-                                    <h5><i class="fa fa-building-o"></i>订单编号</h5>
-                                </div>
-                                <h4><strong>
-                                    <asp:Label ID="lbSubProNum" runat="server" Text=""></asp:Label></strong></h4>
-                            </li>
+                         <ul class="profile-details">
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>订单金额</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbSubAmount" runat="server" Text=""></asp:Label></strong></h4>
+                                    <asp:Label ID="lbAmount" runat="server" Text=""></asp:Label></strong></h4>
                             </li>
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>采购商</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbSubPurchaser" runat="server" Text=""></asp:Label></strong></h4>
+                                    <asp:Label ID="lbPurchaser" runat="server" Text=""></asp:Label></strong></h4>
                             </li>
                         </ul>
                     </div>
@@ -92,19 +78,19 @@
             </div>
             <!--/.col-->
 
-            <div class="col-md-7">
+            <div class="col-md-9">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2><i class="fa fa-heart-o red"></i><strong>订单详情</strong></h2>
                     </div>
                     <div class="panel-body">
-                        <asp:Repeater ID="rptodInfo" runat="server" OnItemCreated="rptodInfo_ItemCreated">
+                        <asp:Repeater ID="rptodInfo" runat="server" OnItemCommand="rptodInfo_ItemCommand">
                             <HeaderTemplate>
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th><%# Container.ItemIndex %><asp:HiddenField ID="HiddenField1" runat="server" Value='<%# Eval("ODId") %>' />
+                                            <th><%# Container.ItemIndex %><%# Eval("ODId") %> />
                                             </th>
                                             <th>收货单位</th>
                                             <th>收货地址</th>
@@ -121,7 +107,7 @@
                                     <td><%# Eval("RcvAddr") %></td>
                                     <td><%# Eval("RcvDate") %></td>
                                     <td>
-                                        <asp:Button ID="btDetail" class="btn btn-success" runat="server" Text="物料详情" />
+                                        <asp:Button ID="btDetail" class="btn btn-success" runat="server" Text="物料详情"  CommandArgument='<%# Eval("ODId") %>' />
                                     </td>
                                 </tr>
                             </ItemTemplate>

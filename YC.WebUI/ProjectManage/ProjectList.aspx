@@ -45,9 +45,7 @@
                                             </th>
                                             <th>项目编号</th>
                                             <th>项目名称</th>
-                                            <th>子项目编号</th>
-                                            <th>子项目名称</th>
-                                            <th>子项目总金额</th>
+                                            <th>项目总金额</th>
                                             <th>采购商</th>
                                             <th>申请日期</th>
                                         </tr>
@@ -60,18 +58,16 @@
                                     </td>
                                     <td><%# Eval("ProjectNum") %></td>
                                     <td><%# Eval("ProjectName") %></td>
-                                    <td><%# Eval("SubProNum") %></td>
-                                    <td><%# Eval("SubProName") %></td>
-                                    <td><%# Eval("SubAmount") %></td>
-                                    <td><%# Eval("SubPurchaser") %></td>
+                                    <td><%# Eval("Amount") %></td>
+                                    <td><%# Eval("Purchaser") %></td>
                                     <td><%# Eval("ApplicantDate") %></td>
-                                    <td><a title="新增采购单" class="btn btn-success" href='<%# "NewMaterialOrder.aspx?id=" + Eval("ProjectId").ToString() + "&Subid=" + Eval("SubProId").ToString() %>'>
+                                    <td><a title="新增采购单" class="btn btn-success" href='<%# "NewMaterialOrder.aspx?id=" + Eval("ProjectId").ToString() %>'>
                                         <i class="fa fa-list"></i>
                                     </a>
-                                        <a title="追加订单" class="btn btn-info" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=Edit" %>'>
+<%--                                        <a title="追加订单" class="btn btn-info" href='<%# "NewSubProjectInfo.aspx?id=" + Eval("ProjectId").ToString() + "&mode=Edit" %>'>
                                             <i class="fa fa-edit "></i>
-                                        </a>
-                                        <a title="查看详情" class="btn btn-success" href='<%# "OdInfo.aspx?id=" + Eval("ProjectId").ToString() + "&Subid=" + Eval("SubProId").ToString() %>'>
+                                        </a>--%>
+                                        <a title="查看详情" class="btn btn-success" href='<%# "OdInfo.aspx?id=" + Eval("ProjectId").ToString() %>'>
                                             <i class="fa fa-search-plus "></i>
                                         </a>
                                     </td>

@@ -14,6 +14,12 @@ ProjectInfo(项目信息)
 4、Operator   nvarchar(20) 操作员（录入人）
 5、OperatDate  datetime  操作时间
 6、Status    nvarchar(10) 状态
+7、Amount  decimal 子项目总金额
+8、Purchaser  nvarchar(30)   采购商
+7、Dpt    nvarchar(30)   请购部门
+8、Applicant   nvarchar(30)  申请人
+9、ApplicantDate  datetime    申请日期
+10、Remark    nvarchar(Max)   备注 
 
 
 
