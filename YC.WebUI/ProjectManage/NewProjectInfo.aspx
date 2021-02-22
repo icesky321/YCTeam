@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="password-w2">申请日期</label>
-                                        <asp:TextBox ID="tbApplicantDate" runat="server" class="form-control" placeholder="申请日期" Text=""></asp:TextBox>
+                                        <asp:TextBox ID="tbApplicantDate" runat="server" class="form-control" placeholder="申请日期" Text="" AutoCompleteType="Disabled"></asp:TextBox>
                                         <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="tbApplicantDate" />
                                         <span class="help-block">请选择申请日期</span>
                                     </div>
