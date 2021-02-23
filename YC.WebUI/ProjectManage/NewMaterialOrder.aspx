@@ -86,7 +86,10 @@
                         <h2><i class="fa fa-heart-o red"></i><strong>创建采购单</strong></h2>
                     </div>
                     <div class="panel-body">
-
+                                                <div class="form-group">
+                            <label class="control-label">订单编号</label>
+                            <asp:TextBox ID="tbOdNum" runat="server" class="form-control"></asp:TextBox>
+                        </div>
                         <div class="form-group">
                             <label class="control-label">收货部门</label>
                             <asp:TextBox ID="tbRcvDpt" runat="server" class="form-control"></asp:TextBox>
@@ -94,7 +97,6 @@
                         <div class="form-group">
                             <label class="control-label">收货地址</label>
                             <asp:TextBox ID="tbRcvAddr" runat="server" class="form-control"></asp:TextBox>
-
                         </div>
                         <div class="form-group">
                             <label class="control-label">到货日期</label>

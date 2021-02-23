@@ -42635,6 +42635,8 @@ namespace YC.SQLServerDAL
 		
 		private System.Nullable<System.Guid> _ProjectId;
 		
+		private string _OdNum;
+		
 		private string _RcvDpt;
 		
 		private string _RcvAddr;
@@ -42651,6 +42653,8 @@ namespace YC.SQLServerDAL
     partial void OnSubProIdChanged();
     partial void OnProjectIdChanging(System.Nullable<System.Guid> value);
     partial void OnProjectIdChanged();
+    partial void OnOdNumChanging(string value);
+    partial void OnOdNumChanged();
     partial void OnRcvDptChanging(string value);
     partial void OnRcvDptChanged();
     partial void OnRcvAddrChanging(string value);
@@ -42720,6 +42724,26 @@ namespace YC.SQLServerDAL
 					this._ProjectId = value;
 					this.SendPropertyChanged("ProjectId");
 					this.OnProjectIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_OdNum", DbType="NVarChar(10)")]
+		public string OdNum
+		{
+			get
+			{
+				return this._OdNum;
+			}
+			set
+			{
+				if ((this._OdNum != value))
+				{
+					this.OnOdNumChanging(value);
+					this.SendPropertyChanging();
+					this._OdNum = value;
+					this.SendPropertyChanged("OdNum");
+					this.OnOdNumChanged();
 				}
 			}
 		}

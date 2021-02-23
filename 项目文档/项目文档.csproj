@@ -45,6 +45,7 @@
     <Content Include="数据字典.txt" />
     <Content Include="数据库老表.txt" />
     <Content Include="状态汇总.txt" />
+    <Content Include="进度表.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

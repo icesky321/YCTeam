@@ -55,7 +55,7 @@
                             </li>
                         </ul>
                         <hr>
-                         <ul class="profile-details">
+                        <ul class="profile-details">
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>订单金额</h5>
@@ -92,6 +92,7 @@
                                         <tr>
                                             <th><%# Container.ItemIndex %><%# Eval("ODId") %> />
                                             </th>
+                                            <th>订单编号</th>
                                             <th>收货单位</th>
                                             <th>收货地址</th>
                                             <th>到货时间</th>
@@ -103,11 +104,12 @@
                                 <tr>
                                     <td>1
                                     </td>
+                                    <td><%# Eval("OdNum") %></td>
                                     <td><%# Eval("RcvDpt") %></td>
                                     <td><%# Eval("RcvAddr") %></td>
                                     <td><%# Eval("RcvDate") %></td>
                                     <td>
-                                        <asp:Button ID="btDetail" class="btn btn-success" runat="server" Text="物料详情"  CommandArgument='<%# Eval("ODId") %>' />
+                                        <asp:Button ID="btDetail" class="btn btn-success" runat="server" Text="物料详情" CommandArgument='<%# Eval("ODId") %>' />
                                     </td>
                                 </tr>
                             </ItemTemplate>
@@ -117,7 +119,7 @@
                             </FooterTemplate>
                         </asp:Repeater>
                         <hr />
-                        <asp:Repeater ID="rptMaterialDetail" runat="server" Visible ="false">
+                        <asp:Repeater ID="rptMaterialDetail" runat="server" Visible="false">
                             <HeaderTemplate>
                                 <table class="table table-hover">
                                     <thead>

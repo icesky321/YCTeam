@@ -39,6 +39,7 @@ SubProjectInfo(订单信息)
 OrderDetailInfo(订单详细信息)
 1、ODId  guid  id
 2、SubProId  guid  订单（子项目）id
+3、OdNum  nvarchar(10)   订单编号
 3、ProjectId  guid  项目id
 4、RcvDpt   nvarchar(50)   收货单位
 5、RcvAddr    nvarchar(50)   收货地址

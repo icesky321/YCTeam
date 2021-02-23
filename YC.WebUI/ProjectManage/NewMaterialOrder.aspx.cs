@@ -37,6 +37,7 @@ public partial class ProjectManage_NewMaterialOrder : System.Web.UI.Page
 
     private void NewMaterialOrderInfo(Guid proid,Guid SubProId)
     {
+        odinfo.OdNum = tbOdNum.Text;
         odinfo.ProjectId = proid;
         odinfo.RcvDpt = tbRcvDpt.Text;
         odinfo.RcvAddr = tbRcvAddr.Text;

@@ -2279,6 +2279,7 @@
       <Column Name="ODId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="SubProId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
       <Column Name="ProjectId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OdNum" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="RcvDpt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="RcvAddr" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="RcvDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
