@@ -19,7 +19,7 @@
 
         <div class="row profile">
 
-            <div class="col-md-4">
+            <div class="col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -32,7 +32,7 @@
 
                         <div class="row text-center">
                             <div class="col-xs-6">
-                                <div><strong>3条</strong></div>
+                                <div><strong><a href="NewOrder.aspx">3条</a></strong></div>
                                 <div><small>订单总数</small></div>
                             </div>
                             <!--/.col-->
@@ -74,8 +74,72 @@
             </div>
             <!--/.col-->
 
-            <div class="col-md-8">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2><i class="fa fa-heart-o red"></i><strong>待询价物料明细</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2><i class="fa fa-table red"></i><span class="break"></span><strong>请购单信息</strong></h2>
+                                    <div class="panel-actions">
+                                        <a href="table.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                                        <a href="table.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                                        <a href="table.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                                    </div>
+                                </div>
 
+                                <div class="panel-body">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#
+                                                </th>
+                                                <th>送货部门</th>
+                                                <th>送货地址</th>
+                                                <th>送货日期</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1
+                                                </td>
+                                                <td>综合服务部</td>
+                                                <td>和义大道</td>
+                                                <td>2021-6-22</td>
+                                                <td>
+                                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2
+                                                </td>
+                                                <td>物资管理部</td>
+                                                <td>来福士广场</td>
+                                                <td>2021--7-23</td>
+                                                <td>
+                                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2
+                                                </td>
+                                                <td>物资管理部</td>
+                                                <td>来福士广场</td>
+                                                <td>2021--7-23</td>
+                                                <td>
+                                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink>
+                                                <td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2><i class="fa fa-heart-o red"></i><strong>待询价物料明细</strong></h2>
@@ -201,7 +265,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="text-align:right;">
+                        <div style="text-align: right;">
                             <asp:Button ID="Button1" runat="server" Text="导出到Excel" />
                         </div>
                     </div>
