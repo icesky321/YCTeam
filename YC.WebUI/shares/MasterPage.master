@@ -241,7 +241,7 @@
                                     <ul class="nav sub">
                                         <li><a href="../PurchasingCenter/TotalOrder.aspx"><i class="fa fa-align-left"></i><span class="text">销售订单汇总</span></a></li>
                                         <li><a href="../PurchasingCenter/NewOrder.aspx"><i class="fa fa-outdent"></i><span class="text">创建采购订单</span></a></li>
-                                        <li><a href="ui-elements.html"><i class="fa fa-list"></i><span class="text">Elements</span></a></li>
+                                        <li><a href="../PurchasingCenter/PaymentOrder.aspx"><i class="fa fa-list"></i><span class="text">付款申请</span></a></li>
                                         <li><a href="ui-panels.html"><i class="fa fa-list-alt"></i><span class="text">Panels</span></a></li>
                                         <li><a href="ui-buttons.html"><i class="fa fa-th"></i><span class="text">Buttons</span></a></li>
                                     </ul>
