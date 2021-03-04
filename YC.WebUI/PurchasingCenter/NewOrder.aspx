@@ -80,20 +80,20 @@
                         <div class="panel-body">
                             <div class="row">
 
-                                    <table class="table table-clear">
-                                        <tbody>
-                                            <tr>
-                                                <td class="left"><strong>供货商：</strong></td>
-                                                <td class="left">唐山盛材钢铁厂</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="left"><strong>合同编号：</strong></td>
-                                                <td class="left">57401-20-1277-CV-R-M-1001</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--/col-->
+                                <table class="table table-clear">
+                                    <tbody>
+                                        <tr>
+                                            <td class="left"><strong>供货商：</strong></td>
+                                            <td class="left">唐山盛材钢铁厂</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left"><strong>合同编号：</strong></td>
+                                            <td class="left">57401-20-1277-CV-R-M-1001</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/col-->
                             <table class="table table-striped table-responsive">
                                 <thead>
                                     <tr>
@@ -115,7 +115,9 @@
                                         <td class="left">CHHNABZTA _150X75X5X7</td>
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">沙钢</td>
-                                        <td class="right">2772</td>
+                                        <td class="right">
+                                            <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink></td>
+                                        <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
                                         <td class="right">12000</td>
@@ -126,7 +128,9 @@
                                         <td class="left">CHHNABZTA _150X75X5X7</td>
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">沙钢</td>
-                                        <td class="right">342</td>
+                                        <td class="right">
+                                            <asp:TextBox ID="TextBox4" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink1" runat="server">更新</asp:HyperLink></td>
+                                        <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
                                         <td class="right">12000</td>
@@ -137,7 +141,9 @@
                                         <td class="left">CHHNABZTA _200X100X5.5X8</td>
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">沙钢</td>
-                                        <td class="right">543</td>
+                                        <td class="right">
+                                            <asp:TextBox ID="TextBox5" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink2" runat="server">更新</asp:HyperLink></td>
+                                        <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
                                         <td class="right">12000</td>
@@ -148,7 +154,9 @@
                                         <td class="left">CHHNABZTA _175X175X7.5X11</td>
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">鞍钢</td>
-                                        <td class="right">1234</td>
+                                        <td class="right">
+                                            <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink3" runat="server">更新</asp:HyperLink></td>
+                                        <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
                                         <td class="right">12000</td>
@@ -159,7 +167,9 @@
                                         <td class="left">VMSD202Z_8X1800X8500</td>
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">鞍钢</td>
-                                        <td class="right">4445</td>
+                                        <td class="right">
+                                            <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink4" runat="server">更新</asp:HyperLink></td>
+                                        <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
                                         <td class="right">12000</td>

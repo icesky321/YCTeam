@@ -160,6 +160,7 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
+                                                <th></th>
                                                 <th>#
                                                 </th>
                                                 <th>物料名称</th>
@@ -171,6 +172,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox5" runat="server" />
+                                                </th>
                                                 <td>1
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -180,6 +184,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox1" runat="server" />
+                                                </th>
                                                 <td>2
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -189,6 +196,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox2" runat="server" />
+                                                </th>
                                                 <td>3
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -198,6 +208,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox3" runat="server" />
+                                                </th>
                                                 <td>4
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -207,6 +220,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox4" runat="server" />
+                                                </th>
                                                 <td>5
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -216,6 +232,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox6" runat="server" />
+                                                </th>
                                                 <td>6
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -225,6 +244,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox7" runat="server" />
+                                                </th>
                                                 <td>4
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -234,6 +256,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox8" runat="server" />
+                                                </th>
                                                 <td>7
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -243,6 +268,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox9" runat="server" />
+                                                </th>
                                                 <td>8
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -252,6 +280,9 @@
                                                 <td>"822米</td>
                                             </tr>
                                             <tr>
+                                                <th>
+                                                    <asp:CheckBox ID="CheckBox10" runat="server" />
+                                                </th>
                                                 <td>9
                                                 </td>
                                                 <td>流体碳素无缝钢管</td>
@@ -266,7 +297,7 @@
                             </div>
                         </div>
                         <div style="text-align: right;">
-                            <asp:Button ID="Button1" runat="server" Text="导出到Excel" />
+                            <asp:Button ID="Button1" runat="server" Text="导出询价单" />
                         </div>
                     </div>
 
