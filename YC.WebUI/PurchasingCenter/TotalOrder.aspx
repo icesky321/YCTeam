@@ -135,6 +135,7 @@
                                             <th>送货地址</th>
                                             <th>送货日期</th>
                                             <th></th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -145,7 +146,9 @@
                                             <td>和义大道</td>
                                             <td>2021-6-22</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">采购信息</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink></td>
+                                            <td>
+                                                <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加装货信息</asp:HyperLink></td>
                                         </tr>
                                         <tr>
                                             <td>2
@@ -154,7 +157,9 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">采购信息</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink></td>
+                                            <td>
+                                                <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加装货信息</asp:HyperLink></td>
                                         </tr>
                                         <tr>
                                             <td>2
@@ -163,7 +168,9 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">采购信息</asp:HyperLink>
+                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink>
+                                            <td>
+                                                <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加装货信息</asp:HyperLink></td>
                                             <td>
                                         </tr>
                                     </tbody>
@@ -182,6 +189,7 @@
                                     <th>物料编码</th>
                                     <th class="center">规格型号</th>
                                     <th class="center">产地</th>
+                                    <th class="center">需求时间</th>
                                     <th class="right">供货数量</th>
                                     <th class="right">供货单价</th>
                                     <th class="right">合计单价</th>
@@ -195,6 +203,7 @@
                                     <td class="left">CHHNABZTA _150X75X5X7</td>
                                     <td class="center">HN150X75X5X7/Q235B</td>
                                     <td class="right">沙钢</td>
+                                    <td class="right">"2021-06-22"</td>
                                     <td class="right">
                                         <asp:TextBox ID="TextBox1" runat="server">777</asp:TextBox><asp:HyperLink ID="HyperLink4" runat="server">更新</asp:HyperLink></td>
 
@@ -208,7 +217,9 @@
                                     <td class="left">CHHNABZTA _150X75X5X7</td>
                                     <td class="center">HN150X75X5X7/Q235B</td>
                                     <td class="right">沙钢</td>
-                                    <td class="right"><asp:TextBox ID="TextBox2" runat="server">369</asp:TextBox><asp:HyperLink ID="HyperLink5" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">"2021-06-22"</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox2" runat="server">369</asp:TextBox><asp:HyperLink ID="HyperLink5" runat="server">更新</asp:HyperLink></td>
                                     <td class="right">345</td>
                                     <td class="right">5676</td>
                                     <td class="right">12000</td>
@@ -219,7 +230,9 @@
                                     <td class="left">CHHNABZTA _200X100X5.5X8</td>
                                     <td class="center">HN150X75X5X7/Q235B</td>
                                     <td class="right">沙钢</td>
-                                    <td class="right"><asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">"2021-06-22"</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink></td>
                                     <td class="right">345</td>
                                     <td class="right">5676</td>
                                     <td class="right">12000</td>
@@ -230,7 +243,9 @@
                                     <td class="left">CHHNABZTA _175X175X7.5X11</td>
                                     <td class="center">HN150X75X5X7/Q235B</td>
                                     <td class="right">鞍钢</td>
-                                    <td class="right"><asp:TextBox ID="TextBox4" runat="server">1234</asp:TextBox><asp:HyperLink ID="HyperLink7" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">"2021-06-22"</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox4" runat="server">1234</asp:TextBox><asp:HyperLink ID="HyperLink7" runat="server">更新</asp:HyperLink></td>
                                     <td class="right">345</td>
                                     <td class="right">5676</td>
                                     <td class="right">12000</td>
@@ -241,7 +256,9 @@
                                     <td class="left">VMSD202Z_8X1800X8500</td>
                                     <td class="center">HN150X75X5X7/Q235B</td>
                                     <td class="right">鞍钢</td>
-                                    <td class="right"><asp:TextBox ID="TextBox5" runat="server">4445</asp:TextBox><asp:HyperLink ID="HyperLink8" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">"2021-06-22"</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox5" runat="server">4445</asp:TextBox><asp:HyperLink ID="HyperLink8" runat="server">更新</asp:HyperLink></td>
                                     <td class="right">345</td>
                                     <td class="right">5676</td>
                                     <td class="right">12000</td>

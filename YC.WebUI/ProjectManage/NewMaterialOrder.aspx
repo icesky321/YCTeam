@@ -83,7 +83,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2><i class="fa fa-heart-o red"></i><strong>创建采购单</strong></h2>
+                        <h2><i class="fa fa-heart-o red"></i><strong>创建请购单</strong></h2>
                     </div>
                     <div class="panel-body">
                                                 <div class="form-group">

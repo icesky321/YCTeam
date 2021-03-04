@@ -78,6 +78,22 @@
 
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            <div class="row">
+
+                                    <table class="table table-clear">
+                                        <tbody>
+                                            <tr>
+                                                <td class="left"><strong>供货商：</strong></td>
+                                                <td class="left">唐山盛材钢铁厂</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left"><strong>合同编号：</strong></td>
+                                                <td class="left">57401-20-1277-CV-R-M-1001</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--/col-->
                             <table class="table table-striped table-responsive">
                                 <thead>
                                     <tr>

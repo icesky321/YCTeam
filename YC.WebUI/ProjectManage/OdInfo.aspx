@@ -130,6 +130,7 @@
                                             <th>物料规格型号</th>
                                             <th>物料单位</th>
                                             <th>物料数量</th>
+                                            <th>需求到货时间</th>
                                             <th>备注</th>
                                         </tr>
                                     </thead>
@@ -142,6 +143,8 @@
                                     <td><%# Eval("Model") %></td>
                                     <td><%# Eval("Unit") %></td>
                                     <td><%# Eval("quantity") %></td>
+                                    <td>
+                                        <asp:Label ID="Label1" runat="server" Text="2021-06-10"></asp:Label></td>
                                     <td><%# Eval("Reamrk") %></td>
                                 </tr>
                             </ItemTemplate>
