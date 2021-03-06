@@ -239,11 +239,11 @@
                                 <li>
                                     <a href="#"><i class="fa fa-briefcase"></i><span class="text">采购中心</span> <span class="fa fa-angle-down pull-right"></span></a>
                                     <ul class="nav sub">
-                                        <li><a href="../PurchasingCenter/TotalOrder.aspx"><i class="fa fa-align-left"></i><span class="text">订单汇总</span></a></li>
-                                        <li><a href="../PurchasingCenter/NewOrder.aspx"><i class="fa fa-outdent"></i><span class="text">采购订单管理</span></a></li>
-                                        <li><a href="../PurchasingCenter/PaymentOrder.aspx"><i class="fa fa-list"></i><span class="text">付款单管理</span></a></li>
-                                        <li><a href="../PurchasingCenter/GoodsOrder.aspx"><i class="fa fa-list-alt"></i><span class="text">货单管理</span></a></li>
-                                        <li><a href="ui-buttons.html"><i class="fa fa-th"></i><span class="text">Buttons</span></a></li>
+                                        <li><a href="../PurchasingCenter/TotalOrder.aspx"><i class="fa fa-align-left"></i><span class="text">请购单汇总</span></a></li>
+                                        <li><a href="../PurchasingCenter/GoodsOrderManage.aspx"><i class="fa fa-outdent"></i><span class="text">采购订单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/PayManage.aspx"><i class="fa fa-list"></i><span class="text">请款单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/GoodsOrderManage.aspx"><i class="fa fa-list-alt"></i><span class="text">货单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/PayManage.aspx"><i class="fa fa-th"></i><span class="text">进项发票管理</span></a></li>
                                     </ul>
                                 </li>
                                 <li>

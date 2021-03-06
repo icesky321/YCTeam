@@ -20,7 +20,7 @@
                 <div class="smallstat red-bg">
                     <i class="fa fa-bell white-bg"></i>
                     <span class="value black">34项</span>
-                    <h3><span class="title">项目总数</span></h3>
+                    <h3>项目总数</h3>
                 </div>
                 <!--/.smallstat-->
             </div>
@@ -30,7 +30,7 @@
                 <div class="smallstat magenta-bg">
                     <i class="fa fa-cogs white-bg"></i>
                     <span class="value black">25项</span>
-                    <h3><span class="title">待询价</span></h3>
+                    <h3>待询价</h3>
                 </div>
                 <!--/.smallstat-->
             </div>
@@ -40,7 +40,7 @@
                 <div class="smallstat blue-bg">
                     <i class="fa fa-laptop white-bg"></i>
                     <span class="value black">13项</span>
-                    <h3><span class="title">待发货</span></h3>
+                    <h3>待发货</h3>
                 </div>
                 <!--/.smallstat-->
             </div>
@@ -50,7 +50,7 @@
                 <div class="smallstat green-bg">
                     <i class="fa fa-moon-o white-bg"></i>
                     <span class="value black">25项</span>
-                    <h3><span class="title">已发货</span></h3>
+                    <h3>已发货</h3>
                 </div>
                 <!--/.smallstat-->
             </div>

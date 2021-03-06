@@ -116,7 +116,19 @@
                                         <td class="center">HN150X75X5X7/Q235B</td>
                                         <td class="right">沙钢</td>
                                         <td class="right">
-                                            <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink></td>
+                                            <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink>
+
+                                            <div class="dropdown pull-right">
+                                                <a class="fa fa-comments" data-toggle="dropdown" href="widgets.html#"></a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                    <li><a href="widgets.html#">变更时间       价格</a></li>
+                                                    <li><a href="widgets.html#"><i style="text-align: left">2021-1-3</i>       <i style="text-align: right"></i>345</a></li>
+                                                    <li><a href="widgets.html#">2021-1-6       347</a></li>
+                                                    <li><a href="widgets.html#">2021-1-9       344</a></li>
+                                                    <li><a href="widgets.html#">2021-2-3       355</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
                                         <td class="right">345</td>
                                         <td class="right">345</td>
                                         <td class="right">5676</td>
