@@ -242,8 +242,8 @@
                                         <li><a href="../PurchasingCenter/TotalOrder.aspx"><i class="fa fa-align-left"></i><span class="text">请购单汇总</span></a></li>
                                         <li><a href="../PurchasingCenter/GoodsOrderManage.aspx"><i class="fa fa-outdent"></i><span class="text">采购订单管理</span></a></li>
                                         <li><a href="../PurchasingCenter/PayManage.aspx"><i class="fa fa-list"></i><span class="text">请款单管理</span></a></li>
-                                        <li><a href="../PurchasingCenter/GoodsOrderManage.aspx"><i class="fa fa-list-alt"></i><span class="text">货单管理</span></a></li>
-                                        <li><a href="../PurchasingCenter/PayManage.aspx"><i class="fa fa-th"></i><span class="text">进项发票管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/ShippingList.aspx"><i class="fa fa-list-alt"></i><span class="text">到货单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/InputInvoice.aspx"><i class="fa fa-th"></i><span class="text">进项发票管理</span></a></li>
                                     </ul>
                                 </li>
                                 <li>

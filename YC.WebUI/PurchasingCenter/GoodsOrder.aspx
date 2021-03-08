@@ -63,6 +63,10 @@
                             <p>车号:</><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></p>
                             <p>司机:</><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></p>
                             <p>联系方式:</><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></p>
+                            <p>加工费:</><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></p>
+                            <p>运费:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
+                            <p>其他杂费:</><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></p>
+                            <p>备注:</><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></p>
                             <p>
                                 <asp:Button ID="Button1" runat="server" Text="确认" />
                             </p>
