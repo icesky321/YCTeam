@@ -148,9 +148,9 @@
                                             <td>和义大道</td>
                                             <td>2021-6-22</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">请购询价</asp:HyperLink></td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">付款详情</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrderManage.aspx">供货商信息</asp:HyperLink></td>
 
                                         </tr>
                                         <tr>
@@ -161,9 +161,9 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">请购询价</asp:HyperLink></td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="#">付款详情</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrderManage.aspx">供货商信息</asp:HyperLink></td>
                                         </tr>
                                         <tr>
 
@@ -173,9 +173,9 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加采购信息</asp:HyperLink>
+                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">请购询价</asp:HyperLink>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="#">付款详情</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrderManage.aspx">供货商信息</asp:HyperLink></td>
                                             <td>
                                         </tr>
                                     </tbody>
@@ -197,6 +197,7 @@
                                     <th class="center">合同号</th>
                                     <th class="center">付款金额</th>
                                     <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -211,7 +212,9 @@
                                     <td class="center">2020BC239234</td>
                                     <td class="center">￥ 2347870.00元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">添加装货信息</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -224,7 +227,9 @@
                                     <td class="center">2020BC239234</td>
                                     <td class="center">￥ 2347870.00元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">添加装货信息</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -237,7 +242,9 @@
                                     <td class="center">2020BC239234</td>
                                     <td class="center">￥ 2347870.00元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">添加装货信息</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -250,7 +257,9 @@
                                     <td class="center">2020BC239234</td>
                                     <td class="center">￥ 2347870.00元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">添加装货信息</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -263,7 +272,9 @@
                                     <td class="center">2020BC239234</td>
                                     <td class="center">￥ 2347870.00元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">添加装货信息</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                             </tbody>
                         </table>
