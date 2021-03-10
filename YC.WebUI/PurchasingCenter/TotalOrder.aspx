@@ -92,7 +92,7 @@
             <div class="col-lg-12">
 
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h2><i class="fa fa-table red"></i><span class="break"></span><strong>项目信息</strong></h2>
@@ -110,6 +110,8 @@
                                             <th>项目名称</th>
                                             <th>采购单位</th>
                                             <th>采购金额</th>
+                                            <th>项目负责人</th>
+                                            <th>中标日期</th>
                                             <th>项目状态</th>
                                             <th></th>
                                         </tr>
@@ -120,6 +122,8 @@
                                             <td>镇海炼化1# 地块乙烯项目</td>
                                             <td>镇海炼化</td>
                                             <td>¥60000元</td>
+                                            <td>叶经理</td>
+                                            <td>2021-02-10</td>
                                             <td>待询价</td>
                                             <td>
                                                 <a class="btn btn-success" href="ProDetail.aspx">详情
@@ -131,6 +135,8 @@
                                             <td>南京雄盛乙炔项目基地</td>
                                             <td>南京雄盛</td>
                                             <td>¥80000元</td>
+                                            <td>梁经理</td>
+                                            <td>2021-03-10</td>
                                             <td>已询价</td>
                                             <td>
                                                 <a class="btn btn-success" href="table.html#">详情
@@ -143,7 +149,7 @@
                         </div>
                     </div>
                     <!--/col-->
-                    <div class="col-lg-8">
+                    <%--<div class="col-lg-8">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h2><i class="fa fa-life-bouy red"></i><strong>Salary</strong></h2>
@@ -210,9 +216,9 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
-                <div class="panel panel-default">
+                <%--                <div class="panel panel-default">
                     <div class="panel-body">
                         <table class="table table-striped table-responsive">
                             <thead>
@@ -318,7 +324,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div>--%>
             </div>
             <!--/col-->
 

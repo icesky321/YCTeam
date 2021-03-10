@@ -126,8 +126,74 @@
             <!--/.col-->
 
             <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2><i class="fa fa-indent red"></i><strong>采购付款申请单</strong></h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">供货单位</label>
+                                <div class="col-lg-10 col-md-10">
+                                    <input type="text" class="form-control" value="日照钢铁厂">
+                                </div>
+                            </div>
+                            <hr>
+                            <br />
+
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">开户行</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <label class="col-lg-2 col-md-2 col-sm-12 control-label">账号</label>
+                                    <div class="col-lg-4 col-md-4">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <br />
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="select">付款机构</label>
+                                <div class="col-md-4">
+                                    <select id="select" name="select" class="form-control" size="1">
+                                        <option value="0">请选择....</option>
+                                        <option value="1">宁波甬诚</option>
+                                        <option value="2">宁波甬丁儿</option>
+                                    </select>
+                                </div>
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">付款编号</label>
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" id="disabled-input2" name="disabled-input" class="form-control" placeholder="FK2021987384743" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">合同号</label>
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" id="disabled-input" name="disabled-input" class="form-control" placeholder="20BC202001-1" disabled>
+                                </div>
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">金额</label>
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" id="disabled-input1" name="disabled-input" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br />
+                        <br />
+                        <br />
+                        <div style="text-align: center">
+                            <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i>新增付款</button>
+                        </div>
+                    </div>
+                </div>
                 <div style="text-align: left">
-                    <asp:Button ID="Button1" runat="server" Text="新增付款" PostBackUrl="~/PurchasingCenter/PaymentOrder.aspx" />
+                    <%--<asp:Button ID="Button1" runat="server" Text="新增付款" PostBackUrl="~/PurchasingCenter/PaymentOrder.aspx" />--%>
                 </div>
                 <br />
                 <div class="panel panel-default">
