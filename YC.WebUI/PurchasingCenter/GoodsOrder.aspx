@@ -67,6 +67,7 @@
                             <p>运费:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
                             <p>其他杂费:</><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></p>
                             <p>备注:</><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></p>
+                            质保书附件：<asp:FileUpload ID="FileUpload1" runat="server" />
                             <p>
                                 <asp:Button ID="Button1" runat="server" Text="确认" />
                             </p>

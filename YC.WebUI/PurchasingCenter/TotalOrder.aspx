@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/shares/MasterPage.master" AutoEventWireup="true" CodeFile="TotalOrder.aspx.cs" Inherits="PurchasingCenter_TotalOrder" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -16,7 +17,7 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
                 <div class="smallstat red-bg">
                     <i class="fa fa-bell white-bg"></i>
                     <span class="value black">34项</span>
@@ -26,7 +27,7 @@
             </div>
             <!--/.col-->
 
-            <div class="col-lg-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
                 <div class="smallstat magenta-bg">
                     <i class="fa fa-cogs white-bg"></i>
                     <span class="value black">25项</span>
@@ -36,7 +37,7 @@
             </div>
             <!--/.col-->
 
-            <div class="col-lg-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
                 <div class="smallstat blue-bg">
                     <i class="fa fa-laptop white-bg"></i>
                     <span class="value black">13项</span>
@@ -46,16 +47,45 @@
             </div>
             <!--/.col-->
 
-            <div class="col-lg-3 col-sm-6 col-xs-6 col-xxs-12">
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
                 <div class="smallstat green-bg">
                     <i class="fa fa-moon-o white-bg"></i>
                     <span class="value black">25项</span>
-                    <h3>已发货</h3>
+                    <h3>待开票</h3>
+                </div>
+                <!--/.smallstat-->
+            </div>
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
+                <div class="smallstat yellow-bg">
+                    <i class="fa fa-puzzle-piece white-bg"></i>
+                    <span class="value black">25项</span>
+                    <h3>待送货</h3>
+                </div>
+                <!--/.smallstat-->
+            </div>
+            <div class="col-lg-2 col-sm-6 col-xs-6 col-xxs-12">
+                <div class="smallstat brown-bg">
+                    <i class="fa fa-flag white-bg"></i>
+                    <span class="value black">25项</span>
+                    <h3>待结算</h3>
                 </div>
                 <!--/.smallstat-->
             </div>
             <!--/.col-->
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <%-- <ol class="breadcrumb">--%>
+                <li>项目名称：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>（可模糊查询）
+                    合同编号：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>（可模糊查询）
+                        创建时间:               
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" Format="yyyy/MM" TargetControlID="TextBox3" />
+                    <asp:Button ID="btFinish" runat="server" CausesValidation="True" Text="搜索" CssClass="btn btn-primary button-finish" />
+                </li>
+            </div>
+
+            <%--</ol>--%>
         </div>
         <!--/.row-->
         <div class="row">
@@ -92,8 +122,7 @@
                                             <td>¥60000元</td>
                                             <td>待询价</td>
                                             <td>
-                                                <a class="btn btn-success" href="ProDetail.aspx">
-                                                    <i class="fa fa-search-plus "></i>
+                                                <a class="btn btn-success" href="ProDetail.aspx">详情
                                                 </a>
                                             </td>
                                         </tr>
@@ -104,8 +133,7 @@
                                             <td>¥80000元</td>
                                             <td>已询价</td>
                                             <td>
-                                                <a class="btn btn-success" href="table.html#">
-                                                    <i class="fa fa-search-plus "></i>
+                                                <a class="btn btn-success" href="table.html#">详情
                                                 </a>
                                             </td>
                                         </tr>
@@ -198,6 +226,7 @@
                                     <th class="center">付款金额</th>
                                     <th></th>
                                     <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -214,7 +243,9 @@
                                     <td>
                                         <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/PurchasingCenter/DeliveryBillManage.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/PurchasingCenter/InputInvoice.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -229,7 +260,9 @@
                                     <td>
                                         <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/PurchasingCenter/DeliveryBillManage.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/PurchasingCenter/InputInvoice.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -244,7 +277,9 @@
                                     <td>
                                         <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/PurchasingCenter/DeliveryBillManage.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink19" runat="server" NavigateUrl="~/PurchasingCenter/InputInvoice.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -259,7 +294,9 @@
                                     <td>
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="~/PurchasingCenter/DeliveryBillManage.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink20" runat="server" NavigateUrl="~/PurchasingCenter/InputInvoice.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <th>
@@ -274,7 +311,9 @@
                                     <td>
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">到货单管理</asp:HyperLink></td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">进项发票管理</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/PurchasingCenter/DeliveryBillManage.aspx">到货单管理</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/PurchasingCenter/InputInvoice.aspx">进项发票管理</asp:HyperLink></td>
                                 </tr>
                             </tbody>
                         </table>

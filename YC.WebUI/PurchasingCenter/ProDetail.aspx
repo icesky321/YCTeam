@@ -101,6 +101,7 @@
                                                 <th>送货地址</th>
                                                 <th>送货日期</th>
                                                 <th></th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -110,6 +111,8 @@
                                                 <td>综合服务部</td>
                                                 <td>和义大道</td>
                                                 <td>2021-6-22</td>
+                                                 <td>
+                                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
                                                 <td>
                                                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink></td>
                                             </tr>
@@ -120,6 +123,8 @@
                                                 <td>来福士广场</td>
                                                 <td>2021--7-23</td>
                                                 <td>
+                                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
+                                                <td>
                                                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink></td>
                                             </tr>
                                             <tr>
@@ -128,6 +133,8 @@
                                                 <td>物资管理部</td>
                                                 <td>来福士广场</td>
                                                 <td>2021--7-23</td>
+                                                <td>
+                                                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
                                                 <td>
                                                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">添加询价信息</asp:HyperLink>
                                                 <td>

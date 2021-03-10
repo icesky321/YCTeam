@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/shares/MasterPage.master" AutoEventWireup="true" CodeFile="PayManage.aspx.cs" Inherits="PurchasingCenter_PayManage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/shares/MasterPage.master" AutoEventWireup="true" CodeFile="NewInputInvoice.aspx.cs" Inherits="PurchasingCenter_NewInputInvoice" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <!-- start: Content -->
     <div class="main ">
         <div class="row">
             <div class="col-lg-12">
@@ -126,70 +125,49 @@
             <!--/.col-->
 
             <div class="col-md-9">
-                <div style="text-align: left">
-                    <asp:Button ID="Button1" runat="server" Text="新增付款" PostBackUrl="~/PurchasingCenter/PaymentOrder.aspx" />
-                </div>
-                <br />
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h2><i class="fa fa-life-bouy red"></i><strong>请款单汇总</strong></h2>
-                        <div class="panel-actions">
-                            <a href="charts-xcharts.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
-                            <a href="widgets.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
-                            <a href="widgets.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                <div class="form-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><strong>进项发票登记</strong></h2>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">供货单位</label>
+                                <div class="col-lg-10 col-md-10">
+                                    <input type="text" class="form-control" value="山东钢铁厂">
+                                </div>
+                                <br />
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">采购单位</label>
+                                <div class="col-lg-10 col-md-10">
+                                    <input type="text" class="form-control" value="宁波镇海甬诚物资有限公司">
+                                </div>
+                                <br />
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">发票金额</label>
+                                <div class="col-lg-10 col-md-10">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                                <br />
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 col-md-2 col-sm-12 control-label">开票日期 </label>
+                                <div class="col-lg-10 col-md-10">
+                                    <input type="text" class="form-control" value="">
+                                </div>
+                                <br />
+                            </div>
+                            <div class="form-group" style="text-align: center">
+                                <a class="btn btn-success" href="InputInvoice.aspx">添加
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="panel-body">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>#
-                                    </th>
-                                    <th>付款编号</th>
-                                    <th>付款机构</th>
-                                    <th>付款金额</th>
-                                    <th>付款时间</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1
-                                    </td>
-                                    <td>FK2021987384743</td>
-                                    <td>宁波甬诚</td>
-                                    <td>¥8783.98元</td>
-                                    <td>2021-03-21</td>
-                                </tr>
-                                <tr>
-                                    <td>2
-                                    </td>
-                                    <td>FK2021987384743</td>
-                                    <td>宁波甬丁儿</td>
-                                    <td>¥4495844.98元</td>
-                                    <td>2021-03-21</td>
-                                </tr>
-                                <tr>
-                                    <td>2
-                                    </td>
-                                    <td>FK2021987384743</td>
-                                    <td>宁波甬诚</td>
-                                    <td>¥387485.77元</td>
-                                    <td>2021-03-21</td>
-                                    <td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
-
-
             </div>
-            <!--/invoice-->
         </div>
-        <!--/.col-->
     </div>
-    <!--/.row profile-->
-    <!-- end: Content -->
 </asp:Content>
 

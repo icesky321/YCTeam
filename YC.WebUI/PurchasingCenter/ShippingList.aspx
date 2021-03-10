@@ -134,7 +134,7 @@
                                     <td>2010BC04736273</td>
                                     <td>¥8783.98元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">装货单</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <td>2
@@ -144,7 +144,7 @@
                                     <td>20210BC2873663</td>
                                     <td>¥4495844.98元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">装货单</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <td>2
@@ -154,7 +154,7 @@
                                     <td>2010BC2903974</td>
                                     <td>¥387485.77元</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">装货单</asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
                                     <td>
                                 </tr>
                             </tbody>
@@ -198,7 +198,7 @@
                                     <td class="center">13458768754</td>
                                     <td class="right">2021-03-01</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">物料明细 </asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
@@ -208,7 +208,7 @@
                                     <td class="center">13458768754</td>
                                     <td class="right">2021-03-01</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">物料明细 </asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
@@ -218,7 +218,7 @@
                                     <td class="center">13458768754</td>
                                     <td class="right">2021-03-01</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">物料明细 </asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
@@ -228,7 +228,7 @@
                                     <td class="center">13458768754</td>
                                     <td class="right">2021-03-01</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">物料明细 </asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
@@ -238,7 +238,7 @@
                                     <td class="center">13458768754</td>
                                     <td class="right">2021-03-01</td>
                                     <td>
-                                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/PurchasingCenter/NewOrder.aspx">物料明细 </asp:HyperLink></td>
+                                        <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                             </tbody>
