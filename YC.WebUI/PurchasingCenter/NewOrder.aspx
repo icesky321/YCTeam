@@ -68,10 +68,7 @@
                                     <p>
                                         备注：<asp:TextBox ID="TextBox8" runat="server" TextMode="MultiLine"></asp:TextBox>
                                     </p>
-                                    <p>
-                                        <asp:FileUpload ID="FileUpload1" runat="server" />
-                                    </p>
-                                    <button type="button" class="btn btn-danger btn-xs">导入询价单</button>
+                                    <%--<button type="button" class="btn btn-danger btn-xs">导入询价单</button>--%>
                                 </div>
                             </div>
                         </div>
@@ -82,21 +79,6 @@
 
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div class="row">
-
-                                <table class="table table-clear">
-                                    <tbody>
-                                        <tr>
-                                            <td class="left"><strong>供货商：</strong></td>
-                                            <td class="left">唐山盛材钢铁厂</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="left"><strong>合同编号：</strong></td>
-                                            <td class="left">57401-20-1277-CV-R-M-1001</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
                             <!--/col-->
                             <table class="table table-striped table-responsive">
                                 <thead>
@@ -148,7 +130,8 @@
                                         <td class="center">沙钢</td>
                                         <td class="center">
                                             <asp:TextBox ID="TextBox4" runat="server">543</asp:TextBox></td>
-                                        <td class="center">345</td>
+                                        <td class="center">
+                                            <asp:TextBox ID="TextBox10" runat="server">543</asp:TextBox></td>
                                         <td class="center">345</td>
                                         <td class="center">5676</td>
                                         <td class="center">12000</td>
@@ -161,7 +144,8 @@
                                         <td class="center">沙钢</td>
                                         <td class="center">
                                             <asp:TextBox ID="TextBox5" runat="server">543</asp:TextBox></td>
-                                        <td class="center">345</td>
+                                        <td class="center">
+                                            <asp:TextBox ID="TextBox11" runat="server">543</asp:TextBox></td>
                                         <td class="center">345</td>
                                         <td class="center">5676</td>
                                         <td class="center">12000</td>
@@ -174,7 +158,8 @@
                                         <td class="center">鞍钢</td>
                                         <td class="center">
                                             <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox></td>
-                                        <td class="center">345</td>
+                                        <td class="center">
+                                            <asp:TextBox ID="TextBox12" runat="server">543</asp:TextBox></td>
                                         <td class="center">345</td>
                                         <td class="center">5676</td>
                                         <td class="center">12000</td>
@@ -187,7 +172,8 @@
                                         <td class="center">鞍钢</td>
                                         <td class="center">
                                             <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox></td>
-                                        <td class="center">345</td>
+                                        <td class="center">
+                                            <asp:TextBox ID="TextBox13" runat="server">543</asp:TextBox></td>
                                         <td class="center">345</td>
                                         <td class="center">5676</td>
                                         <td class="center">12000</td>

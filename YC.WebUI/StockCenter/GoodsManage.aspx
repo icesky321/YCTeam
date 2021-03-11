@@ -20,6 +20,7 @@
                 <%-- <ol class="breadcrumb">--%>
                 <li>物资名称：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>（可模糊查询）
                     合同编号：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>（可模糊查询）
+                    仓库名称：<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>（可模糊查询）
                        入库时间:               
                         <asp:TextBox ID="TextBox3" runat="server" AutoCompleteType="Disabled"></asp:TextBox><ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" Format="yyyy/MM" TargetControlID="TextBox3" />
                     <asp:Button ID="btFinish" runat="server" CausesValidation="True" Text="搜索" CssClass="btn btn-primary button-finish" />
@@ -49,6 +50,7 @@
                             <th class="center">规格型号</th>
                             <th class="center">产地</th>
                             <th class="center">库存数量</th>
+                            <th class="center">已定单价</th>
                             <th class="center">所在仓库</th>
                             <th class="center">送货日期</th>
                             <th></th>
@@ -62,6 +64,7 @@
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">345</td>
+                            <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
                             <td class="center">
@@ -74,6 +77,7 @@
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">456</td>
+                            <td class="center">23.4</td>
                             <td class="center">宁波江北2#仓库</td>
                             <td class="center">2021-7-7</td>
                             <td class="center">
@@ -86,6 +90,7 @@
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">345</td>
+                            <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
                             <td class="center">
@@ -98,6 +103,7 @@
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
                             <td class="center">345</td>
+                            <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
                             <td class="center">
@@ -110,6 +116,7 @@
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
                             <td class="center">345</td>
+                            <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
                             <td class="center">
@@ -117,6 +124,25 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="row">
+
+                    <div class="col-lg-4 col-lg-offset-4 col-sm-5 col-sm-offset-2 recap pull-right">
+                        <table class="table table-clear">
+                            <tbody>
+                                <tr>
+                                    <td class="right"><strong>实际库存量</strong></td>
+                                    <td class="right">345吨</td>
+                                </tr>
+                                <tr>
+                                    <td class="right"><strong>实际占用资金</strong></td>
+                                    <td class="right">¥888738元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--/col-->
+
+                </div>
             </div>
         </div>
     </div>
