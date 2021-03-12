@@ -66,8 +66,10 @@
                             <p>加工费:</><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></p>
                             <p>运费:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
                             <p>其他杂费:</><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></p>
-                            <p>备注:</><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></p>
-                            质保书附件：<asp:FileUpload ID="FileUpload1" runat="server" />
+                            <p>备注:</><asp:TextBox ID="TextBox14" runat="server" TextMode="MultiLine"></asp:TextBox></p>
+                            <p>运输目的地：<asp:RadioButton ID="RadioButton1" runat="server" Text="中转" ValidationGroup="1" /><asp:RadioButton ID="RadioButton2" runat="server" Text="直达" ValidationGroup="1" /></p>
+                            <p>目的地:</><asp:TextBox ID="TextBox15" runat="server" Text=""></asp:TextBox></p>
+                            <%--                            质保书附件：<asp:FileUpload ID="FileUpload1" runat="server" />--%>
                             <p>
                                 <asp:Button ID="Button1" runat="server" Text="确认" />
                             </p>

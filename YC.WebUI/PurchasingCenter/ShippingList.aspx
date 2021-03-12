@@ -123,6 +123,7 @@
                                     <th>合同编号</th>
                                     <th>合同金额</th>
                                     <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -135,6 +136,8 @@
                                     <td>¥8783.98元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="#">运单明细</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <td>2
@@ -145,6 +148,8 @@
                                     <td>¥4495844.98元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink15" runat="server" NavigateUrl="#">运单明细</asp:HyperLink></td>
                                 </tr>
                                 <tr>
                                     <td>2
@@ -155,6 +160,8 @@
                                     <td>¥387485.77元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
+                                    <td>
+                                        <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="#">运单明细</asp:HyperLink></td>
                                     <td>
                                 </tr>
                             </tbody>
@@ -186,57 +193,63 @@
                                     <th>车号</th>
                                     <th>司机</th>
                                     <th class="center">联系方式</th>
-                                    <th class="right">日期</th>
+                                    <th class="center">日期</th>
+                                    <th class="center">物流状态</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="center">1</td>
-                                    <td class="left">冀B288736</td>
-                                    <td class="left">张三</td>
+                                    <td class="center">冀B288736</td>
+                                    <td class="center">张三</td>
                                     <td class="center">13458768754</td>
-                                    <td class="right">2021-03-01</td>
+                                    <td class="center">2021-03-01</td>
+                                    <td class="center">待发货</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
                                     <td class="center">2</td>
-                                    <td class="left">冀A23236</td>
-                                    <td class="left">李四</td>
+                                    <td class="center">冀A23236</td>
+                                    <td class="center">李四</td>
                                     <td class="center">13458768754</td>
-                                    <td class="right">2021-03-01</td>
+                                    <td class="center">2021-03-01</td>
+                                    <td class="center">已发货</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
                                     <td class="center">2</td>
-                                    <td class="left">冀A23236</td>
-                                    <td class="left">李四</td>
+                                    <td class="center">冀A23236</td>
+                                    <td class="center">李四</td>
                                     <td class="center">13458768754</td>
-                                    <td class="right">2021-03-01</td>
+                                    <td class="center">2021-03-01</td>
+                                    <td class="center">待入库</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
                                     <td class="center">2</td>
-                                    <td class="left">冀A23236</td>
-                                    <td class="left">李四</td>
+                                    <td class="center">冀A23236</td>
+                                    <td class="center">李四</td>
                                     <td class="center">13458768754</td>
-                                    <td class="right">2021-03-01</td>
+                                    <td class="center">2021-03-01</td>
+                                    <td class="center">已入库</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>
                                 </tr>
                                 <tr>
                                     <td class="center">2</td>
-                                    <td class="left">冀A23236</td>
-                                    <td class="left">李四</td>
+                                    <td class="center">冀A23236</td>
+                                    <td class="center">李四</td>
                                     <td class="center">13458768754</td>
-                                    <td class="right">2021-03-01</td>
+                                    <td class="center">2021-03-01</td>
+                                     <td class="center">已入库</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="#">物料明细 </asp:HyperLink></td>
                                     <td>

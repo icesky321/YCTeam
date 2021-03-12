@@ -137,7 +137,7 @@
                                             <td>¥80000元</td>
                                             <td>梁经理</td>
                                             <td>2021-03-10</td>
-                                            <td>已询价</td>
+                                            <td>待发货</td>
                                             <td>
                                                 <a class="btn btn-success" href="table.html#">详情
                                                 </a>

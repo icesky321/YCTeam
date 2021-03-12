@@ -159,11 +159,96 @@
                                 </div>
                                 <br />
                             </div>
+                               <%--<table class="table table-striped table-responsive">
+                            <thead>
+                                <tr>
+                                    <th class="center">#</th>
+                                    <th>物料名称</th>
+                                    <th>物料编码</th>
+                                    <th class="center">规格型号</th>
+                                    <th class="center">产地</th>
+                                    <th class="right">供货数量</th>
+                                    <th class="right">供货单价</th>
+                                    <th class="right">合计单价</th>
+                                    <th class="right">合计总价价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">1</td>
+                                    <td class="left">低温板</td>
+                                    <td class="left">CHHNABZTA _150X75X5X7</td>
+                                    <td class="center">HN150X75X5X7/Q235B</td>
+                                    <td class="right">沙钢</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink1" runat="server">更新</asp:HyperLink>
+                                    </td>
+                                    <td class="right">345</td>
+                                    <td class="right">345</td>
+                                    <td class="right">5676</td>
+                                    <td class="right">12000</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">2</td>
+                                    <td class="left">低温板</td>
+                                    <td class="left">CHHNABZTA _150X75X5X7</td>
+                                    <td class="center">HN150X75X5X7/Q235B</td>
+                                    <td class="right">沙钢</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox4" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink2" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">345</td>
+                                    <td class="right">345</td>
+                                    <td class="right">5676</td>
+                                    <td class="right">12000</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">3</td>
+                                    <td class="left">低温板</td>
+                                    <td class="left">CHHNABZTA _200X100X5.5X8</td>
+                                    <td class="center">HN150X75X5X7/Q235B</td>
+                                    <td class="right">沙钢</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox5" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink3" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">345</td>
+                                    <td class="right">345</td>
+                                    <td class="right">5676</td>
+                                    <td class="right">12000</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">4</td>
+                                    <td class="left">低温板</td>
+                                    <td class="left">CHHNABZTA _175X175X7.5X11</td>
+                                    <td class="center">HN150X75X5X7/Q235B</td>
+                                    <td class="right">鞍钢</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink7" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">345</td>
+                                    <td class="right">345</td>
+                                    <td class="right">5676</td>
+                                    <td class="right">12000</td>
+                                </tr>
+                                <tr>
+                                    <td class="center">5</td>
+                                    <td class="left">低温板</td>
+                                    <td class="left">VMSD202Z_8X1800X8500</td>
+                                    <td class="center">HN150X75X5X7/Q235B</td>
+                                    <td class="right">鞍钢</td>
+                                    <td class="right">
+                                        <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink8" runat="server">更新</asp:HyperLink></td>
+                                    <td class="right">345</td>
+                                    <td class="right">345</td>
+                                    <td class="right">5676</td>
+                                    <td class="right">12000</td>
+                                </tr>
+                            </tbody>
+                        </table>--%>
                             <div class="form-group" style="text-align: center">
                                 <a class="btn btn-success" href="InputInvoice.aspx">添加
                                 </a>
                             </div>
                         </div>
+                        <!--/col-->
+                     
                     </div>
                 </div>
             </div>
