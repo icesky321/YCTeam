@@ -67,8 +67,8 @@
                             <p>运费:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
                             <p>其他杂费:</><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></p>
                             <p>备注:</><asp:TextBox ID="TextBox14" runat="server" TextMode="MultiLine"></asp:TextBox></p>
-                            <p>运输目的地：<asp:RadioButton ID="RadioButton1" runat="server" Text="中转" ValidationGroup="1" /><asp:RadioButton ID="RadioButton2" runat="server" Text="直达" ValidationGroup="1" /></p>
                             <p>目的地:</><asp:TextBox ID="TextBox15" runat="server" Text=""></asp:TextBox></p>
+                              <p>运输目的地：<asp:RadioButton ID="RadioButton1" runat="server" Text="中转" ValidationGroup="1" /><asp:RadioButton ID="RadioButton2" runat="server" Text="直达" ValidationGroup="1" /></p>
                             <%--                            质保书附件：<asp:FileUpload ID="FileUpload1" runat="server" />--%>
                             <p>
                                 <asp:Button ID="Button1" runat="server" Text="确认" />
@@ -80,82 +80,100 @@
                 <table class="table table-striped table-responsive">
                     <thead>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox6" runat="server" /></td>
                             <th class="center">#</th>
                             <th>物料名称</th>
                             <th>物料编码</th>
                             <th class="center">规格型号</th>
                             <th class="center">产地</th>
-                            <th class="right">供货数量</th>
-                            <th class="right">供货单价</th>
-                            <th class="right">合计单价</th>
-                            <th class="right">合计总价价</th>
+                            <th class="center">供货数量</th>
+                            <th class="center">状态</th>
+                            <th class="center">供货单价</th>
+                            <th class="center">合计单价</th>
+                            <th class="center">合计总价价</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox1" runat="server" /></td>
                             <td class="center">1</td>
-                            <td class="left">低温板</td>
-                            <td class="left">CHHNABZTA _150X75X5X7</td>
+                            <td class="center">低温板</td>
+                            <td class="center">CHHNABZTA _150X75X5X7</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
-                            <td class="right">沙钢</td>
-                            <td class="right">
+                            <td class="center">沙钢</td>
+                            <td class="center">
                                 <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink6" runat="server">更新</asp:HyperLink></td>
-                            <td class="right">345</td>
-                            <td class="right">345</td>
-                            <td class="right">5676</td>
-                            <td class="right">12000</td>
+                            <th class="center">待入库</th>
+                            <td class="center">345</td>
+                            <td class="center">345</td>
+                            <td class="center">5676</td>
+                            <td class="center">12000</td>
                         </tr>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox2" runat="server" /></td>
                             <td class="center">2</td>
-                            <td class="left">低温板</td>
-                            <td class="left">CHHNABZTA _150X75X5X7</td>
+                            <td class="center">低温板</td>
+                            <td class="center">CHHNABZTA _150X75X5X7</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
-                            <td class="right">沙钢</td>
-                            <td class="right">
+                            <td class="center">沙钢</td>
+                            <td class="center">
                                 <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink1" runat="server">更新</asp:HyperLink></td>
-                            <td class="right">345</td>
-                            <td class="right">345</td>
-                            <td class="right">5676</td>
-                            <td class="right">12000</td>
+                            <th class="center">待入库</th>
+                            <td class="center">345</td>
+                            <td class="center">345</td>
+                            <td class="center">5676</td>
+                            <td class="center">12000</td>
                         </tr>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox3" runat="server" /></td>
                             <td class="center">3</td>
-                            <td class="left">低温板</td>
-                            <td class="left">CHHNABZTA _200X100X5.5X8</td>
+                            <td class="center">低温板</td>
+                            <td class="center">CHHNABZTA _200X100X5.5X8</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
-                            <td class="right">沙钢</td>
-                            <td class="right">
+                            <td class="center">沙钢</td>
+                            <td class="center">
                                 <asp:TextBox ID="TextBox8" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink2" runat="server">更新</asp:HyperLink></td>
-                            <td class="right">345</td>
-                            <td class="right">345</td>
-                            <td class="right">5676</td>
-                            <td class="right">12000</td>
+                            <th class="center">待入库</th>
+                            <td class="center">345</td>
+                            <td class="center">345</td>
+                            <td class="center">5676</td>
+                            <td class="center">12000</td>
                         </tr>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox4" runat="server" /></td>
                             <td class="center">4</td>
-                            <td class="left">低温板</td>
-                            <td class="left">CHHNABZTA _175X175X7.5X11</td>
+                            <td class="center">低温板</td>
+                            <td class="center">CHHNABZTA _175X175X7.5X11</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
-                            <td class="right">鞍钢</td>
-                            <td class="right">
+                            <td class="center">鞍钢</td>
+                            <td class="center">
                                 <asp:TextBox ID="TextBox9" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink3" runat="server">更新</asp:HyperLink></td>
-                            <td class="right">345</td>
-                            <td class="right">345</td>
-                            <td class="right">5676</td>
-                            <td class="right">12000</td>
+                            <th class="center">待入库</th>
+                            <td class="center">345</td>
+                            <td class="center">345</td>
+                            <td class="center">5676</td>
+                            <td class="center">12000</td>
                         </tr>
                         <tr>
+                            <td class="center">
+                                <asp:CheckBox ID="CheckBox5" runat="server" /></td>
                             <td class="center">5</td>
-                            <td class="left">低温板</td>
-                            <td class="left">VMSD202Z_8X1800X8500</td>
+                            <td class="center">低温板</td>
+                            <td class="center">VMSD202Z_8X1800X8500</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
-                            <td class="right">鞍钢</td>
-                            <td class="right">
+                            <td class="center">鞍钢</td>
+                            <td class="center">
                                 <asp:TextBox ID="TextBox10" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink4" runat="server">更新</asp:HyperLink></td>
-                            <td class="right">345</td>
-                            <td class="right">345</td>
-                            <td class="right">5676</td>
-                            <td class="right">12000</td>
+                            <th class="center">待入库</th>
+                            <td class="center">345</td>
+                            <td class="center">345</td>
+                            <td class="center">5676</td>
+                            <td class="center">12000</td>
                         </tr>
                     </tbody>
                 </table>
