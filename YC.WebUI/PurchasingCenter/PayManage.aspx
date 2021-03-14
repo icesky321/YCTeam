@@ -251,6 +251,33 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="row">
+
+                        <div class="col-lg-4 col-lg-offset-4 col-sm-5 col-sm-offset-2 recap pull-right">
+                            <table class="table table-clear">
+                                <tbody>
+                                    <tr>
+                                        <td class="right"><strong>合同金额</strong></td>
+                                        <td class="right">¥888738元</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right"><strong>已付款金额</strong></td>
+                                        <td class="right">¥888738元</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right"><strong>待付款金额</strong></td>
+                                        <td class="right">¥43356元</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="right"><strong>未付款金额</strong></td>
+                                        <td class="right">¥33456元</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/col-->
+
+                    </div>
                 </div>
 
 

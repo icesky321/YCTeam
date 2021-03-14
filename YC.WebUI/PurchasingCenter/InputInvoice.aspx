@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/shares/MasterPage.master" AutoEventWireup="true" CodeFile="InputInvoice.aspx.cs" Inherits="PurchasingCenter_InputInvoice" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <!-- start: Content -->
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <!-- start: Content -->
     <div class="main ">
         <div class="row">
             <div class="col-lg-12">
@@ -159,6 +159,25 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-lg-offset-4 col-sm-5 col-sm-offset-2 recap pull-right">
+                                <table class="table table-clear">
+                                    <tbody>
+                                        <tr>
+                                            <td class="right"><strong>已开发票总金额</strong></td>
+                                            <td class="right">¥88873元</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="right"><strong>未开发票总金额</strong></td>
+                                            <td class="right">¥34564元</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/col-->
+
+                        </div>
                     </div>
                 </div>
                 <div class="panel panel-default">
@@ -230,6 +249,25 @@
                         </table>
 
                         <!--/row-->
+                        <div class="row">
+
+                            <div class="col-lg-4 col-lg-offset-4 col-sm-5 col-sm-offset-2 recap pull-right">
+                                <table class="table table-clear">
+                                    <tbody>
+                                        <tr>
+                                            <td class="right"><strong>已开发票总金额</strong></td>
+                                            <td class="right">¥873元</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="right"><strong>未开发票总金额</strong></td>
+                                            <td class="right">¥3564元</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--/col-->
+
+                        </div>
                     </div>
                 </div>
 

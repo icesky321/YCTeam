@@ -167,7 +167,7 @@
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
-                                                <th></th>
+                                                <th><asp:CheckBox ID="CheckBox11" runat="server" /></th>
                                                 <th>#
                                                 </th>
                                                 <th>物料名称</th>
