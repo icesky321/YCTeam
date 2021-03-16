@@ -21,7 +21,7 @@
                 <li>物资名称：<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>（可模糊查询）
                     合同编号：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>（可模糊查询）
                     仓库名称：<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>（可模糊查询）
-                       入库时间:               
+                       送货月份:               
                         <asp:TextBox ID="TextBox3" runat="server" AutoCompleteType="Disabled"></asp:TextBox><ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" Format="yyyy/MM" TargetControlID="TextBox3" />
                     <asp:Button ID="btFinish" runat="server" CausesValidation="True" Text="搜索" CssClass="btn btn-primary button-finish" />
                 </li>

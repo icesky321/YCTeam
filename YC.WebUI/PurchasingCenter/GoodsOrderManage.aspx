@@ -118,44 +118,43 @@
                                 <tr>
                                     <th>#
                                     </th>
-                                    <th>供应商</th>
-                                    <th>采购商</th>
-                                    <th>合同编号</th>
-                                    <th>合同金额</th>
+                                    <th class="center">供应商</th>
+                                    <th class="center">采购商</th>
+                                    <th class="center">合同编号</th>
+                                    <th class="center">合同金额</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>1
+                                    <td class="center">1
                                     </td>
-                                    <td>山东钢铁厂</td>
-                                    <td>宁波甬诚</td>
-                                    <td>2010BC04736273</td>
-                                    <td>¥8783.98元</td>
-                                    <td>
+                                    <td class="center">山东钢铁厂</td>
+                                    <td class="center">宁波甬诚</td>
+                                    <td class="center">2010BC04736273</td>
+                                    <td class="center">¥8783.98元</td>
+                                    <td class="center">
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
                                 </tr>
                                 <tr>
-                                    <td>2
+                                    <td class="center">2
                                     </td>
-                                    <td>日照钢铁厂</td>
-                                    <td>宁波甬丁儿</td>
-                                    <td>20210BC2873663</td>
-                                    <td>¥4495844.98元</td>
-                                    <td>
+                                    <td class="center">日照钢铁厂</td>
+                                    <td class="center">宁波甬丁儿</td>
+                                    <td class="center">20210BC2873663</td>
+                                    <td class="center">¥4495844.98元</td>
+                                    <td class="center">
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
                                 </tr>
                                 <tr>
-                                    <td>2
+                                    <td class="center">2
                                     </td>
-                                    <td>吉林钢铁厂</td>
-                                    <td>宁波甬诚</td>
-                                    <td>2010BC2903974</td>
-                                    <td>¥387485.77元</td>
-                                    <td>
+                                    <td class="center">吉林钢铁厂</td>
+                                    <td class="center">宁波甬诚</td>
+                                    <td class="center">2010BC2903974</td>
+                                    <td class="center">¥387485.77元</td>
+                                    <td class="center">
                                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
-                                    <td>
                                 </tr>
                             </tbody>
                         </table>
@@ -204,21 +203,21 @@
                                     <th>物料编码</th>
                                     <th class="center">规格型号</th>
                                     <th class="center">产地</th>
-                                    <th class="right">供货数量</th>
-                                    <th class="right">供货单价</th>
-                                    <th class="right">合计单价</th>
-                                    <th class="right">合计总价价</th>
+                                    <th class="center">供货数量</th>
+                                    <th class="center">供货单价</th>
+                                    <th class="center">合计单价</th>
+                                    <th class="center">合计总价价</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="center">1</td>
-                                    <td class="left">低温板</td>
-                                    <td class="left">CHHNABZTA _150X75X5X7</td>
+                                    <td class="center">低温板</td>
+                                    <td class="center">CHHNABZTA _150X75X5X7</td>
                                     <td class="center">
                                         <asp:TextBox ID="TextBox1" runat="server">HN150X75X5X7/Q235B</asp:TextBox><asp:HyperLink ID="HyperLink9" runat="server">更新</asp:HyperLink></td>
-                                    <td class="right">沙钢</td>
-                                    <td class="right">
+                                    <td class="center">沙钢</td>
+                                    <td class="center">
                                         <asp:TextBox ID="TextBox3" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink1" runat="server">更新</asp:HyperLink>
 
                                         <div class="dropdown pull-right">
@@ -232,70 +231,66 @@
                                             </ul>
                                         </div>
                                     </td>
-                                    <td class="right">345</td>
-                                    <td class="right">345</td>
-                                    <td class="right">5676</td>
-                                    <td class="right">12000</td>
+                                    <td class="center">345</td>
+                                    <td class="center">345</td>
+                                    <td class="center">5676</td>
+                                    <td class="center">12000</td>
                                 </tr>
                                 <tr>
                                     <td class="center">2</td>
-                                    <td class="left">低温板</td>
-                                    <td class="left">CHHNABZTA _150X75X5X7</td>
+                                    <td class="center">低温板</td>
+                                    <td class="center">CHHNABZTA _150X75X5X7</td>
                                     <td class="center">
                                         <asp:TextBox ID="TextBox2" runat="server">HN150X75X5X7/Q235B</asp:TextBox><asp:HyperLink ID="HyperLink10" runat="server">更新</asp:HyperLink></td>
-                                    </td>
-                                    <td class="right">沙钢</td>
-                                    <td class="right">
+                                    <td class="center">沙钢</td>
+                                    <td class="center">
                                         <asp:TextBox ID="TextBox4" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink2" runat="server">更新</asp:HyperLink></td>
-                                    <td class="right">345</td>
-                                    <td class="right">345</td>
-                                    <td class="right">5676</td>
-                                    <td class="right">12000</td>
+                                    <td class="center">345</td>
+                                    <td class="center">345</td>
+                                    <td class="center">5676</td>
+                                    <td class="center">12000</td>
                                 </tr>
                                 <tr>
                                     <td class="center">3</td>
-                                    <td class="left">低温板</td>
-                                    <td class="left">CHHNABZTA _200X100X5.5X8</td>
+                                    <td class="center">低温板</td>
+                                    <td class="center">CHHNABZTA _200X100X5.5X8</td>
                                     <td class="center">
                                         <asp:TextBox ID="TextBox8" runat="server">HN150X75X5X7/Q235B</asp:TextBox><asp:HyperLink ID="HyperLink11" runat="server">更新</asp:HyperLink></td>
-                                    </td>
-                                    <td class="right">沙钢</td>
-                                    <td class="right">
+                                    <td class="center">沙钢</td>
+                                    <td class="center">
                                         <asp:TextBox ID="TextBox5" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink3" runat="server">更新</asp:HyperLink></td>
-                                    <td class="right">345</td>
-                                    <td class="right">345</td>
-                                    <td class="right">5676</td>
-                                    <td class="right">12000</td>
+                                    <td class="center">345</td>
+                                    <td class="center">345</td>
+                                    <td class="center">5676</td>
+                                    <td class="center">12000</td>
                                 </tr>
                                 <tr>
                                     <td class="center">4</td>
-                                    <td class="left">低温板</td>
-                                    <td class="left">CHHNABZTA _175X175X7.5X11</td>
+                                    <td class="center">低温板</td>
+                                    <td class="center">CHHNABZTA _175X175X7.5X11</td>
                                     <td class="center">
                                         <asp:TextBox ID="TextBox9" runat="server">HN150X75X5X7/Q235B</asp:TextBox><asp:HyperLink ID="HyperLink12" runat="server">更新</asp:HyperLink></td>
-                                    </td>
-                                    <td class="right">鞍钢</td>
-                                    <td class="right">
+                                    <td class="center">鞍钢</td>
+                                    <td class="center">
                                         <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink7" runat="server">更新</asp:HyperLink></td>
-                                    <td class="right">345</td>
-                                    <td class="right">345</td>
-                                    <td class="right">5676</td>
-                                    <td class="right">12000</td>
+                                    <td class="center">345</td>
+                                    <td class="center">345</td>
+                                    <td class="center">5676</td>
+                                    <td class="center">12000</td>
                                 </tr>
                                 <tr>
                                     <td class="center">5</td>
-                                    <td class="left">低温板</td>
-                                    <td class="left">VMSD202Z_8X1800X8500</td>
+                                    <td class="center">低温板</td>
+                                    <td class="center">VMSD202Z_8X1800X8500</td>
                                     <td class="center">
                                         <asp:TextBox ID="TextBox10" runat="server">HN150X75X5X7/Q235B</asp:TextBox><asp:HyperLink ID="HyperLink13" runat="server">更新</asp:HyperLink></td>
-                                    </td>
-                                    <td class="right">鞍钢</td>
-                                    <td class="right">
+                                    <td class="center">鞍钢</td>
+                                    <td class="center">
                                         <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink8" runat="server">更新</asp:HyperLink></td>
-                                    <td class="right">345</td>
-                                    <td class="right">345</td>
-                                    <td class="right">5676</td>
-                                    <td class="right">12000</td>
+                                    <td class="center">345</td>
+                                    <td class="center">345</td>
+                                    <td class="center">5676</td>
+                                    <td class="center">12000</td>
                                 </tr>
                             </tbody>
                         </table>
