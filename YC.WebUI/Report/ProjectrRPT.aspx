@@ -140,6 +140,20 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
+                                                            <div class="row">
+                                                                <table class="table table-clear">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="right"><strong>合同总金额</strong></td>
+                                                                            <td class="right">¥888738元</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="right"><strong>合同总吨位</strong></td>
+                                                                            <td class="right">243.56吨</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
                                                         </td>
                                                         <td class="center">
                                                             <table class="table table-hover">
@@ -246,23 +260,41 @@
                                                                     <tr>
                                                                         <th class="center">合同编号</th>
                                                                         <th class="center">合同金额</th>
+                                                                        <th class="center">合同吨位</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td class="center">2010BC04736273</td>
                                                                         <td class="center">¥8783.98元</td>
+                                                                        <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="center">20210BC2873663</td>
                                                                         <td class="center">¥4495844.98元</td>
+                                                                        <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="center">2010BC2903974</td>
                                                                         <td class="center">¥387485.77元</td>
+                                                                        <td class="center">43.56吨</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
+                                                            <div class="row">
+                                                                <table class="table table-clear">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="right"><strong>合同总金额</strong></td>
+                                                                            <td class="right">¥888738元</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="right"><strong>合同总吨位</strong></td>
+                                                                            <td class="right">243.56吨</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
                                                         </td>
                                                         <td class="center">
                                                             <table class="table table-hover">
