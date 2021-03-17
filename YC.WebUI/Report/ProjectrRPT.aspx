@@ -103,7 +103,8 @@
                                                     <tr>
                                                         <th class="center">项目名称</th>
                                                         <th class="center">合同信息</th>
-                                                        <th class="center">购货信息</th>
+                                                        <th class="center">采购吨位</th>
+                                                        <th class="center">付款信息</th>
                                                         <th class="center">进项发票信息</th>
                                                         <th class="center">发货信息</th>
                                                         <th class="center">项目负责人</th>
@@ -140,73 +141,20 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-                                                            <div class="row">
-                                                                <table class="table table-clear">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="right"><strong>合同总金额</strong></td>
-                                                                            <td class="right">¥888738元</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="right"><strong>合同总吨位</strong></td>
-                                                                            <td class="right">243.56吨</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                        <td class="center">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>购货总金额</th>
-                                                                        <th>购货吨位</th>
-                                                                    </tr>
-                                                                </thead>
+                                                            <table>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>¥8783.98元</td>
-                                                                        <td>43.56吨</td>
+                                                                        <td class="right"><strong>合同总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>¥8783.98元</td>
-                                                                        <td>43.56吨</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>¥8783.98元</td>
-                                                                        <td>43.56吨</td>
-                                                                        <td>
+                                                                        <td class="right"><strong>合同总吨位</strong></td>
+                                                                        <td class="right">243.56吨</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                         </td>
-                                                        <td class="center">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th class="center">发票总金额</th>
-                                                                        <th class="center">已开发票金额</th>
-                                                                        <th class="center">未开发票金额</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="center">¥328783.98元</td>
-                                                                        <td class="center">¥823783.98元</td>
-                                                                        <td class="center">¥8783.98元</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="center">¥328783.98元</td>
-                                                                        <td class="center">¥823783.98元</td>
-                                                                        <td class="center">¥8783.98元</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="center">¥328783.98元</td>
-                                                                        <td class="center">¥823783.98元</td>
-                                                                        <td class="center">¥8783.98元</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="center">43.24吨
                                                         </td>
                                                         <td class="center">
                                                             <table class="table table-hover">
@@ -233,6 +181,102 @@
                                                                         <td>¥387485.77元</td>
                                                                         <td>待付款</td>
                                                                         <td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="row">
+                                                                <table class="table table-clear">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="right"><strong>付款总金额</strong></td>
+                                                                            <td class="right">¥888738元</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="right"><strong>已付金额</strong></td>
+                                                                            <td class="right">¥88873</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td class="center">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="center">发票金额</th>
+                                                                        <th class="center">已开发票金额</th>
+                                                                        <th class="center">未开发票金额</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="row">
+                                                                <table class="table table-clear">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="right"><strong>发票总金额</strong></td>
+                                                                            <td class="right">¥888738元</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="right"><strong>已开发票总金额</strong></td>
+                                                                            <td class="right">¥88873</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="right"><strong>未开发票总金额</strong></td>
+                                                                            <td class="right">¥2333</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="center">采购吨位</th>
+                                                                        <th class="center">已发货吨位</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>采购总吨位</strong></td>
+                                                                        <td class="right">541.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>累计发货吨位</strong></td>
+                                                                        <td class="right">323.45吨</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -281,73 +325,20 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-                                                            <div class="row">
-                                                                <table class="table table-clear">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="right"><strong>合同总金额</strong></td>
-                                                                            <td class="right">¥888738元</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="right"><strong>合同总吨位</strong></td>
-                                                                            <td class="right">243.56吨</td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </td>
-                                                        <td class="center">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>送货部门</th>
-                                                                        <th>送货日期</th>
-                                                                    </tr>
-                                                                </thead>
+                                                            <table>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>综合服务部</td>
-                                                                        <td>2021-6-22</td>
+                                                                        <td class="right"><strong>合同总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>物资管理部</td>
-                                                                        <td>2021--7-23</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>物资管理部</td>
-                                                                        <td>2021--7-23</td>
-                                                                        <td>
+                                                                        <td class="right"><strong>合同总吨位</strong></td>
+                                                                        <td class="right">243.56吨</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                         </td>
-                                                        <td class="center">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th class="center">供应商</th>
-                                                                        <th class="center">合同编号</th>
-                                                                        <th class="center">合同金额</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="center">山东钢铁厂</td>
-                                                                        <td class="center">2010BC04736273</td>
-                                                                        <td class="center">¥8783.98元</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="center">日照钢铁厂</td>
-                                                                        <td class="center">20210BC2873663</td>
-                                                                        <td class="center">¥4495844.98元</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="center">吉林钢铁厂</td>
-                                                                        <td class="center">2010BC2903974</td>
-                                                                        <td class="center">¥387485.77元</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="center">134.53吨
                                                         </td>
                                                         <td class="center">
                                                             <table class="table table-hover">
@@ -377,24 +368,191 @@
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>付款总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>已付金额</strong></td>
+                                                                        <td class="right">¥88873</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td class="center">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="center">发票总金额</th>
+                                                                        <th class="center">已开发票金额</th>
+                                                                        <th class="center">未开发票金额</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">¥328783.98元</td>
+                                                                        <td class="center">¥823783.98元</td>
+                                                                        <td class="center">¥8783.98元</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>发票总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>已开发票总金额</strong></td>
+                                                                        <td class="right">¥88873</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>未开发票总金额</strong></td>
+                                                                        <td class="right">¥2333</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="center">采购吨位</th>
+                                                                        <th class="center">已发货吨位</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center">432.23吨</td>
+                                                                        <td class="center">323.23吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>采购总吨位</strong></td>
+                                                                        <td class="right">541.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>累计发货吨位</strong></td>
+                                                                        <td class="right">323.45吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
                                                         </td>
                                                         <td class="center">叶经理
                                                         </td>
                                                         <td class="center">待发货</td>
                                                     </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计合同总金额</strong></td>
+                                                                        <td class="right">¥1888738元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计合同总吨位</strong></td>
+                                                                        <td class="right">243.56吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计采购总吨数</strong></td>
+                                                                        <td class="right">243.56吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计付款总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计已付金额</strong></td>
+                                                                        <td class="right">¥88873</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计发票总金额</strong></td>
+                                                                        <td class="right">¥888738元</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计已开发票总金额</strong></td>
+                                                                        <td class="right">¥88873</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计未开发票总金额</strong></td>
+                                                                        <td class="right">¥2333</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计采购总吨位</strong></td>
+                                                                        <td class="right">541.23吨</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="right"><strong>合计发货吨位</strong></td>
+                                                                        <td class="right">323.45吨</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
-                            <!--/col-->
-
-
                         </div>
+                        <!--/col-->
+
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </asp:Content>
 
