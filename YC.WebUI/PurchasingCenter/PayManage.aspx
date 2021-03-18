@@ -154,7 +154,7 @@
                                     </td>
                                     <td class="center">山东钢铁厂</td>
                                     <td class="center">宁波甬诚</td>
-                                    <td class="center">20B001-1-1</td>
+                                    <td class="center">20B001-CG-1</td>
                                     <td class="center">¥8783.98元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
@@ -167,7 +167,7 @@
                                     </td>
                                     <td class="center">日照钢铁厂</td>
                                     <td class="center">宁波甬丁儿</td>
-                                    <td class="center">20B001-2-1</td>
+                                    <td class="center">20B001-CG-2</td>
                                     <td class="center">¥4495844.98元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
@@ -180,7 +180,7 @@
                                     </td>
                                     <td class="center">吉林钢铁厂</td>
                                     <td class="center">宁波甬诚</td>
-                                    <td class="center">20B001-1-2</td>
+                                    <td class="center">20B001-CG-3</td>
                                     <td class="center">¥387485.77元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
@@ -213,11 +213,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="left"><strong>供货商：</strong></td>
-                                                <td class="left">唐山盛材钢铁厂</td>
+                                                <td class="left">山东钢铁厂</td>
                                             </tr>
                                             <tr>
                                                 <td class="left"><strong>合同编号：</strong></td>
-                                                <td class="left">57401-20-1277-CV-R-M-1001</td>
+                                                <td class="left">20B001-CG-1</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -462,7 +462,7 @@
                                     </td>
                                     <td>FK2021987384743</td>
                                     <td>宁波甬诚</td>
-                                    <td>20B001-1-1</td>
+                                    <td>20B001-CG-1</td>
                                     <td>¥8783.98元</td>
                                     <td>2021-03-21</td>
                                     <td>已付款</td>
@@ -472,7 +472,7 @@
                                     </td>
                                     <td>FK2021987384743</td>
                                     <td>宁波甬丁儿</td>
-                                    <td>20B001-1-2</td>
+                                    <td>20B001-CG-2</td>
                                     <td>¥4495844.98元</td>
                                     <td>2021-03-21</td>
                                     <td>待付款</td>
@@ -482,7 +482,7 @@
                                     </td>
                                     <td>FK2021987384743</td>
                                     <td>宁波甬诚</td>
-                                    <td>20B001-2-1</td>
+                                    <td>20B001-CG-1</td>
                                     <td>¥387485.77元</td>
                                     <td>2021-03-21</td>
                                     <td>待付款</td>

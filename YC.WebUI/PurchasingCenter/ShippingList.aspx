@@ -132,7 +132,7 @@
                                     </td>
                                     <td>山东钢铁厂</td>
                                     <td>宁波甬诚</td>
-                                    <td>2010BC04736273</td>
+                                    <td>20B001-CG-1</td>
                                     <td>¥8783.98元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
@@ -144,7 +144,7 @@
                                     </td>
                                     <td>日照钢铁厂</td>
                                     <td>宁波甬丁儿</td>
-                                    <td>20210BC2873663</td>
+                                    <td>20B001-CG-2</td>
                                     <td>¥4495844.98元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
@@ -156,7 +156,7 @@
                                     </td>
                                     <td>吉林钢铁厂</td>
                                     <td>宁波甬诚</td>
-                                    <td>2010BC2903974</td>
+                                    <td>20B001-CG-3</td>
                                     <td>¥387485.77元</td>
                                     <td>
                                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PurchasingCenter/GoodsOrder.aspx">装货单</asp:HyperLink></td>
