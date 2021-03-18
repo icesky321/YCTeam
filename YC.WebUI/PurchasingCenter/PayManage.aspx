@@ -234,8 +234,7 @@
                                             <th class="center">产地</th>
                                             <th class="center">供货数量</th>
                                             <th class="center">供货单价</th>
-                                            <th class="center">合计单价</th>
-                                            <th class="center">合计总价价</th>
+                                            <th class="center">合计总价</th>
                                             <th>交货如期</th>
                                         </tr>
                                     </thead>
@@ -265,8 +264,6 @@
                                                 </div>
                                             </td>
                                             <td class="center">345</td>
-                                            <td class="center">345</td>
-                                            <td class="center">5676</td>
                                             <td class="center">12000</td>
                                             <td class="center">2021-3-13</td>
                                         </tr>
@@ -283,8 +280,6 @@
                                             <td class="center">
                                                 <asp:TextBox ID="TextBox4" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink2" runat="server">更新</asp:HyperLink></td>
                                             <td class="center">345</td>
-                                            <td class="center">345</td>
-                                            <td class="center">5676</td>
                                             <td class="center">12000</td>
                                             <td class="center">2021-3-13</td>
                                         </tr>
@@ -301,8 +296,6 @@
                                             <td class="center">
                                                 <asp:TextBox ID="TextBox5" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink3" runat="server">更新</asp:HyperLink></td>
                                             <td class="center">345</td>
-                                            <td class="center">345</td>
-                                            <td class="center">5676</td>
                                             <td class="center">12000</td>
                                             <td class="center">2021-3-13</td>
                                         </tr>
@@ -319,8 +312,6 @@
                                             <td class="center">
                                                 <asp:TextBox ID="TextBox6" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink7" runat="server">更新</asp:HyperLink></td>
                                             <td class="center">345</td>
-                                            <td class="center">345</td>
-                                            <td class="center">5676</td>
                                             <td class="center">12000</td>
                                             <td class="center">2021-3-13</td>
                                         </tr>
@@ -337,8 +328,6 @@
                                             <td class="center">
                                                 <asp:TextBox ID="TextBox7" runat="server">543</asp:TextBox><asp:HyperLink ID="HyperLink8" runat="server">更新</asp:HyperLink></td>
                                             <td class="center">345</td>
-                                            <td class="center">345</td>
-                                            <td class="center">5676</td>
                                             <td class="center">12000</td>
                                             <td class="center">2021-3-13</td>
                                         </tr>
