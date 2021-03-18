@@ -49,7 +49,7 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox1" runat="server" /></td>
                             <th class="center">#</th>
-                            <th class="center">所属项目编号</th>
+                            <th class="center">采购单编号</th>
                             <th class="center">物料名称</th>
                             <th class="center">送货地址</th>
                             <th class="center">规格型号</th>
@@ -67,9 +67,9 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox2" runat="server" /></td>
                             <td class="center">1</td>
-                            <td class="center">ZHLH2101#DK</td>
+                            <td class="center">20B001-1-1</td>
                             <td class="center">低温板</td>
-                            <td class="center">宁波和义大道</td>
+                            <td class="center">徐圩新区炼化项目现场</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">345</td>
@@ -84,9 +84,9 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox3" runat="server" /></td>
                             <td class="center">2</td>
-                            <td class="center">ZHLH2101#DK</td>
+                            <td class="center">20B001-1-2</td>
                             <td class="center">低温板</td>
-                            <td class="center">宁波和义大道</td>
+                            <td class="center">徐圩新区炼化项目现场</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">456</td>
@@ -101,9 +101,9 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox4" runat="server" /></td>
                             <td class="center">3</td>
-                            <td class="center">ZHLH2101#DK</td>
+                            <td class="center">20B001-1-1</td>
                             <td class="center">低温板</td>
-                            <td class="center">宁波来福士广场</td>
+                            <td class="center">徐圩新区炼化项目现场</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
                             <td class="center">345</td>
@@ -118,9 +118,9 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox5" runat="server" /></td>
                             <td class="center">4</td>
-                            <td class="center">ZHLH2101#DK</td>
+                            <td class="center">20B001-2-1</td>
                             <td class="center">低温板</td>
-                            <td class="center">宁波来福士广场</td>
+                            <td class="center">徐圩新区炼化项目现场</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
                             <td class="center">345</td>
@@ -135,9 +135,9 @@
                             <td>
                                 <asp:CheckBox ID="CheckBox6" runat="server" /></td>
                             <td class="center">5</td>
-                            <td class="center">ZHLH2101#DK</td>
+                            <td class="center">20B001-2-2</td>
                             <td class="center">低温板</td>
-                            <td class="center">万豪大酒店</td>
+                            <td class="center">徐圩新区炼化项目现场</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
                             <td class="center">345</td>

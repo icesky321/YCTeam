@@ -113,7 +113,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td class="center">镇海炼化1# 地块乙烯项目(ZHLH-YX-2101)</td>
+                                                        <td class="center">镇海炼化1# 地块乙烯项目(20A001)</td>
                                                         <td class="center">
                                                             <table class="table table-hover">
                                                                 <thead>
@@ -125,17 +125,17 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td class="center">2010BC04736273</td>
+                                                                        <td class="center">20A001-1</td>
                                                                         <td class="center">¥8783.98元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="center">20210BC2873663</td>
+                                                                        <td class="center">20A001-2</td>
                                                                         <td class="center">¥4495844.98元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="center">2010BC2903974</td>
+                                                                        <td class="center">20A001-3</td>
                                                                         <td class="center">¥387485.77元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
@@ -297,7 +297,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="center">南京雄盛乙炔项目基地(YCDJ-JW-2102)</td>
+                                                        <td class="center">盛虹炼化一体化项目(20B001)</td>
                                                         <td class="center">
                                                             <table class="table table-hover">
                                                                 <thead>
@@ -309,17 +309,17 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td class="center">2010BC04736273</td>
+                                                                        <td class="center">20B001-1</td>
                                                                         <td class="center">¥8783.98元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="center">20210BC2873663</td>
+                                                                        <td class="center">20B001-2</td>
                                                                         <td class="center">¥4495844.98元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td class="center">2010BC2903974</td>
+                                                                        <td class="center">20B001-3</td>
                                                                         <td class="center">¥387485.77元</td>
                                                                         <td class="center">43.56吨</td>
                                                                     </tr>
@@ -543,16 +543,16 @@
                                                 </tbody>
                                             </table>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--/col-->
+
+
                         </div>
-                        <!--/col-->
-
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </asp:Content>
 

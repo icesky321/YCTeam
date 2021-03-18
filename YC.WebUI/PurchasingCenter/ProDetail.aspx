@@ -24,8 +24,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
 
-                        <h3 class="text-center"><strong>镇海炼化1号地块乙烯项目</strong></h3>
-                        <h4 class="text-center"><strong>ZHLH-YX-21001</strong></h4>
+                        <h3 class="text-center"><strong>盛虹炼化一体化项目</strong></h3>
+                        <h4 class="text-center"><strong>21B001</strong></h4>
                         <h4 class="text-center"><small><i class="fa fa-map-marker"></i>项目名称</small></h4>
 
                         <hr>
@@ -57,7 +57,7 @@
                                     <h5><i class="fa fa-building-o"></i>采购商</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbPurchaser" runat="server" Text="镇海炼化公司"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbPurchaser" runat="server" Text="盛虹炼化"></asp:Label></strong></h4>
                             </li>
                             <li>
                                 <div>
@@ -99,7 +99,7 @@
                                                 </th>
                                                 <th>送货部门</th>
                                                 <th>送货地址</th>
-                                                <th>送货日期</th>
+                                                
                                                 <th></th>
                                                 <th></th>
                                             </tr>
@@ -108,9 +108,9 @@
                                             <tr>
                                                 <td>1
                                                 </td>
-                                                <td>综合服务部</td>
-                                                <td>和义大道</td>
-                                                <td>2021-6-22</td>
+                                                <td>SH5材料采购组</td>
+                                                <td>徐圩新区炼化项目现场</td>
+                                                
                                                  <td>
                                                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
                                                 <td>
@@ -119,9 +119,8 @@
                                             <tr>
                                                 <td>2
                                                 </td>
-                                                <td>物资管理部</td>
-                                                <td>来福士广场</td>
-                                                <td>2021--7-23</td>
+                                                <td>SH6材料采购组</td>
+                                                <td>江苏连云港徐圩新区苏海路</td>
                                                 <td>
                                                     <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
                                                 <td>
@@ -130,9 +129,8 @@
                                             <tr>
                                                 <td>2
                                                 </td>
-                                                <td>物资管理部</td>
-                                                <td>来福士广场</td>
-                                                <td>2021--7-23</td>
+                                                <td>SH7材料采购组</td>
+                                                <td>江苏连云港徐圩新区苏海路</td>
                                                 <td>
                                                     <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">物料信息</asp:HyperLink></td>
                                                 <td>
@@ -175,6 +173,7 @@
                                                 <th>物料单位</th>
                                                 <th>物料数量</th>
                                                 <th>备注</th>
+                                                <th>送货日期</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -189,6 +188,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -201,6 +201,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -213,6 +214,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -225,6 +227,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-12</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -237,6 +240,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-19</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -249,6 +253,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -261,6 +266,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-16</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -273,6 +279,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-19</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -285,6 +292,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                             <tr>
                                                 <th>
@@ -297,6 +305,7 @@
                                                 <td>千克</td>
                                                 <td>629.1500</td>
                                                 <td>"822米</td>
+                                                <td>2021-6-22</td>
                                             </tr>
                                         </tbody>
                                     </table>

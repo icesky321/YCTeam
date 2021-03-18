@@ -31,10 +31,10 @@
                                     项目信息：
                                 </div>
                                 <div class="panel-body">
-                                    <p><strong>镇海炼化1号地块乙烯项目</strong></p>
-                                    <p>项目编号：ZHLH-YX-21001</p>
+                                    <p><strong>盛虹炼化一体化项目</strong></p>
+                                    <p>项目编号：20B001</p>
                                     <p>订单金额：¥80000元</p>
-                                    <p>采购商：镇海炼化公司</p>
+                                    <p>采购商：盛虹炼化</p>
                                     <p>项目状态：待询价</p>
                                 </div>
                             </div>
@@ -46,10 +46,10 @@
                                     请购单信息
                                 </div>
                                 <div class="panel-body">
-                                    <p><strong>请购单号：57401-20-1277-CV-R-M-1001</strong></p>
-                                    <p><strong>送货部门：物资采购部</strong></p>
+                                    <p><strong>请购单号：20B001-1</strong></p>
+                                    <p><strong>送货部门：SH5材料采购组</strong></p>
 
-                                    <p>交货地点：宁波和义大道</p>
+                                    <p>交货地点：徐圩新区炼化项目现场</p>
                                     <p>
                                         交货时间：2021-07-23
                                     </p>
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="panel-body">
                                     <p><strong>供货商名:</strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></p>
-                                    <p>合同编号：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></p>
+                                    <p>合同编号：<asp:TextBox ID="TextBox2" runat="server">20B001-CG-</asp:TextBox></p>
                                     <p>
                                         备注：<asp:TextBox ID="TextBox8" runat="server" TextMode="MultiLine"></asp:TextBox>
                                     </p>

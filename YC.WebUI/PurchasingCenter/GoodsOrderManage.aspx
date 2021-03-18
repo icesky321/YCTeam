@@ -31,14 +31,14 @@
                                     <h5><i class="fa fa-thumbs-up"></i>项目名称</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbProName" runat="server" Text="镇海炼化1号地块乙烯项目"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbProName" runat="server" Text="盛虹炼化一体化项目"></asp:Label></strong></h4>
                             </li>
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>项目编号</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbProNum" runat="server" Text="ZHLH2101#DK"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbProNum" runat="server" Text="20B001"></asp:Label></strong></h4>
                             </li>
                         </ul>
 
@@ -50,7 +50,7 @@
                                     <h5><i class="fa fa-phone"></i>项目状态</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbStatus" runat="server" Text="待投标"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbStatus" runat="server" Text="待询价"></asp:Label></strong></h4>
                             </li>
                         </ul>
                         <hr>
@@ -67,7 +67,7 @@
                                     <h5><i class="fa fa-building-o"></i>采购商</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbPurchaser" runat="server" Text="宁波天翼石化重型设备制造有限公司"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbPurchaser" runat="server" Text="盛虹炼化"></asp:Label></strong></h4>
                             </li>
                             <hr>
                             <ul class="profile-details">
@@ -76,21 +76,21 @@
                                         <h5><i class="fa fa-building-o"></i>订单编号</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label2" runat="server" Text="20BC202001-1"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label2" runat="server" Text="20B001-1"></asp:Label></strong></h4>
                                 </li>
                                 <li>
                                     <div>
                                         <h5><i class="fa fa-building-o"></i>收货单位</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label3" runat="server" Text="公用工程部"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label3" runat="server" Text="SH5材料采购组"></asp:Label></strong></h4>
                                 </li>
                                 <li>
                                     <div>
                                         <h5><i class="fa fa-building-o"></i>收货地址</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label4" runat="server" Text="宁波和义大道"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label4" runat="server" Text="徐圩新区炼化项目现场"></asp:Label></strong></h4>
                                 </li>
                             </ul>
                         </ul>
@@ -131,7 +131,7 @@
                                     </td>
                                     <td class="center">山东钢铁厂</td>
                                     <td class="center">宁波甬诚</td>
-                                    <td class="center">2010BC04736273</td>
+                                    <td class="center">20B001-CG-1</td>
                                     <td class="center">¥8783.98元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
@@ -141,7 +141,7 @@
                                     </td>
                                     <td class="center">日照钢铁厂</td>
                                     <td class="center">宁波甬丁儿</td>
-                                    <td class="center">20210BC2873663</td>
+                                    <td class="center">20B001-CG-1</td>
                                     <td class="center">¥4495844.98元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>
@@ -151,7 +151,7 @@
                                     </td>
                                     <td class="center">吉林钢铁厂</td>
                                     <td class="center">宁波甬诚</td>
-                                    <td class="center">2010BC2903974</td>
+                                    <td class="center">20B001-CG-2</td>
                                     <td class="center">¥387485.77元</td>
                                     <td class="center">
                                         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="#">物料明细</asp:HyperLink></td>

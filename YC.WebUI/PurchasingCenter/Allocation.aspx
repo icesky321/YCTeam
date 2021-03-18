@@ -30,14 +30,14 @@
                                     <h5><i class="fa fa-thumbs-up"></i>原项目名称</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbProName" runat="server" Text="镇海炼化1号地块乙烯项目"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbProName" runat="server" Text="盛虹炼化一体化项目"></asp:Label></strong></h4>
                             </li>
                             <li>
                                 <div>
                                     <h5><i class="fa fa-building-o"></i>项目编号</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbProNum" runat="server" Text="ZHLH2101#DK"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbProNum" runat="server" Text="20B001"></asp:Label></strong></h4>
                             </li>
                         </ul>
 
@@ -49,7 +49,7 @@
                                     <h5><i class="fa fa-phone"></i>项目状态</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbStatus" runat="server" Text="待投标"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbStatus" runat="server" Text="待送货"></asp:Label></strong></h4>
                             </li>
                         </ul>
                         <hr>
@@ -66,7 +66,7 @@
                                     <h5><i class="fa fa-building-o"></i>采购商</h5>
                                 </div>
                                 <h4><strong>
-                                    <asp:Label ID="lbPurchaser" runat="server" Text="宁波天翼石化重型设备制造有限公司"></asp:Label></strong></h4>
+                                    <asp:Label ID="lbPurchaser" runat="server" Text="盛虹炼化"></asp:Label></strong></h4>
                             </li>
                             <hr>
                             <ul class="profile-details">
@@ -75,21 +75,21 @@
                                         <h5><i class="fa fa-building-o"></i>订单编号</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label2" runat="server" Text="20BC202001-1"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label2" runat="server" Text="20B001-1"></asp:Label></strong></h4>
                                 </li>
                                 <li>
                                     <div>
                                         <h5><i class="fa fa-building-o"></i>收货单位</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label3" runat="server" Text="公用工程部"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label3" runat="server" Text="SH5材料采购组"></asp:Label></strong></h4>
                                 </li>
                                 <li>
                                     <div>
                                         <h5><i class="fa fa-building-o"></i>收货地址</h5>
                                     </div>
                                     <h4><strong>
-                                        <asp:Label ID="Label4" runat="server" Text="宁波和义大道"></asp:Label></strong></h4>
+                                        <asp:Label ID="Label4" runat="server" Text="徐圩新区炼化项目现场"></asp:Label></strong></h4>
                                 </li>
                             </ul>
                         </ul>
@@ -134,7 +134,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>ZHLH-YX-2101</td>
+                                            <td>20A002</td>
                                             <td>镇海炼化1# 地块乙烯项目</td>
                                             <td>镇海炼化</td>
                                             <td>¥60000元</td>
@@ -147,11 +147,11 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>YCDJ-JW-2102</td>
+                                            <td>20C003</td>
                                             <td>南京雄盛乙炔项目基地</td>
                                             <td>南京雄盛</td>
                                             <td>¥80000元</td>
-                                            <td>梁经理</td>
+                                            <td>邵经理</td>
                                             <td>2021-03-10</td>
                                             <td>待发货</td>
                                             <td>
@@ -239,7 +239,7 @@
                             <div class="form-group">
                                 <label class="col-lg-2 col-md-2 col-sm-12 control-label">采购商</label>
                                 <div class="col-lg-10 col-md-10">
-                                    <input type="text" class="form-control" value="盛虹炼化">
+                                    <input type="text" class="form-control" value="镇海炼化">
                                 </div>
                             </div>
                             <br />
