@@ -253,7 +253,7 @@
                                     <ul class="nav sub">
                                         <%--                                        <li><a href="../StockCenter/GoodsIn.aspx"><i class="fa fa-meh-o"></i><span class="text">入库查询</span></a></li>
                                         <li><a href="../StockCenter/GoodsOut.aspx"><i class="fa fa-meh-o"></i><span class="text">出库查询</span></a></li>--%>
-                                        <li><a href="../StockCenter/GoodsManage.aspx"><i class="fa fa-meh-o"></i><span class="text">库存统计查询</span></a></li>
+                                        <li><a href="../StockCenter/GoodsManage.aspx"><i class="fa fa-meh-o"></i><span class="text">余料库存统计查询</span></a></li>
                                     </ul>
                                 </li>
                                 <li>

@@ -49,7 +49,10 @@
                             <th>物料编码</th>
                             <th class="center">规格型号</th>
                             <th class="center">产地</th>
-                            <th class="center">库存数量</th>
+                            <th class="center">供应商需求数量</th>
+                            <th class="center">采购数量</th>
+                            <th class="center">已发数量</th>
+                            <th class="center">预估余料量</th>
                             <th class="center">已定单价</th>
                             <th class="center">所在仓库</th>
                             <th class="center">送货日期</th>
@@ -63,7 +66,10 @@
                             <td class="center">CHHNABZTA _150X75X5X7</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
-                            <td class="center">345</td>
+                            <td class="center">345吨</td>
+                            <td class="center">355吨</td>
+                            <td class="center">123吨</td>
+                            <td class="center">10吨</td>
                             <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
@@ -76,7 +82,10 @@
                             <td class="center">CHHNABZTA _150X75X5X7</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
-                            <td class="center">456</td>
+                            <td class="center">345吨</td>
+                            <td class="center">355吨</td>
+                            <td class="center">123吨</td>
+                            <td class="center">10吨</td>
                             <td class="center">23.4</td>
                             <td class="center">宁波江北2#仓库</td>
                             <td class="center">2021-7-7</td>
@@ -89,7 +98,10 @@
                             <td class="center">CHHNABZTA _200X100X5.5X8</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">沙钢</td>
-                            <td class="center">345</td>
+                            <td class="center">345吨</td>
+                            <td class="center">355吨</td>
+                            <td class="center">123吨</td>
+                            <td class="center">10吨</td>
                             <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
@@ -102,7 +114,10 @@
                             <td class="center">CHHNABZTA _175X175X7.5X11</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
-                            <td class="center">345</td>
+                            <td class="center">345吨</td>
+                            <td class="center">355吨</td>
+                            <td class="center">123吨</td>
+                            <td class="center">10吨</td>
                             <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
@@ -115,7 +130,10 @@
                             <td class="center">VMSD202Z_8X1800X8500</td>
                             <td class="center">HN150X75X5X7/Q235B</td>
                             <td class="center">鞍钢</td>
-                            <td class="center">345</td>
+                            <td class="center">345吨</td>
+                            <td class="center">355吨</td>
+                            <td class="center">123吨</td>
+                            <td class="center">10吨</td>
                             <td class="center">23.4</td>
                             <td class="center">宁波江北1#仓库</td>
                             <td class="center">2021-5-7</td>
@@ -133,9 +151,17 @@
                                     <td class="right"><strong>实际库存量</strong></td>
                                     <td class="right">345吨</td>
                                 </tr>
+                                 <tr>
+                                    <td class="right"><strong>预估余料总量</strong></td>
+                                    <td class="right">123吨</td>
+                                </tr>
                                 <tr>
                                     <td class="right"><strong>实际占用资金</strong></td>
                                     <td class="right">¥888738元</td>
+                                </tr>
+                                                                <tr>
+                                    <td class="right"><strong>预估余料占用资金</strong></td>
+                                    <td class="right">¥234533元</td>
                                 </tr>
                             </tbody>
                         </table>
