@@ -243,8 +243,10 @@
                                         <li><a href="../PurchasingCenter/GoodsOrderManage.aspx"><i class="fa fa-outdent"></i><span class="text">采购订单管理</span></a></li>
                                         <li><a href="../PurchasingCenter/PayManage.aspx"><i class="fa fa-list"></i><span class="text">请款单管理</span></a></li>
                                         <li><a href="../PurchasingCenter/ShippingList.aspx"><i class="fa fa-list-alt"></i><span class="text">到货单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/FreightManage.aspx"><i class="fa fa-list-alt"></i><span class="text">运杂费管理</span></a></li>
                                         <li><a href="../PurchasingCenter/InputInvoice.aspx"><i class="fa fa-th"></i><span class="text">进项发票管理</span></a></li>
                                         <li><a href="../PurchasingCenter/DeliveryBillManage.aspx"><i class="fa fa-list-alt"></i><span class="text">送货单管理</span></a></li>
+                                        <li><a href="../PurchasingCenter/OddmentsManage.aspx"><i class="fa fa-list-alt"></i><span class="text">余料管理</span></a></li>
                                     </ul>
                                 </li>
 

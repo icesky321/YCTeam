@@ -152,7 +152,6 @@
                 </table>
                 <div style="text-align: right">
                     <a class="btn btn-warning btn-lg" href="NewDeliveryBill.aspx">发货</a>
-                    <a class="btn btn-danger btn-lg" href="Allocation.aspx">调拨</a>
                 </div>
 
             </div>

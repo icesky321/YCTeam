@@ -60,15 +60,14 @@
                         <div class="panel-body">
                             <p><strong>购货单位:</strong><asp:TextBox ID="TextBox1" runat="server">宁波甬诚</asp:TextBox></p>
                             <p><strong>供货单位:</strong><asp:TextBox ID="TextBox2" runat="server">泰安市圣地工贸有限公司</asp:TextBox></p>
+                            <p>出发地:</><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></p>
+                            <p>目的地:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
                             <p>车号:</><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></p>
                             <p>司机:</><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></p>
                             <p>联系方式:</><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></p>
-                            <p>加工费:</><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></p>
-                            <p>运费:</><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></p>
-                            <p>其他杂费:</><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></p>
                             <p>备注:</><asp:TextBox ID="TextBox14" runat="server" TextMode="MultiLine"></asp:TextBox></p>
                             <p>目的地:</><asp:TextBox ID="TextBox15" runat="server" Text=""></asp:TextBox></p>
-                              <p>运输目的地：<asp:RadioButton ID="RadioButton1" runat="server" Text="中转" ValidationGroup="1" /><asp:RadioButton ID="RadioButton2" runat="server" Text="直达" ValidationGroup="1" /></p>
+                            <p>运输目的地：<asp:RadioButton ID="RadioButton1" runat="server" Text="中转" ValidationGroup="1" /><asp:RadioButton ID="RadioButton2" runat="server" Text="直达" ValidationGroup="1" /></p>
                             <%--                            质保书附件：<asp:FileUpload ID="FileUpload1" runat="server" />--%>
                             <p>
                                 <asp:Button ID="Button1" runat="server" Text="确认" />

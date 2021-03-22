@@ -198,7 +198,7 @@
                                             <td>和义大道</td>
                                             <td>2021-6-22</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="#">添加调拨单</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="#">余料出库</asp:HyperLink></td>
                                         </tr>
                                         <tr>
                                             <td>2
@@ -207,7 +207,7 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="#">添加调拨单</asp:HyperLink></td>
+                                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="#">余料出库</asp:HyperLink></td>
                                         </tr>
                                         <tr>
                                             <td>2
@@ -216,7 +216,7 @@
                                             <td>来福士广场</td>
                                             <td>2021--7-23</td>
                                             <td>
-                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="#">添加调拨单</asp:HyperLink>
+                                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="#">余料出库</asp:HyperLink>
                                             </td>
                                         </tr>
                                     </tbody>
